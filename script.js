@@ -3,6 +3,7 @@
    ═══════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
+
   /* ── Sticky Header ── */
   const header = document.getElementById('header');
   const scrollThreshold = 60;
@@ -21,8 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (burger && nav) {
     burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      nav.classList.toggle('open');
+      const isOpen = burger.classList.toggle('active');
+      nav.classList.toggle('open', isOpen);
+      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     // Close menu on link click
@@ -30,7 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         burger.classList.remove('active');
         nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (nav.classList.contains('open') &&
+          !nav.contains(e.target) &&
+          !burger.contains(e.target)) {
+        burger.classList.remove('active');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
@@ -43,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const typedEl = document.getElementById('typed-text');
+
   if (typedEl) {
     let phraseIndex = 0;
     let charIndex = 0;
@@ -69,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (charIndex === 0) {
           isDeleting = false;
           phraseIndex = (phraseIndex + 1) % phrases.length;
-          typeSpeed = 400; // Pause before next
+          typeSpeed = 400; // Pause before next phrase
         } else {
           typeSpeed = 30;
         }
@@ -102,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealEls.forEach(el => revealObserver.observe(el));
   } else {
-    // Fallback: show all if IntersectionObserver not supported
+    // Fallback: show all immediately if IntersectionObserver not supported
     revealEls.forEach(el => el.classList.add('reveal--visible'));
   }
 
@@ -120,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       track.style.transform = `translateX(-${currentSlide * 100}%)`;
       dots.forEach((dot, i) => {
         dot.classList.toggle('active', i === currentSlide);
+        dot.setAttribute('aria-label', `Go to testimonial ${i + 1}${i === currentSlide ? ' (current)' : ''}`);
       });
     }
 
@@ -142,11 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Start
+    // Initialize
     goToSlide(0);
     resetAutoplay();
 
-    // Optional: pause when tab not visible
+    // Pause autoplay when tab is not visible
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) {
         clearInterval(autoplayTimer);
@@ -177,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Scroll to Top functionality ── */
+  /* ── Scroll to Top ── */
   const scrollTop = document.getElementById('scroll-top');
 
   if (scrollTop) {
@@ -194,10 +210,14 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     scrollTop.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  /* ── Auto-update Footer Year ── */
+  const footerYear = document.getElementById('footer-year');
+  if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+  }
+
 });
