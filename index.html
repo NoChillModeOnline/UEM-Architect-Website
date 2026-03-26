@@ -36,6 +36,8 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header id="header" class="header" role="banner">
     <div class="container">
       <a href="#" class="header__logo" aria-label="UEM Architect — home">
@@ -239,7 +241,7 @@
           </p>
         </div>
 
-        <ol class="process__timeline" role="list">
+        <ol class="process__timeline">
 
           <li class="process-step reveal reveal--delay-1">
             <div class="process-step__number" aria-hidden="true">1</div>
@@ -400,9 +402,9 @@
           </div>
 
           <div id="testimonials-dots" class="testimonials__dots" role="tablist" aria-label="Testimonial navigation">
-            <button type="button" data-index="0" aria-label="Go to testimonial 1" class="active"></button>
-            <button type="button" data-index="1" aria-label="Go to testimonial 2"></button>
-            <button type="button" data-index="2" aria-label="Go to testimonial 3"></button>
+            <button type="button" role="tab" data-index="0" aria-label="Go to testimonial 1" class="active"></button>
+            <button type="button" role="tab" data-index="1" aria-label="Go to testimonial 2"></button>
+            <button type="button" role="tab" data-index="2" aria-label="Go to testimonial 3"></button>
           </div>
         </div>
       </div>
@@ -509,7 +511,7 @@
 
         <div class="footer__brand">
           <a href="#" aria-label="UEM Architect — home">
-            <img src="images/logo.png" alt="UEM Architect logo" height="48" loading="lazy" />
+            <img src="images/logo-white.png" alt="UEM Architect logo" height="48" loading="lazy" />
           </a>
           <p>
             Helping organizations architect, secure, and operate their endpoint
