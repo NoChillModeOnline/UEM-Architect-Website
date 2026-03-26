@@ -2,9 +2,6 @@
    UEM Architect — Design System & Styles
    ═══════════════════════════════════════════════════ */
 
-/* ── Google Font Import ── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 /* ── Design Tokens ── */
 :root {
   /* Brand Palette */
@@ -16,7 +13,6 @@
   --amber-light: #fbbf24;
   --grey:        #94a3b8;
   --dark:        #0d1117;
-  --dark-mid:    #161b22;
   --white:       #ffffff;
   --off-white:   #f0f4f8;
   --light-grey:  #e2e8f0;
@@ -25,7 +21,6 @@
 
   /* Gradients */
   --grad-hero:   linear-gradient(135deg, #0d1117 0%, #1a2744 40%, #2b4570 80%, #0d1117 100%);
-  --grad-card:   linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
   --grad-cta:    linear-gradient(135deg, #0d1117 0%, #1a2744 50%, #2b4570 100%);
   --grad-accent: linear-gradient(135deg, #00b4d8 0%, #48cae4 100%);
   --grad-amber:  linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
@@ -42,21 +37,16 @@
   --shadow-md:    0 8px 24px rgba(0, 0, 0, 0.1);
   --shadow-lg:    0 16px 48px rgba(0, 0, 0, 0.14);
   --shadow-glow:  0 8px 32px rgba(0, 180, 216, 0.2);
-  --shadow-amber: 0 8px 32px rgba(245, 158, 11, 0.2);
 
   /* Radius */
-  --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-xl: 28px;
-  --radius-2xl: 40px;
 
   /* Transitions */
   --ease:   cubic-bezier(0.4, 0, 0.2, 1);
-  --t-fast: 0.25s;
   --t-base: 0.3s;
-  --t-slow: 0.6s;
 }
 
 /* ── Reset & Base ── */
@@ -203,17 +193,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.7);
   transform: translateY(-2px);
-}
-
-.btn--dark {
-  background: var(--navy);
-  color: var(--white);
-}
-
-.btn--dark:hover {
-  background: var(--dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 /* ═══════════════════════════════════════════
@@ -751,6 +730,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 4rem;
   animation: scroll-logos 30s linear infinite;
   width: max-content;
+  will-change: transform;
 }
 
 .partners__track img {
@@ -794,7 +774,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-card__stars {
-  color: #fbbf24;
+  color: var(--amber-light);
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   letter-spacing: 4px;
@@ -1315,6 +1295,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .partners__track {
     animation: none;
+    will-change: auto;
   }
 
   .hero__shapes .shape {
