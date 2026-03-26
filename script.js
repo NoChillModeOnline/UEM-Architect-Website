@@ -3,14 +3,15 @@
    ═══════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
-
   /* ── Sticky Header ── */
   const header = document.getElementById('header');
   const scrollThreshold = 60;
 
   function updateHeader() {
+    if (!header) return;
     header.classList.toggle('header--scrolled', window.scrollY > scrollThreshold);
   }
+
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();
 
@@ -18,18 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    nav.classList.toggle('open');
-  });
-
-  // Close menu on link click
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      burger.classList.remove('active');
-      nav.classList.remove('open');
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      nav.classList.toggle('open');
     });
-  });
+
+    // Close menu on link click
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        nav.classList.remove('open');
+      });
+    });
+  }
 
   /* ── Typing Effect ── */
   const phrases = [
@@ -40,98 +43,135 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const typedEl = document.getElementById('typed-text');
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 60;
+  if (typedEl) {
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 60;
 
-  function typeLoop() {
-    const current = phrases[phraseIndex];
+    function typeLoop() {
+      const current = phrases[phraseIndex];
 
-    if (!isDeleting) {
-      typedEl.textContent = current.substring(0, charIndex + 1);
-      charIndex++;
-      if (charIndex === current.length) {
-        isDeleting = true;
-        typeSpeed = 2000; // Pause at end
+      if (!isDeleting) {
+        typedEl.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === current.length) {
+          isDeleting = true;
+          typeSpeed = 2000; // Pause at end
+        } else {
+          typeSpeed = 55 + Math.random() * 40;
+        }
       } else {
-        typeSpeed = 55 + Math.random() * 40;
+        typedEl.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typeSpeed = 400; // Pause before next
+        } else {
+          typeSpeed = 30;
+        }
       }
-    } else {
-      typedEl.textContent = current.substring(0, charIndex - 1);
-      charIndex--;
-      if (charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 400; // Pause before next
-      } else {
-        typeSpeed = 30;
-      }
+
+      setTimeout(typeLoop, typeSpeed);
     }
 
-    setTimeout(typeLoop, typeSpeed);
+    typeLoop();
   }
-
-  typeLoop();
 
   /* ── Scroll Reveal (IntersectionObserver) ── */
   const revealEls = document.querySelectorAll('.reveal');
 
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('reveal--visible');
-        revealObserver.unobserve(entry.target);
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal--visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px',
       }
-    });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
-  });
+    );
 
-  revealEls.forEach(el => revealObserver.observe(el));
+    revealEls.forEach(el => revealObserver.observe(el));
+  } else {
+    // Fallback: show all if IntersectionObserver not supported
+    revealEls.forEach(el => el.classList.add('reveal--visible'));
+  }
 
   /* ── Testimonial Carousel ── */
   const track = document.getElementById('testimonials-track');
   const dots = document.querySelectorAll('#testimonials-dots button');
-  let currentSlide = 0;
-  const totalSlides = dots.length;
-  let autoplayTimer;
 
-  function goToSlide(index) {
-    currentSlide = index;
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === currentSlide);
+  if (track && dots.length > 0) {
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+    let autoplayTimer;
+
+    function goToSlide(index) {
+      currentSlide = index;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % totalSlides);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(nextSlide, 5000);
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.dataset.index, 10);
+        if (!Number.isNaN(idx)) {
+          goToSlide(idx);
+          resetAutoplay();
+        }
+      });
+    });
+
+    // Start
+    goToSlide(0);
+    resetAutoplay();
+
+    // Optional: pause when tab not visible
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearInterval(autoplayTimer);
+      } else {
+        resetAutoplay();
+      }
     });
   }
-
-  dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      goToSlide(parseInt(dot.dataset.index));
-      resetAutoplay();
-    });
-  });
-
-  function nextSlide() {
-    goToSlide((currentSlide + 1) % totalSlides);
-  }
-
-  function resetAutoplay() {
-    clearInterval(autoplayTimer);
-    autoplayTimer = setInterval(nextSlide, 5000);
-  }
-
-  resetAutoplay();
 
   /* ── Smooth Scroll for Anchor Links ── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+    anchor.addEventListener('click', e => {
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#') return;
+
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const headerHeight = header.offsetHeight;
-        const targetPos = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+        const headerHeight = header ? header.offsetHeight : 0;
+        const targetPos =
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight -
+          20;
+
         window.scrollTo({ top: targetPos, behavior: 'smooth' });
       }
     });
@@ -140,40 +180,24 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Scroll to Top functionality ── */
   const scrollTop = document.getElementById('scroll-top');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-      scrollTop.classList.add('visible');
-    } else {
-      scrollTop.classList.remove('visible');
-    }
-  }, { passive: true });
+  if (scrollTop) {
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (window.scrollY > 500) {
+          scrollTop.classList.add('visible');
+        } else {
+          scrollTop.classList.remove('visible');
+        }
+      },
+      { passive: true }
+    );
 
-  scrollTop.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-
-  // New scroll to top functionality from user's edit
-  window.onscroll = function() {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    const scrollBtn = document.getElementById("scrollToTopBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollBtn.style.display = "flex";
-    } else {
-      scrollBtn.style.display = "none";
-    }
-  }
-
-  function topFunction() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    scrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     });
   }
-
 });
