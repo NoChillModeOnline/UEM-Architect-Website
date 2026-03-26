@@ -44,6 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.setAttribute('aria-expanded', 'false');
       }
     });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        burger.classList.remove('active');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.focus();
+      }
+    });
   }
 
   /* ── Typing Effect ── */
