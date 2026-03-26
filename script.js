@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    // Close menu on link click
     nav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         burger.classList.remove('active');
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (nav.classList.contains('open') &&
           !nav.contains(e.target) &&
@@ -73,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (charIndex === current.length) {
           isDeleting = true;
-          typeSpeed = 2000; // Pause at end
+          typeSpeed = 2000;
         } else {
           typeSpeed = 55 + Math.random() * 40;
         }
@@ -84,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (charIndex === 0) {
           isDeleting = false;
           phraseIndex = (phraseIndex + 1) % phrases.length;
-          typeSpeed = 400; // Pause before next phrase
+          typeSpeed = 400;
         } else {
           typeSpeed = 30;
         }
@@ -117,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealEls.forEach(el => revealObserver.observe(el));
   } else {
-    // Fallback: show all immediately if IntersectionObserver not supported
     revealEls.forEach(el => el.classList.add('reveal--visible'));
   }
 
@@ -158,11 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Initialize
     goToSlide(0);
     resetAutoplay();
 
-    // Pause autoplay when tab is not visible
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) {
         clearInterval(autoplayTimer);
