@@ -2296,6 +2296,77 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--light-grey);
 }
 
+/* ── Omnissa Partner Section ── */
+.omnissa-partner {
+  background: var(--off-white);
+}
+
+.omnissa-partner__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 3rem;
+}
+
+.omnissa-partner__badges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.omnissa-partner__badge {
+  width: 150px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.omnissa-partner__content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.omnissa-partner__content p {
+  color: var(--text-light);
+  line-height: 1.75;
+  margin-bottom: 0.875rem;
+}
+
+.omnissa-partner__content p strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.omnissa-partner__tagline {
+  font-style: italic;
+  color: var(--blue) !important;
+  font-weight: 500;
+  border-left: 3px solid var(--blue);
+  padding-left: 1rem;
+  margin-top: 1.25rem !important;
+}
+
+@media (max-width: 900px) {
+  .omnissa-partner__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .omnissa-partner__badges {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 /* ── Cookie Banner Responsive ── */
 @media (max-width: 768px) {
   .cookie-banner__inner {
