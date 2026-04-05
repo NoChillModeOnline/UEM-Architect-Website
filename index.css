@@ -467,7 +467,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-/* Hero CTA sheen */
 .hero .btn--primary {
   position: relative;
   overflow: hidden;
@@ -477,17 +476,17 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   top: 0;
-  left: -120%;
+  left: 0;
   width: 60%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
-  transform: skewX(-20deg);
+  transform: translateX(-200%) skewX(-20deg);
   animation: btn-sheen 4s ease-in-out infinite 1.5s;
 }
 
 @keyframes btn-sheen {
-  0%        { left: -120%; }
-  35%, 100% { left: 160%; }
+  0%        { transform: translateX(-200%) skewX(-20deg); }
+  35%, 100% { transform: translateX(350%) skewX(-20deg); }
 }
 
 /* Floating shapes (decorative) */
@@ -964,7 +963,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 50%;
   height: 100%;
   background: linear-gradient(
@@ -973,13 +972,14 @@ h1, h2, h3, h4, h5, h6 {
     rgba(255, 255, 255, 0.04) 50%,
     transparent 70%
   );
+  transform: translateX(-200%);
   animation: cta-shimmer 7s ease-in-out infinite;
   z-index: 1;
 }
 
 @keyframes cta-shimmer {
-  0%        { left: -100%; }
-  40%, 100% { left: 200%; }
+  0%        { transform: translateX(-200%); }
+  40%, 100% { transform: translateX(400%); }
 }
 
 .cta-banner__content {
@@ -1460,7 +1460,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .cta-banner h2 { font-size: 1.75rem; }
-  .stats__grid   { grid-template-columns: repeat(2, 1fr); }
   .stat-value    { font-size: 2.5rem; }
 
   .footer__grid {
@@ -1497,11 +1496,6 @@ h1, h2, h3, h4, h5, h6 {
   .reveal {
     opacity: 1;
     transform: none;
-    transition: none;
-  }
-
-  .reveal--visible .accent-line {
-    width: 60px;
     transition: none;
   }
 
