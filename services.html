@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — UEM Architect</title>
+  <meta
+    name="description"
+    content="Comprehensive UEM consulting services — from endpoint assessments and platform deployments to managed operations, zero trust security, and identity management."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services — UEM Architect" />
+  <meta property="og:description" content="Comprehensive endpoint management services from assessment to ongoing operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/services.html" />
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+
+  <link rel="canonical" href="https://your-domain.com/services.html" />
+  <link rel="icon" href="images/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formspree.io; form-action https://formspree.io;" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="header" class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="UEM Architect — home">
+        <img src="Images/logo.png" alt="UEM Architect logo" fetchpriority="high" />
+      </a>
+
+      <nav id="nav" class="header__nav" aria-label="Primary navigation">
+        <ul class="header__links">
+          <li><a href="who-we-serve.html">Who We Serve</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="our-process.html">Our Process</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary header__cta">Get Started</a>
+      </nav>
+
+      <button
+        id="burger"
+        class="header__burger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ── Page Banner ── -->
+    <section class="page-banner" aria-labelledby="page-banner-heading">
+      <div class="container">
+        <span class="accent-line" aria-hidden="true"></span>
+        <h1 id="page-banner-heading">Our Services</h1>
+        <p>
+          Comprehensive UEM services anchored by a clear understanding of your workflows
+          and culture — from assessments and deployments to ongoing managed operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Services Grid ── -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="services-heading">What We Deliver</h2>
+          <p>
+            Our team manages the entire endpoint ecosystem. Whether you need a
+            one-time assessment or long-term operational support, we bring the
+            expertise and discipline to get it done right.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card reveal reveal--delay-1">
+            <img class="service-card__img" src="Images/service-assessment.png" alt="Endpoint Assessment illustration" loading="lazy" />
+            <h3>Endpoint Assessment &amp; Roadmap</h3>
+            <p>
+              Comprehensive evaluation of your current endpoint environment with
+              a prioritized roadmap for improvement and maturity growth.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-2">
+            <img class="service-card__img" src="Images/service-deployment.png" alt="Platform Deployment illustration" loading="lazy" />
+            <h3>Platform Deployment &amp; Migration</h3>
+            <p>
+              End-to-end deployment and migration services for UEM platforms —
+              minimizing disruption and maximizing adoption.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-3">
+            <img class="service-card__img" src="Images/service-managed.png" alt="Managed UEM Operations illustration" loading="lazy" />
+            <h3>Managed UEM Operations</h3>
+            <p>
+              Ongoing operational management, monitoring, and optimization of
+              your endpoint infrastructure for peak performance.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-4">
+            <img class="service-card__img" src="Images/service-security.png" alt="Security and Zero Trust illustration" loading="lazy" />
+            <h3>Security &amp; Zero Trust</h3>
+            <p>
+              Implement zero trust security frameworks, conditional access
+              policies, and compliance baselines across all endpoints.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-5">
+            <img class="service-card__img" src="Images/service-identity.png" alt="Identity and Access Management illustration" loading="lazy" />
+            <h3>Identity &amp; Access Management</h3>
+            <p>
+              Unified identity governance, single sign-on, MFA, and lifecycle
+              management across your entire user base.
+            </p>
+          </article>
+
+          <article class="service-card reveal reveal--delay-6">
+            <img class="service-card__img" src="Images/service-training.png" alt="Training and Enablement illustration" loading="lazy" />
+            <h3>Training &amp; Enablement</h3>
+            <p>
+              Knowledge transfer, admin training, and end-user enablement to
+              ensure your team can sustain and grow their UEM practice.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Platforms ── -->
+    <section class="section section--alt" aria-labelledby="platforms-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="platforms-heading">Platforms We Support</h2>
+          <p>
+            We have deep, hands-on experience across the leading UEM and identity
+            platforms — so you get expert guidance no matter which tools you rely on.
+          </p>
+        </div>
+
+        <div class="why__grid">
+
+          <article class="why-card reveal reveal--delay-1">
+            <div class="why-card__icon" aria-hidden="true">🖥️</div>
+            <h3>Omnissa (VMware Workspace ONE)</h3>
+            <p>
+              From initial deployment to advanced automation, we bring certified
+              expertise to the full Omnissa platform stack.
+            </p>
+          </article>
+
+          <article class="why-card reveal reveal--delay-2">
+            <div class="why-card__icon" aria-hidden="true">☁️</div>
+            <h3>Microsoft Intune &amp; Entra ID</h3>
+            <p>
+              End-to-end Modern Workplace — Intune device management, Entra ID
+              identity, and Conditional Access policy design.
+            </p>
+          </article>
+
+          <article class="why-card reveal reveal--delay-3">
+            <div class="why-card__icon" aria-hidden="true">🍎</div>
+            <h3>Jamf (Apple &amp; Mac)</h3>
+            <p>
+              Apple-first endpoint management with Jamf Pro and Jamf Connect —
+              built for organizations serious about their Mac fleet.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Partners ── -->
+    <section class="partners" aria-label="Trusted technology partners">
+      <div class="container">
+        <p class="partners__label">Trusted Technology Partners</p>
+      </div>
+      <div class="partners__track" aria-hidden="true">
+        <img src="Images/partner-omnissa.png" alt="Omnissa" loading="lazy" />
+        <img src="Images/partner-intune.svg" alt="Microsoft Intune" loading="lazy" />
+        <img src="Images/partner-jamf.svg" alt="Jamf" loading="lazy" />
+        <img src="Images/partner-entra.svg" alt="Microsoft Entra ID" loading="lazy" />
+        <img src="Images/partner-crowdstrike.svg" alt="CrowdStrike" loading="lazy" />
+        <img src="Images/partner-okta.svg" alt="Okta" loading="lazy" />
+        <img src="Images/partner-omnissa.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="Images/partner-intune.svg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="Images/partner-jamf.svg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="Images/partner-entra.svg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="Images/partner-crowdstrike.svg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="Images/partner-okta.svg" alt="" aria-hidden="true" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner__content reveal">
+          <h2 id="cta-heading">Not Sure Which Service You Need?</h2>
+          <p>
+            We'll start with a discovery conversation to understand your environment
+            and recommend exactly where to focus first.
+          </p>
+          <a href="contact.html" class="btn btn--primary">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" aria-label="UEM Architect — home">
+            <img src="Images/logo-white.svg" alt="UEM Architect logo" height="48" loading="lazy" />
+          </a>
+          <p>
+            Helping organizations architect, secure, and operate their endpoint
+            environments with clarity, structure, and long-term confidence.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/uem-architect-consulting" target="_blank" rel="noopener noreferrer" aria-label="UEM Architect on LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Endpoint Assessment</a></li>
+            <li><a href="services.html">Platform Deployment</a></li>
+            <li><a href="services.html">Managed UEM Operations</a></li>
+            <li><a href="services.html">Security &amp; Zero Trust</a></li>
+            <li><a href="services.html">Identity &amp; Access</a></li>
+            <li><a href="services.html">Training &amp; Enablement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="who-we-serve.html">Who We Serve</a></li>
+            <li><a href="our-process.html">Our Process</a></li>
+            <li><a href="why-us.html">Why UEM Architect</a></li>
+            <li><a href="why-us.html#testimonials">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4>Stay in the Loop</h4>
+          <p>Get endpoint management insights and updates delivered to your inbox.</p>
+          <form
+            class="footer__newsletter-form"
+            action="https://formspree.io/f/YOUR_NEWSLETTER_ID"
+            method="POST"
+            aria-label="Newsletter signup"
+          >
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> UEM Architect. All rights reserved.</p>
+        <p>Charlotte, NC &mdash; Serving Clients Globally</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" type="button" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+</body>
+</html>
