@@ -1,29 +1,36 @@
 #!/bin/bash
-# UEM Architect — Push multi-page site update to GitHub
-# Run this once from inside the project folder, or double-click to execute.
+# UEM Architect — Push latest site updates to GitHub
+# Run from Terminal: bash git-push.sh
 
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-echo "📥 Pulling latest changes from origin/main..."
-git pull origin main
+echo "⚙️  Configuring git identity..."
+git config user.email "contact@uemarchitect.org"
+git config user.name "ZombieSlayer"
 
-echo "📦 Staging all changed files..."
-git add index.html index.css who-we-serve.html services.html our-process.html why-us.html contact.html blog.html
+echo "📦 Staging all site files..."
+git add index.html index.css script.js \
+        who-we-serve.html services.html our-process.html \
+        why-us.html contact.html blog.html privacy.html \
+        Images/businessman.png Images/businesswoman.png
 
 echo "✍️  Committing..."
-git commit -m "Convert single-page site to multi-page: 6 dedicated pages, blog, real testimonials
+git commit -m "Add GDPR cookie consent banner and Privacy Policy page
 
-- Split into 7 dedicated pages: who-we-serve, services, our-process, why-us, contact, blog
-- Home page now shows abbreviated previews with Learn More links to each page
-- Why Us page combines Why Us + Testimonials (Michael Gallagher & Sarah Mitchell photos)
-- Contact page combines Contact form + Get Started options
-- Blog page is a coming-soon placeholder with subscribe form and topic previews
-- Blog added to main navigation on all pages
-- Updated LinkedIn URL to linkedin.com/company/uem-architect-consulting
-- Added page-banner, active nav highlight, and blog CSS to index.css"
+- script.js: Auto-injecting cookie consent banner on all pages via IIFE;
+  stores user choice (all / essential-only) in localStorage under
+  uema_cookie_consent; slides up from bottom with CSS transition
+- index.css: Cookie banner styles (dark themed, responsive mobile stack),
+  footer__legal link styles, and privacy page prose styles
+- privacy.html: Full GDPR-compliant Privacy & Cookie Policy page covering
+  data collection, legal basis, cookie inventory, third-party services,
+  data retention, user rights, and contact details
+- All 7 page footers updated with Privacy & Cookie Policy link in footer__bottom
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
 
 echo "🚀 Pushing to origin/main..."
 git push origin main
