@@ -2,6 +2,61 @@
    UEM Architect — Interactivity & Animations
    ═══════════════════════════════════════════════════ */
 
+/* ── Cookie Consent Banner (GDPR) ── */
+(function () {
+  const CONSENT_KEY = 'uema_cookie_consent';
+
+  function buildBanner() {
+    if (localStorage.getItem(CONSENT_KEY)) return;
+
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.className = 'cookie-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-modal', 'false');
+    banner.setAttribute('aria-label', 'Cookie consent');
+    banner.innerHTML = `
+      <div class="cookie-banner__inner">
+        <div class="cookie-banner__text">
+          <p class="cookie-banner__title">🍪 We Use Cookies</p>
+          <p class="cookie-banner__desc">
+            We use essential cookies to keep this site running and to process contact
+            form submissions securely via Formspree. We don't use advertising or
+            tracking cookies. You can accept all cookies or continue with essential
+            cookies only. <a href="privacy.html">Privacy &amp; Cookie Policy</a>
+          </p>
+        </div>
+        <div class="cookie-banner__actions">
+          <button id="cookie-btn-accept" class="btn btn--primary cookie-banner__btn">Accept All</button>
+          <button id="cookie-btn-essential" class="cookie-banner__btn cookie-banner__btn--secondary">Essential Only</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(banner);
+
+    // Slide in after paint
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => banner.classList.add('cookie-banner--visible'))
+    );
+
+    function dismiss(choice) {
+      localStorage.setItem(CONSENT_KEY, choice);
+      banner.classList.remove('cookie-banner--visible');
+      banner.addEventListener('transitionend', () => banner.remove(), { once: true });
+    }
+
+    banner.querySelector('#cookie-btn-accept').addEventListener('click', () => dismiss('all'));
+    banner.querySelector('#cookie-btn-essential').addEventListener('click', () => dismiss('essential'));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', buildBanner);
+  } else {
+    buildBanner();
+  }
+}());
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Sticky Header ── */

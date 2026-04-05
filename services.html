@@ -6,12 +6,12 @@
   <title>Services — UEM Architect</title>
   <meta
     name="description"
-    content="Comprehensive UEM consulting services — from endpoint assessments and platform deployments to managed operations, zero trust security, and identity management."
+    content="Comprehensive UEM consulting services — endpoint assessments, platform deployments, managed operations, zero trust security, identity management, and training. Built around your workflows."
   />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Services — UEM Architect" />
-  <meta property="og:description" content="Comprehensive endpoint management services from assessment to ongoing operations." />
+  <meta property="og:description" content="From endpoint assessments to managed operations — comprehensive UEM services built around your environment." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://your-domain.com/services.html" />
   <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
@@ -79,94 +79,247 @@
         <span class="accent-line" aria-hidden="true"></span>
         <h1 id="page-banner-heading">Our Services</h1>
         <p>
-          Comprehensive UEM services anchored by a clear understanding of your workflows
-          and culture — from assessments and deployments to ongoing managed operations.
+          We cover the full endpoint management lifecycle — from initial assessment through
+          deployment, security hardening, identity integration, and ongoing operations.
+          Every service is scoped around your actual environment, not a vendor template.
         </p>
       </div>
     </section>
 
-    <!-- ── Services Grid ── -->
+    <!-- ── Services Detail Grid ── -->
     <section id="services" class="section" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-header reveal">
           <span class="accent-line" aria-hidden="true"></span>
           <h2 id="services-heading">What We Deliver</h2>
           <p>
-            Our team manages the entire endpoint ecosystem. Whether you need a
-            one-time assessment or long-term operational support, we bring the
-            expertise and discipline to get it done right.
+            Each service is designed to solve a specific phase of the endpoint management
+            challenge — and they're built to work together as a cohesive strategy, not
+            isolated projects.
           </p>
         </div>
 
-        <div class="services__grid">
+        <div class="services-detail__grid">
 
-          <article class="service-card reveal reveal--delay-1">
-            <img class="service-card__img" src="Images/service-assessment.png" alt="Endpoint Assessment illustration" loading="lazy" />
-            <h3>Endpoint Assessment &amp; Roadmap</h3>
-            <p>
-              Comprehensive evaluation of your current endpoint environment with
-              a prioritized roadmap for improvement and maturity growth.
-            </p>
+          <!-- Assessment -->
+          <article class="service-detail-card reveal reveal--delay-1">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-assessment.png" alt="Endpoint Assessment illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Endpoint Assessment &amp; Roadmap</h3>
+              <p>
+                Before making any changes, we build a complete picture of where you are today —
+                your platforms, policies, configurations, coverage gaps, and security posture.
+                The result is a clear, prioritized roadmap that tells you what to fix first,
+                what to build next, and what to defer, backed by data and documented rationale.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Current-state platform and policy audit across all managed device types</li>
+                <li>Gap analysis against security frameworks (Zero Trust, CIS, NIST, or your own standards)</li>
+                <li>Risk scoring for identified gaps — critical, high, medium, and low priority</li>
+                <li>Prioritized remediation roadmap with phased implementation recommendations</li>
+                <li>Executive summary and technical detail documentation for IT leadership</li>
+                <li>Vendor-neutral platform recommendation (if a migration or addition is warranted)</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="service-card reveal reveal--delay-2">
-            <img class="service-card__img" src="Images/service-deployment.png" alt="Platform Deployment illustration" loading="lazy" />
-            <h3>Platform Deployment &amp; Migration</h3>
-            <p>
-              End-to-end deployment and migration services for UEM platforms —
-              minimizing disruption and maximizing adoption.
-            </p>
+          <!-- Deployment -->
+          <article class="service-detail-card reveal reveal--delay-2">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-deployment.png" alt="Platform Deployment illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Platform Deployment &amp; Migration</h3>
+              <p>
+                Whether you're deploying a new UEM platform from scratch or migrating away
+                from a legacy solution, we manage the full technical scope — design,
+                configuration, testing, and go-live — while minimizing disruption to your
+                users and maintaining continuity of policy enforcement throughout the transition.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Platform architecture design tailored to your organizational structure and device types</li>
+                <li>Tenant or on-premise environment buildout with enrollment profiles and configuration policies</li>
+                <li>Application deployment framework — required apps, optional apps, and VPP/ABM/AOSP integration</li>
+                <li>Migration runbook covering device re-enrollment, data continuity, and rollback procedures</li>
+                <li>User acceptance testing (UAT) and pilot group validation before full rollout</li>
+                <li>Complete configuration documentation and change log delivered at project close</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="service-card reveal reveal--delay-3">
-            <img class="service-card__img" src="Images/service-managed.png" alt="Managed UEM Operations illustration" loading="lazy" />
-            <h3>Managed UEM Operations</h3>
-            <p>
-              Ongoing operational management, monitoring, and optimization of
-              your endpoint infrastructure for peak performance.
-            </p>
+          <!-- Managed Operations -->
+          <article class="service-detail-card reveal reveal--delay-3">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-managed.png" alt="Managed UEM Operations illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Managed UEM Operations</h3>
+              <p>
+                Your UEM platform requires ongoing attention to stay effective — policy updates,
+                OS release management, enrollment support, compliance monitoring, and more.
+                Our managed operations service gives you a dedicated UEM team without the cost
+                of a full-time hire, keeping your environment healthy and your IT team focused
+                on higher-value work.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Day-to-day platform management — enrollment troubleshooting, policy changes, and device remediation</li>
+                <li>OS and app update testing and staged deployment coordination</li>
+                <li>Compliance posture monitoring with proactive alerts for non-compliant or unmanaged devices</li>
+                <li>Regular platform health reviews and configuration drift correction</li>
+                <li>Monthly reporting on device coverage, compliance rates, and open issues</li>
+                <li>Documentation updates as changes are made — always current, always yours</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="service-card reveal reveal--delay-4">
-            <img class="service-card__img" src="Images/service-security.png" alt="Security and Zero Trust illustration" loading="lazy" />
-            <h3>Security &amp; Zero Trust</h3>
-            <p>
-              Implement zero trust security frameworks, conditional access
-              policies, and compliance baselines across all endpoints.
-            </p>
+          <!-- Security -->
+          <article class="service-detail-card reveal reveal--delay-4">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-security.png" alt="Security and Zero Trust illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Security &amp; Zero Trust</h3>
+              <p>
+                Endpoint security isn't a checkbox — it's an architecture. We help organizations
+                design and implement Zero Trust frameworks that treat device health, user identity,
+                and network location as first-class signals for access decisions. The result is a
+                security posture that's enforced at the endpoint layer, not just at the perimeter.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Zero Trust architecture design aligned to your identity provider, UEM platform, and network</li>
+                <li>Conditional access policy design and implementation (Entra ID, Okta, or equivalent)</li>
+                <li>Device compliance policy buildout — encryption, patch level, threat detection, and OS version gating</li>
+                <li>CIS Benchmark or STIG baseline configuration for Windows, macOS, iOS, and Android</li>
+                <li>Data loss prevention (DLP) policy design and implementation</li>
+                <li>Security posture documentation suitable for audit, compliance review, or executive reporting</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="service-card reveal reveal--delay-5">
-            <img class="service-card__img" src="Images/service-identity.png" alt="Identity and Access Management illustration" loading="lazy" />
-            <h3>Identity &amp; Access Management</h3>
-            <p>
-              Unified identity governance, single sign-on, MFA, and lifecycle
-              management across your entire user base.
-            </p>
+          <!-- Identity -->
+          <article class="service-detail-card reveal reveal--delay-5">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-identity.png" alt="Identity and Access Management illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Identity &amp; Access Management</h3>
+              <p>
+                Identity is the control plane of the modern endpoint environment. We help
+                organizations build a unified identity foundation that connects device
+                management, application access, and security policy into a single coherent
+                model — reducing credential sprawl, improving user experience, and tightening
+                access governance across the board.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Identity provider assessment and configuration (Entra ID, Okta, or on-premise AD hybrid)</li>
+                <li>Single sign-on (SSO) implementation for managed applications and cloud services</li>
+                <li>Multi-factor authentication (MFA) rollout with phased enforcement and user communication planning</li>
+                <li>User lifecycle automation — provisioning, role changes, and deprovisioning workflows</li>
+                <li>Privileged access review and least-privilege policy design</li>
+                <li>Identity-device binding to ensure access decisions account for both user and device posture</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="service-card reveal reveal--delay-6">
-            <img class="service-card__img" src="Images/service-training.png" alt="Training and Enablement illustration" loading="lazy" />
-            <h3>Training &amp; Enablement</h3>
-            <p>
-              Knowledge transfer, admin training, and end-user enablement to
-              ensure your team can sustain and grow their UEM practice.
-            </p>
+          <!-- Training -->
+          <article class="service-detail-card reveal reveal--delay-6">
+            <div class="service-detail-card__img-wrap">
+              <img src="Images/service-training.png" alt="Training and Enablement illustration" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <h3>Training &amp; Enablement</h3>
+              <p>
+                A well-built UEM environment only stays healthy if the people managing it
+                understand how it works and why it was built the way it was. Our training
+                and enablement service ensures your IT team can operate, troubleshoot, and
+                evolve the environment confidently — and that end users know what to expect
+                from their managed devices.
+              </p>
+              <h4>What's Included</h4>
+              <ul class="card-list">
+                <li>Admin training workshops tailored to your specific platform(s) and configuration</li>
+                <li>Standard operating procedures (SOPs) for common admin tasks — enrollment, policy changes, incident response</li>
+                <li>Runbooks for recurring operational workflows your team will own after engagement close</li>
+                <li>End-user communication templates and onboarding guides for new device rollouts</li>
+                <li>Train-the-trainer sessions for organizations with distributed IT teams or MSP partners</li>
+                <li>Post-engagement support period with access to our team for questions and clarification</li>
+              </ul>
+            </div>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- ── Engagement Formats ── -->
+    <section class="section section--alt" aria-labelledby="engagement-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="engagement-heading">How We Engage</h2>
+          <p>
+            Every organization's needs are different. We offer two primary engagement
+            models so the scope and commitment match what you actually need.
+          </p>
+        </div>
+
+        <div class="engagement-grid">
+
+          <div class="engagement-card reveal reveal--delay-1">
+            <div class="engagement-card__badge">Project-Based</div>
+            <h3>Defined Scope, Clear Deliverables</h3>
+            <p>
+              For organizations with a specific goal — a platform migration, a security
+              baseline implementation, a Zero Trust rollout, or an initial assessment.
+              We scope the work, define the deliverables, and execute against a clear
+              timeline with documented handoffs at completion.
+            </p>
+            <ul class="card-list">
+              <li>Fixed scope with agreed deliverables and milestones</li>
+              <li>Full documentation package at project close</li>
+              <li>Knowledge transfer built into every engagement</li>
+              <li>Optional managed support transition at completion</li>
+            </ul>
+          </div>
+
+          <div class="engagement-card reveal reveal--delay-2">
+            <div class="engagement-card__badge">Managed Services</div>
+            <h3>Ongoing Expertise, Predictable Support</h3>
+            <p>
+              For organizations that want a dedicated UEM team on retainer — handling
+              day-to-day operations, monitoring, policy changes, and proactive improvements
+              without the overhead of a full-time specialist hire. We act as an extension
+              of your IT team.
+            </p>
+            <ul class="card-list">
+              <li>Dedicated point of contact and defined response SLAs</li>
+              <li>Monthly reporting and platform health reviews</li>
+              <li>Proactive monitoring and compliance posture alerts</li>
+              <li>Scales up or down based on your organization's needs</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ── Platforms ── -->
-    <section class="section section--alt" aria-labelledby="platforms-heading">
+    <section class="section" aria-labelledby="platforms-heading">
       <div class="container">
         <div class="section-header reveal">
           <span class="accent-line" aria-hidden="true"></span>
           <h2 id="platforms-heading">Platforms We Support</h2>
           <p>
-            We have deep, hands-on experience across the leading UEM and identity
-            platforms — so you get expert guidance no matter which tools you rely on.
+            We have deep, hands-on expertise across the leading UEM, identity, and endpoint
+            security platforms. Our recommendations are always vendor-neutral — we advise
+            based on fit, not preference.
           </p>
         </div>
 
@@ -176,8 +329,10 @@
             <div class="why-card__icon" aria-hidden="true">🖥️</div>
             <h3>Omnissa (VMware Workspace ONE)</h3>
             <p>
-              From initial deployment to advanced automation, we bring certified
-              expertise to the full Omnissa platform stack.
+              From initial deployment to advanced automation, we bring deep expertise across
+              the full Omnissa platform — UEM, Access, Intelligence, and Horizon. We've
+              designed and managed Workspace ONE environments for organizations ranging
+              from mid-market to large enterprise across multiple verticals.
             </p>
           </article>
 
@@ -185,8 +340,10 @@
             <div class="why-card__icon" aria-hidden="true">☁️</div>
             <h3>Microsoft Intune &amp; Entra ID</h3>
             <p>
-              End-to-end Modern Workplace — Intune device management, Entra ID
-              identity, and Conditional Access policy design.
+              End-to-end Modern Workplace expertise — Intune device management and compliance,
+              Entra ID identity and conditional access, Autopilot zero-touch provisioning, and
+              Microsoft Defender for Endpoint integration. We cover Windows, macOS, iOS,
+              and Android within the Microsoft ecosystem.
             </p>
           </article>
 
@@ -194,8 +351,21 @@
             <div class="why-card__icon" aria-hidden="true">🍎</div>
             <h3>Jamf (Apple &amp; Mac)</h3>
             <p>
-              Apple-first endpoint management with Jamf Pro and Jamf Connect —
-              built for organizations serious about their Mac fleet.
+              Apple-first endpoint management built on Jamf Pro and Jamf Connect. We design
+              Mac management strategies for organizations that take their Apple fleet seriously —
+              with automated enrollment via ABM, smart group policy architecture, and identity
+              integration through Jamf Connect and Entra ID or Okta.
+            </p>
+          </article>
+
+          <article class="why-card reveal reveal--delay-4">
+            <div class="why-card__icon" aria-hidden="true">🔐</div>
+            <h3>CrowdStrike &amp; Okta</h3>
+            <p>
+              Endpoint security and identity are inseparable in a Zero Trust model. We
+              integrate CrowdStrike Falcon for device health signal and threat detection,
+              and Okta for identity governance and SSO — connecting both into your UEM
+              platform's conditional access framework for a unified security posture.
             </p>
           </article>
 
@@ -230,8 +400,8 @@
         <div class="cta-banner__content reveal">
           <h2 id="cta-heading">Not Sure Which Service You Need?</h2>
           <p>
-            We'll start with a discovery conversation to understand your environment
-            and recommend exactly where to focus first.
+            Most organizations start with a discovery conversation. We'll ask the right
+            questions, understand your environment, and tell you exactly where to focus first.
           </p>
           <a href="contact.html" class="btn btn--primary">Start a Conversation</a>
         </div>
@@ -300,6 +470,9 @@
 
       <div class="footer__bottom">
         <p>&copy; <span id="footer-year"></span> UEM Architect. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="privacy.html">Privacy &amp; Cookie Policy</a>
+        </nav>
         <p>Charlotte, NC &mdash; Serving Clients Globally</p>
       </div>
     </div>
