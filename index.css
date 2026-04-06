@@ -1051,16 +1051,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
   transition: all var(--t-base) var(--ease);
-  font-size: 1rem;
 }
 
 .footer__social a:hover {
   background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
 }
 
 .footer h4 {
