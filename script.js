@@ -120,7 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const typedEl = document.getElementById('typed-text');
 
-  if (typedEl) {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (typedEl && prefersReducedMotion) {
+    typedEl.textContent = phrases[0];
+  } else if (typedEl) {
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
