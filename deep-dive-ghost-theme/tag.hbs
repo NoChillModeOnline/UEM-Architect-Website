@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{#tag}}
+
+<div class="archive-header">
+  <div class="container">
+    {{#if feature_image}}
+    <div class="archive-header__image-wrap">
+      <img class="archive-header__image"
+        src="{{img_url feature_image size="l"}}"
+        alt="{{name}}" loading="eager" />
+    </div>
+    {{/if}}
+    <div class="archive-header__content">
+      <span class="archive-header__label">Topic</span>
+      <h1 class="archive-header__title">{{name}}</h1>
+      {{#if description}}<p class="archive-header__description">{{description}}</p>{{/if}}
+      {{#if count.posts}}<p class="archive-header__count">{{count.posts}} articles</p>{{/if}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="post-grid">
+    {{#foreach posts}}
+      {{> post-card}}
+    {{/foreach}}
+  </div>
+  {{pagination}}
+</div>
+
+{{/tag}}

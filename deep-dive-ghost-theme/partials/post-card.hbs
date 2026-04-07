@@ -1,0 +1,58 @@
+<article class="post-card {{#if featured}}post-card--featured{{/if}} {{#unless feature_image}}post-card--no-image{{/unless}}">
+  {{#if feature_image}}
+  <a class="post-card__image-link" href="{{url}}" tabindex="-1" aria-hidden="true">
+    <img
+      class="post-card__image"
+      src="{{img_url feature_image size="m"}}"
+      srcset="{{img_url feature_image size="s"}} 300w,
+              {{img_url feature_image size="m"}} 600w,
+              {{img_url feature_image size="l"}} 1000w"
+      sizes="(max-width: 640px) 100vw, 400px"
+      alt="{{title}}"
+      loading="lazy"
+    />
+  </a>
+  {{/if}}
+
+  <div class="post-card__content">
+    {{#primary_tag}}
+    <a href="{{url}}" class="post-card__tag">{{name}}</a>
+    {{/primary_tag}}
+
+    <h2 class="post-card__title">
+      <a href="{{url}}">{{title}}</a>
+    </h2>
+
+    {{#if custom_excerpt}}
+      <p class="post-card__excerpt">{{custom_excerpt}}</p>
+    {{else}}
+      <p class="post-card__excerpt">{{excerpt words="22"}}</p>
+    {{/if}}
+
+    <footer class="post-card__meta">
+      <div class="post-card__author">
+        {{#foreach authors}}
+          {{#if profile_image}}
+            <img class="post-card__author-avatar"
+              src="{{img_url profile_image size="xs"}}"
+              alt="{{name}}" loading="lazy" />
+          {{else}}
+            <span class="post-card__author-initials" aria-hidden="true">
+              {{name.[0]}}
+            </span>
+          {{/if}}
+        {{/foreach}}
+        <span class="post-card__author-name">
+          {{#foreach authors}}{{name}}{{#unless @last}}, {{/unless}}{{/foreach}}
+        </span>
+      </div>
+      <div class="post-card__details">
+        <time class="post-card__date" datetime="{{date format="YYYY-MM-DD"}}">
+          {{date format="MMM D, YYYY"}}
+        </time>
+        <span class="post-card__sep" aria-hidden="true">·</span>
+        <span class="post-card__reading-time">{{reading_time}}</span>
+      </div>
+    </footer>
+  </div>
+</article>

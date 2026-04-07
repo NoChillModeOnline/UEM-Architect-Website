@@ -1,0 +1,56 @@
+<header class="site-header {{#if @custom.navigation_layout.[Logo in the middle]}}site-header--centered{{/if}}">
+  <div class="container">
+    <div class="site-header__inner">
+
+      <a class="site-header__logo" href="{{@site.url}}" aria-label="{{@site.title}} — home">
+        {{#if @site.logo}}
+          <img src="{{@site.logo}}" alt="{{@site.title}}" height="40" />
+        {{else}}
+          <span class="site-header__logo-text">{{@site.title}}</span>
+        {{/if}}
+      </a>
+
+      <nav class="site-header__nav" aria-label="Primary navigation">
+        <ul class="site-nav">
+          {{#foreach navigation}}
+            <li class="site-nav__item {{#if current}}site-nav__item--active{{/if}}">
+              <a href="{{url}}" {{#if current}}aria-current="page"{{/if}}>{{label}}</a>
+            </li>
+          {{/foreach}}
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        {{#if @site.members_enabled}}
+          {{#unless @member}}
+            <a href="/signup" class="btn btn--outline btn--sm">Subscribe</a>
+          {{/unless}}
+        {{/if}}
+        <a href="https://www.uemarchitect.org" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+          Main Site
+        </a>
+        <button class="site-header__burger" id="burger" type="button"
+          aria-label="Toggle navigation" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <ul class="mobile-nav__list">
+      {{#foreach navigation}}
+        <li><a href="{{url}}" {{#if current}}aria-current="page"{{/if}}>{{label}}</a></li>
+      {{/foreach}}
+      {{#if @site.members_enabled}}
+        {{#unless @member}}
+          <li class="mobile-nav__cta"><a href="/signup">Subscribe Free</a></li>
+        {{/unless}}
+      {{/if}}
+      <li class="mobile-nav__cta"><a href="https://www.uemarchitect.org" target="_blank" rel="noopener">Back to Main Site</a></li>
+    </ul>
+  </nav>
+</header>

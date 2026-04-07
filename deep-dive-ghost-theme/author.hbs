@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{#author}}
+
+<div class="archive-header">
+  <div class="container">
+    <div class="archive-header__content archive-header__content--author">
+      {{#if profile_image}}
+      <img class="archive-header__author-avatar"
+        src="{{img_url profile_image size="s"}}"
+        alt="{{name}}" loading="eager" />
+      {{else}}
+      <div class="archive-header__author-initials">{{name.[0]}}</div>
+      {{/if}}
+      <div>
+        <span class="archive-header__label">Author</span>
+        <h1 class="archive-header__title">{{name}}</h1>
+        {{#if location}}<p class="archive-header__location">{{location}}</p>{{/if}}
+        {{#if bio}}<p class="archive-header__description">{{bio}}</p>{{/if}}
+        {{#if count.posts}}<p class="archive-header__count">{{count.posts}} articles</p>{{/if}}
+        <div class="archive-header__author-links">
+          {{#if website}}<a href="{{website}}" target="_blank" rel="noopener">Website</a>{{/if}}
+          {{#if twitter}}<a href="https://twitter.com/{{twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+          {{#if linkedin}}<a href="{{linkedin}}" target="_blank" rel="noopener">LinkedIn</a>{{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="post-grid">
+    {{#foreach posts}}
+      {{> post-card}}
+    {{/foreach}}
+  </div>
+  {{pagination}}
+</div>
+
+{{/author}}
