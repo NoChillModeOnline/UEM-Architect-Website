@@ -201,6 +201,13 @@ if ( $related_query->have_posts() ) : ?>
     wp_reset_postdata();
 endif;
 
+// Comments
+if ( comments_open() || get_comments_number() ) :
+    echo '<div class="container--narrow">';
+    comments_template();
+    echo '</div>';
+endif;
+
 endwhile; endif;
 
 get_footer();

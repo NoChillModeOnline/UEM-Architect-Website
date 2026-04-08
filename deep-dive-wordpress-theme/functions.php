@@ -169,3 +169,116 @@ add_action( 'widgets_init', 'deep_dive_widgets_init' );
 add_image_size( 'deep-dive-hero',    1200, 630,  true ); // Featured hero
 add_image_size( 'deep-dive-card',    800,  450,  true ); // Post card (16:9)
 add_image_size( 'deep-dive-archive', 1200, 400,  true ); // Archive header banner
+
+
+// ── Featured Post Meta Box ───────────────────────────────────────────────────
+
+/**
+ * Register the "Featured Post" meta box on the post edit screen.
+ * Sets the _is_featured meta key queried in home.php.
+ */
+function deep_dive_register_featured_meta_box() {
+    add_meta_box(
+        'deep-dive-featured',
+        __( 'Featured Post', 'deep-dive' ),
+        'deep_dive_featured_meta_box_html',
+        'post',
+        'side',
+        'high'
+    );
+}
+add_action( 'add_meta_boxes', 'deep_dive_register_featured_meta_box' );
+
+function deep_dive_featured_meta_box_html( $post ) {
+    wp_nonce_field( 'deep_dive_featured_nonce', '_deep_dive_featured_nonce' );
+    $is_featured = get_post_meta( $post->ID, '_is_featured', true );
+    ?>
+    <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+        <input type="checkbox" name="deep_dive_is_featured" value="1"
+            <?php checked( $is_featured, '1' ); ?> />
+        <?php esc_html_e( 'Show as featured post on homepage', 'deep-dive' ); ?>
+    </label>
+    <?php
+}
+
+function deep_dive_save_featured_meta( $post_id ) {
+    // Verify nonce
+    if ( ! isset( $_POST['_deep_dive_featured_nonce'] ) ||
+         ! wp_verify_nonce( sanitize_key( $_POST['_deep_dive_featured_nonce'] ), 'deep_dive_featured_nonce' ) ) {
+        return;
+    }
+    // Bail on autosave
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
+
+    if ( ! empty( $_POST['deep_dive_is_featured'] ) ) {
+        update_post_meta( $post_id, '_is_featured', '1' );
+    } else {
+        delete_post_meta( $post_id, '_is_featured' );
+    }
+}
+add_action( 'save_post', 'deep_dive_save_featured_meta' );
+
+
+// ── Comment Callback ─────────────────────────────────────────────────────────
+
+/**
+ * Custom comment template callback — styled for the dark editorial design.
+ *
+ * @param WP_Comment $comment
+ * @param array      $args
+ * @param int        $depth
+ */
+function deep_dive_comment( $comment, $args, $depth ) {
+    $avatar      = get_avatar_url( $comment, [ 'size' => 88 ] );
+    $author_url  = get_comment_author_url( $comment );
+    $author_name = get_comment_author( $comment );
+    ?>
+    <li id="comment-<?php comment_ID(); ?>" <?php comment_class( 'comment-item' ); ?>>
+      <article class="comment-body">
+        <div class="comment-author-wrap">
+          <?php if ( $avatar ) : ?>
+            <img class="comment-avatar" src="<?php echo esc_url( $avatar ); ?>"
+              alt="<?php echo esc_attr( $author_name ); ?>" width="44" height="44" />
+          <?php endif; ?>
+          <div>
+            <span class="comment-author-name">
+              <?php if ( $author_url ) : ?>
+                <a href="<?php echo esc_url( $author_url ); ?>" rel="nofollow"><?php echo esc_html( $author_name ); ?></a>
+              <?php else : ?>
+                <?php echo esc_html( $author_name ); ?>
+              <?php endif; ?>
+            </span>
+            <time class="comment-date" datetime="<?php comment_date( 'c' ); ?>">
+              <?php comment_date( get_option( 'date_format' ) ); ?>
+            </time>
+          </div>
+        </div>
+
+        <?php if ( '0' === $comment->comment_approved ) : ?>
+          <p class="comment-awaiting-moderation">
+            <?php esc_html_e( 'Your comment is awaiting moderation.', 'deep-dive' ); ?>
+          </p>
+        <?php endif; ?>
+
+        <div class="comment-content">
+          <?php comment_text(); ?>
+        </div>
+
+        <div class="comment-reply">
+          <?php
+          comment_reply_link( array_merge( $args, [
+              'add_below' => 'comment',
+              'depth'     => $depth,
+              'max_depth' => $args['max_depth'],
+          ] ) );
+          ?>
+        </div>
+      </article>
+    <?php
+    // Note: closing </li> is handled by WordPress
+}
