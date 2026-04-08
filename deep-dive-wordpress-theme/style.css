@@ -1,0 +1,20 @@
+/*
+Theme Name:  The Deep Dive
+Theme URI:   https://deepdive.uemarchitect.org
+Author:      UEM Architect
+Author URI:  https://www.uemarchitect.org
+Description: Editorial dark theme for The Deep Dive — UEM Architect's endpoint management publication.
+Version:     1.0.0
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: deep-dive
+Tags:        dark, editorial, blog, custom-menu, featured-images, post-thumbnails, responsive-layout
+*/
+
+/*
+ * All theme styles live in assets/css/screen.css
+ * and are enqueued via functions.php.
+ *
+ * This file exists solely to satisfy WordPress's
+ * theme header requirement.
+ */
