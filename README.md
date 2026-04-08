@@ -2,13 +2,12 @@
 
 Source code for **UEM Architect Consulting** — an Omnissa Silver Partner & Solution Reseller helping organizations architect, implement, and operate secure, scalable UEM environments.
 
-This repository contains three projects:
+This repository contains two projects:
 
 | Project | Directory | Purpose |
 |---|---|---|
 | Marketing Site | `/` (root) | Static HTML/CSS/JS marketing website at uemarchitect.org |
-| The Deep Dive — Ghost Theme | `deep-dive-ghost-theme/` | Ghost 5 theme for the editorial blog |
-| The Deep Dive — WordPress Theme | `deep-dive-wordpress-theme/` | WordPress theme (active) for deepdive.uemarchitect.org |
+| The Deep Dive — WordPress Theme | `deep-dive-wordpress-theme/` | WordPress theme for deepdive.uemarchitect.org |
 
 ---
 
@@ -34,25 +33,7 @@ UEM-Architect-Website/
 ├── index.css                   # All styles — design tokens, components
 ├── script.js                   # All interactivity
 │
-├── deep-dive-ghost-theme/      # Ghost 5 theme (archived)
-│   ├── default.hbs             # Master layout
-│   ├── index.hbs               # Homepage (featured post + grid)
-│   ├── post.hbs                # Single post
-│   ├── page.hbs                # Static page
-│   ├── tag.hbs                 # Tag archive
-│   ├── author.hbs              # Author archive
-│   ├── error.hbs               # 404 page
-│   ├── package.json            # Ghost theme config
-│   ├── partials/
-│   │   ├── site-nav.hbs        # Navigation header
-│   │   ├── site-footer.hbs     # Footer
-│   │   └── post-card.hbs       # Post card partial
-│   └── assets/
-│       ├── css/screen.css      # Full stylesheet
-│       ├── js/main.js          # Theme JS
-│       └── images/favicon.svg  # SVG favicon
-│
-└── deep-dive-wordpress-theme/  # WordPress theme (active)
+└── deep-dive-wordpress-theme/  # WordPress theme for The Deep Dive
     ├── style.css               # WordPress theme header
     ├── functions.php           # Theme setup, enqueue, helpers, meta box
     ├── header.php              # Navigation + mobile drawer
@@ -119,29 +100,19 @@ Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800)
 
 ---
 
-## 2 — The Deep Dive Ghost Theme
+## 2 — The Deep Dive WordPress Theme
 
-Ghost 5 Handlebars theme for `deepdive.uemarchitect.org`. Archived in favor of the WordPress theme below, but kept for reference.
+Dark editorial WordPress theme for `deepdive.uemarchitect.org`. Built with the same design language as the marketing site.
 
-**Design:** Dark editorial — `DM Serif Display` + `Figtree`, surface color system, reading progress bar, scroll reveal animations.
-
-**Ghost features used:** `card_assets`, members (subscribe forms), `{{#get}}` for related posts, `{{navigation}}`, custom settings for color scheme and featured post toggle.
-
-To install: zip `deep-dive-ghost-theme/` and upload via Ghost Admin → Design → Upload theme.
-
----
-
-## 3 — The Deep Dive WordPress Theme
-
-Active WordPress theme for `deepdive.uemarchitect.org`. Mirrors the Ghost theme design with full PHP template hierarchy.
+**Design:** `DM Serif Display` + `Figtree`, dark surface color system, reading progress bar, scroll reveal animations.
 
 ### Features
 
-- **Featured post hero** — mark any post as featured via the "Featured Post" meta box in the post editor; displays full-width on the homepage
+- **Featured post hero** — mark any post as featured via the "Featured Post" meta box in the post editor
 - **Reading progress bar** — appears on single posts
 - **Related posts** — tag-matched posts pulled automatically on single post view
 - **Comments** — styled dark comment thread with reply support
-- **Gutenberg compatible** — `.entry-content` styles cover all core blocks (image, quote, code, table, embed, gallery, button, separator, pullquote, cover)
+- **Gutenberg compatible** — `entry-content` styles cover all core blocks (image, quote, code, table, embed, gallery, button, separator, pullquote, cover)
 - **Custom nav walker** — active-state classes on menu items
 - **Newsletter form** — MC4WP-compatible; falls back to a plain HTML form
 - **Admin bar offset** — sticky header respects WordPress admin bar height
@@ -165,6 +136,10 @@ Active WordPress theme for `deepdive.uemarchitect.org`. Mirrors the Ghost theme 
 2. WordPress Admin → **Appearance → Themes → Add New → Upload Theme**
 3. Activate
 
+```bash
+zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
+```
+
 ### Recommended Plugins
 
 | Plugin | Purpose |
@@ -177,17 +152,15 @@ Active WordPress theme for `deepdive.uemarchitect.org`. Mirrors the Ghost theme 
 
 ## 🎨 Shared Design System
 
-Both themes share the same design tokens:
+Both the marketing site and The Deep Dive theme share the same brand palette:
 
 | Token | Value |
 |---|---|
-| `--navy` | `#2b4570` |
-| `--blue` | `#0369A1` |
-| `--light-blue` | `#38BDF8` |
-| `--amber` | `#f59e0b` |
-| `--dark` / `--surface-0` | `#0d1117` |
-| Display font | DM Serif Display |
-| Body font | Figtree |
+| Navy | `#2b4570` |
+| Blue | `#0369A1` |
+| Light Blue | `#38BDF8` |
+| Amber | `#f59e0b` |
+| Dark | `#0d1117` |
 
 ---
 
@@ -200,7 +173,7 @@ cd UEM-Architect-Website
 # Static site — open directly
 open index.html
 
-# WordPress theme — zip and upload
+# WordPress theme — zip and upload to WP Admin
 zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
 ```
 
