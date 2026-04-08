@@ -1,149 +1,216 @@
 # UEM Architect Website
 
-Official website for **UEM Architect Consulting** — an Omnissa Silver Partner & Solution Reseller helping organizations architect, implement, and operate secure, scalable UEM environments tailored to how their teams actually work.
+Source code for **UEM Architect Consulting** — an Omnissa Silver Partner & Solution Reseller helping organizations architect, implement, and operate secure, scalable UEM environments.
+
+This repository contains three projects:
+
+| Project | Directory | Purpose |
+|---|---|---|
+| Marketing Site | `/` (root) | Static HTML/CSS/JS marketing website at uemarchitect.org |
+| The Deep Dive — Ghost Theme | `deep-dive-ghost-theme/` | Ghost 5 theme for the editorial blog |
+| The Deep Dive — WordPress Theme | `deep-dive-wordpress-theme/` | WordPress theme (active) for deepdive.uemarchitect.org |
 
 ---
 
-## 🌐 Live Site
+## 🌐 Live Sites
 
-> Update this link once deployed.
-
-[https://your-domain.com](https://your-domain.com)
-
----
-
-## 📋 Overview
-
-Fully static multi-page marketing site built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, no dependencies. Open any `.html` file directly in a browser.
+- **Main site:** [uemarchitect.org](https://www.uemarchitect.org)
+- **The Deep Dive:** [deepdive.uemarchitect.org](https://deepdive.uemarchitect.org)
 
 ---
 
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
 UEM-Architect-Website/
-├── index.html           # Home — hero, stats strip, partners, Omnissa section, CTA banner
-├── who-we-serve.html    # Personas, industries, and FAQ
-├── services.html        # All 6 services with deliverables + engagement formats
-├── our-process.html     # 4-phase process with timelines and differentiators
-├── why-us.html          # Differentiators + client testimonials carousel
-├── contact.html         # Contact form, booking link, and contact info
-├── blog.html            # Coming soon placeholder with subscribe form
-├── privacy.html         # GDPR-compliant Privacy & Cookie Policy
-├── index.css            # All styles — design tokens, components, responsive
-├── script.js            # All interactivity — nav, carousel, cookie banner, etc.
-├── Images/              # Brand assets, logos, partner badges, and service images
-├── git-push.sh          # Helper script for pushing to GitHub from local Terminal
-└── README.md
+│
+├── index.html                  # Home page
+├── who-we-serve.html           # Personas & industries
+├── services.html               # Service offerings
+├── our-process.html            # 4-phase engagement process
+├── why-us.html                 # Differentiators & testimonials
+├── contact.html                # Contact form & booking
+├── privacy.html                # GDPR Privacy & Cookie Policy
+├── index.css                   # All styles — design tokens, components
+├── script.js                   # All interactivity
+│
+├── deep-dive-ghost-theme/      # Ghost 5 theme (archived)
+│   ├── default.hbs             # Master layout
+│   ├── index.hbs               # Homepage (featured post + grid)
+│   ├── post.hbs                # Single post
+│   ├── page.hbs                # Static page
+│   ├── tag.hbs                 # Tag archive
+│   ├── author.hbs              # Author archive
+│   ├── error.hbs               # 404 page
+│   ├── package.json            # Ghost theme config
+│   ├── partials/
+│   │   ├── site-nav.hbs        # Navigation header
+│   │   ├── site-footer.hbs     # Footer
+│   │   └── post-card.hbs       # Post card partial
+│   └── assets/
+│       ├── css/screen.css      # Full stylesheet
+│       ├── js/main.js          # Theme JS
+│       └── images/favicon.svg  # SVG favicon
+│
+└── deep-dive-wordpress-theme/  # WordPress theme (active)
+    ├── style.css               # WordPress theme header
+    ├── functions.php           # Theme setup, enqueue, helpers, meta box
+    ├── header.php              # Navigation + mobile drawer
+    ├── footer.php              # Footer + newsletter form
+    ├── home.php                # Blog index — featured hero + post grid
+    ├── single.php              # Single post — reading progress, share, related posts
+    ├── page.php                # Static page
+    ├── archive.php             # Category/tag/date archives
+    ├── author.php              # Author archive
+    ├── search.php              # Search results
+    ├── comments.php            # Comment list + form
+    ├── index.php               # WordPress fallback template
+    ├── template-parts/
+    │   └── post-card.php       # Reusable post card (16:9, tag, reading time)
+    └── assets/
+        ├── css/screen.css      # Full stylesheet (design tokens + Gutenberg blocks)
+        ├── js/main.js          # Reading progress, share, reveal animations
+        └── images/favicon.svg  # SVG favicon
 ```
 
 ---
 
-## 🗂️ Pages
+## 1 — Marketing Site
+
+Fully static multi-page site. No build tools, no dependencies — open any `.html` file directly in a browser.
+
+### Pages
 
 | Page | File | Description |
 |---|---|---|
-| Home | `index.html` | Hero, stats strip, partners marquee, Omnissa partner section, CTA banner |
-| Who We Serve | `who-we-serve.html` | IT Leader / HR & Ops / MSP personas, industries served, FAQ |
-| Services | `services.html` | 6 service offerings with deliverables, engagement models, platforms |
-| Our Process | `our-process.html` | Discover → Architect → Implement → Maintain; timeline + differentiators |
-| Why Us | `why-us.html` | Differentiator cards + client testimonial carousel |
+| Home | `index.html` | Hero, stats, partners marquee, Omnissa partner section, CTA |
+| Who We Serve | `who-we-serve.html` | IT Leader / HR & Ops / MSP personas, industries, FAQ |
+| Services | `services.html` | 6 service offerings with deliverables and engagement models |
+| Our Process | `our-process.html` | Discover → Architect → Implement → Maintain |
+| Why Us | `why-us.html` | Differentiator cards + testimonial carousel |
 | Contact | `contact.html` | Formspree contact form, booking link, office info |
-| Blog | `blog.html` | Coming soon — subscribe form and topic preview cards |
-| Privacy Policy | `privacy.html` | Full GDPR-compliant Privacy & Cookie Policy |
+| Privacy Policy | `privacy.html` | GDPR-compliant Privacy & Cookie Policy |
 
----
+### Technologies
 
-## 🛠️ Technologies
+- **HTML5** — semantic markup with ARIA landmarks
+- **CSS3** — vanilla CSS with design tokens, responsive layout, `prefers-reduced-motion`
+- **JavaScript (ES6)** — `IntersectionObserver`, typing effect, carousel, GDPR cookie banner
 
-- **HTML5** — Semantic markup with ARIA landmarks and accessibility attributes
-- **CSS3** — Vanilla CSS with design tokens (`:root` custom properties), responsive layout, `prefers-reduced-motion` support
-- **JavaScript (ES6)** — Vanilla JS with `IntersectionObserver`, typing effect, testimonial carousel, GDPR cookie banner, smooth scroll
-
----
-
-## ⚙️ JavaScript Modules
-
-All logic lives inside a single `DOMContentLoaded` listener in `script.js`, plus a top-level IIFE for the cookie banner:
-
-| Module | Description |
-|---|---|
-| Cookie banner | IIFE — injects GDPR consent banner on first visit; stores choice in `localStorage` under `uema_cookie_consent` |
-| Sticky header | Toggles `header--scrolled` class at 60 px scroll |
-| Mobile burger menu | Toggles `open` / `active` on `#nav` / `#burger`; closes on outside click |
-| Typing effect | Rotates 4 phrases with human-like timing on `#typed-text`; skips animation when `prefers-reduced-motion` is set |
-| Scroll reveal | `IntersectionObserver` on `.reveal` elements; stagger via `.reveal--delay-1` through `.reveal--delay-6` |
-| Testimonial carousel | `#testimonials-track`, dot nav, 5 s autoplay, pauses on hidden tab |
-| Smooth scroll | Accounts for sticky header height; skips bare `#` hrefs |
-| Scroll-to-top | `#scroll-top` visible at 500 px scroll |
-| Footer year | `#footer-year` auto-set to current year |
-
----
-
-## 🎨 Design Tokens
-
-All tokens are defined in `:root` at the top of `index.css`.
+### Design Tokens
 
 | Token | Value | Usage |
 |---|---|---|
-| `--navy` | `#2b4570` | Primary brand navy — small-text links, active nav states |
-| `--blue` | `#0369A1` | Primary accent — buttons, borders, icon highlights |
+| `--navy` | `#2b4570` | Primary brand navy |
+| `--blue` | `#0369A1` | Primary accent |
 | `--light-blue` | `#38BDF8` | Lighter accent |
-| `--sky` | `#BAE6FD` | Lightest accent — hero badge text |
-| `--amber` | `#f59e0b` | Highlight / CTA amber |
-| `--dark` | `#0d1117` | Hero and CTA dark backgrounds |
-| `--off-white` | `#f0f4f8` | Section light backgrounds |
-| `--text` | `#1e293b` | Body text |
-| `--text-light` | `#64748b` | Secondary text |
-| `--grad-accent` | `135deg, #0369A1 → #38BDF8` | Primary buttons |
-| `--grad-hero` | dark navy gradient | Hero section |
-| `--shadow-glow` | `rgba(3, 105, 161, 0.2)` | Hover glow states |
+| `--amber` | `#f59e0b` | Highlight / CTA |
+| `--dark` | `#0d1117` | Hero dark backgrounds |
 
-Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800 + italic)
+Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800)
+
+### Pre-Deployment Checklist
+
+| File | Placeholder | Replace With |
+|---|---|---|
+| All HTML | `og:image` meta tag | Full URL to OG image (1200×630 px) |
+| `contact.html` | `YOUR_FORM_ID` | Formspree contact form ID |
+| All HTML | `YOUR_NEWSLETTER_ID` | Formspree newsletter form ID |
+
+---
+
+## 2 — The Deep Dive Ghost Theme
+
+Ghost 5 Handlebars theme for `deepdive.uemarchitect.org`. Archived in favor of the WordPress theme below, but kept for reference.
+
+**Design:** Dark editorial — `DM Serif Display` + `Figtree`, surface color system, reading progress bar, scroll reveal animations.
+
+**Ghost features used:** `card_assets`, members (subscribe forms), `{{#get}}` for related posts, `{{navigation}}`, custom settings for color scheme and featured post toggle.
+
+To install: zip `deep-dive-ghost-theme/` and upload via Ghost Admin → Design → Upload theme.
+
+---
+
+## 3 — The Deep Dive WordPress Theme
+
+Active WordPress theme for `deepdive.uemarchitect.org`. Mirrors the Ghost theme design with full PHP template hierarchy.
+
+### Features
+
+- **Featured post hero** — mark any post as featured via the "Featured Post" meta box in the post editor; displays full-width on the homepage
+- **Reading progress bar** — appears on single posts
+- **Related posts** — tag-matched posts pulled automatically on single post view
+- **Comments** — styled dark comment thread with reply support
+- **Gutenberg compatible** — `.entry-content` styles cover all core blocks (image, quote, code, table, embed, gallery, button, separator, pullquote, cover)
+- **Custom nav walker** — active-state classes on menu items
+- **Newsletter form** — MC4WP-compatible; falls back to a plain HTML form
+- **Admin bar offset** — sticky header respects WordPress admin bar height
+
+### Template Hierarchy
+
+| Template | Activates On |
+|---|---|
+| `home.php` | Blog index (`/?page_id=X` set as Posts page) |
+| `single.php` | Individual posts |
+| `page.php` | Static pages |
+| `archive.php` | Category, tag, date, and custom taxonomy archives |
+| `author.php` | Author archives |
+| `search.php` | Search results (`/?s=query`) |
+| `404.php` | Not found |
+| `index.php` | WordPress fallback |
+
+### Installing
+
+1. Zip the `deep-dive-wordpress-theme/` folder
+2. WordPress Admin → **Appearance → Themes → Add New → Upload Theme**
+3. Activate
+
+### Recommended Plugins
+
+| Plugin | Purpose |
+|---|---|
+| MC4WP: Mailchimp for WordPress | Newsletter subscribe form in footer |
+| Yoast SEO or Rank Math | Meta titles, OG tags, sitemap |
+| Advanced Custom Fields (ACF) | Tag/category cover images (used in `archive.php`) |
+
+---
+
+## 🎨 Shared Design System
+
+Both themes share the same design tokens:
+
+| Token | Value |
+|---|---|
+| `--navy` | `#2b4570` |
+| `--blue` | `#0369A1` |
+| `--light-blue` | `#38BDF8` |
+| `--amber` | `#f59e0b` |
+| `--dark` / `--surface-0` | `#0d1117` |
+| Display font | DM Serif Display |
+| Body font | Figtree |
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/NoChillModeOnline/UEM-Architect-Website.git
-   ```
+```bash
+git clone https://github.com/NoChillModeOnline/UEM-Architect-Website.git
+cd UEM-Architect-Website
 
-2. Open any `.html` file in your browser — no build step required.
+# Static site — open directly
+open index.html
 
----
-
-## ⚙️ Pre-Deployment Checklist
-
-Before going live, update the following placeholders:
-
-| File | Placeholder | Replace With |
-|---|---|---|
-| All HTML files | `https://your-domain.com/` | Your live domain |
-| All HTML files | `og:image` meta tag | Full URL to your OG image (1200×630 px) |
-| `contact.html` | `YOUR_FORM_ID` | Your Formspree contact form ID |
-| All HTML files | `YOUR_NEWSLETTER_ID` | Your Formspree newsletter form ID |
-
----
-
-## 🍪 GDPR / Cookie Compliance
-
-The site includes a GDPR cookie consent banner (injected via `script.js`) and a full Privacy & Cookie Policy at `privacy.html`. The only cookies currently in use are:
-
-- `uema_cookie_consent` — localStorage key storing the user's consent choice
-- Formspree CSRF cookies — set by the form submission handler
-
-No advertising, analytics, or third-party tracking cookies are used.
+# WordPress theme — zip and upload
+zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
+```
 
 ---
 
 ## 📬 Contact
 
 - **Email:** contact@uemarchitect.org
-- **Schedule a Meeting:** https://zeeg.me/uemarch-pso
+- **Schedule:** https://zeeg.me/uemarch-pso
 - **LinkedIn:** https://www.linkedin.com/company/uem-architect-consulting
-- **Location:** Odessa, FL — Serving Clients Globally
 
 ---
 
