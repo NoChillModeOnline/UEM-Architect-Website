@@ -1640,3 +1640,421 @@ ul, ol { list-style: none; }
   align-items: center;
 }
 .kg-embed-card iframe { max-width: 100%; }
+
+/* ── KG Gallery Card ── */
+.kg-gallery-card .kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.kg-gallery-card .kg-gallery-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.kg-gallery-card .kg-gallery-image {
+  flex: 1;
+  min-width: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.kg-gallery-card .kg-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s var(--ease);
+}
+.kg-gallery-card .kg-gallery-image:hover img { transform: scale(1.03); }
+
+/* ── KG Video Card ── */
+.kg-video-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.kg-video-card video {
+  width: 100%;
+  display: block;
+}
+.kg-video-card figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0.625rem 1rem;
+  font-style: italic;
+}
+
+/* ── KG Audio Card ── */
+.kg-audio-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+}
+.kg-audio-card .kg-audio-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.kg-audio-card .kg-audio-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+.kg-audio-card audio {
+  width: 100%;
+  accent-color: var(--light-blue);
+}
+
+/* ── KG File Card ── */
+.kg-file-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface-2);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--t-base), background var(--t-base);
+}
+.kg-file-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  background: rgba(56, 189, 248, 0.04);
+}
+.kg-file-card a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.kg-file-card-icon {
+  color: var(--light-blue);
+  flex-shrink: 0;
+}
+.kg-file-card-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: block;
+}
+.kg-file-card-caption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+  display: block;
+}
+.kg-file-card-metadata {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ── KG Button Card ── */
+.kg-button-card {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.kg-button-card a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-md);
+  background: var(--grad-accent);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+  box-shadow: 0 4px 16px rgba(3, 105, 161, 0.35);
+}
+.kg-button-card a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);
+  color: var(--white);
+}
+
+/* ── KG Toggle Card ── */
+.kg-toggle-card {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-1);
+}
+.kg-toggle-card + .kg-toggle-card { margin-top: 0.5rem; }
+.kg-toggle-card-icon { display: none; }
+
+.kg-toggle-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  gap: 1rem;
+}
+.kg-toggle-heading:hover { background: var(--surface-2); }
+
+.kg-toggle-heading-text {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+}
+
+.kg-toggle-heading button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--surface-border);
+  background: var(--surface-2);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--t-base);
+}
+.kg-toggle-heading button:hover {
+  border-color: var(--light-blue);
+  color: var(--light-blue);
+}
+
+.kg-toggle-content {
+  padding: 0 1.25rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.kg-toggle-content > * + * { margin-top: 0.75rem; }
+
+/* ── KG Header Card ── */
+.kg-header-card {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  background: var(--grad-hero);
+  position: relative;
+  overflow: hidden;
+}
+.kg-header-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.kg-header-card .kg-header-card-header {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.kg-header-card .kg-header-card-subheader {
+  font-size: 1rem;
+  color: rgba(241, 245, 249, 0.75);
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.kg-header-card .kg-header-card-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-md);
+  background: var(--grad-accent);
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+.kg-header-card .kg-header-card-button:hover {
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+/* ── KG Signup Card ── */
+.kg-signup-card {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--surface-1);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+}
+.kg-signup-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.06), transparent 70%);
+  pointer-events: none;
+}
+.kg-signup-card .kg-signup-card-header {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.625rem;
+}
+.kg-signup-card .kg-signup-card-subheader {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  line-height: 1.65;
+}
+.kg-signup-card form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 420px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.kg-signup-card input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--surface-border);
+  background: var(--surface-2);
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color var(--t-base);
+}
+.kg-signup-card input[type="email"]:focus {
+  border-color: var(--light-blue);
+  background: var(--surface-3);
+}
+.kg-signup-card button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: var(--grad-accent);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+.kg-signup-card button[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ── KG Product Card ── */
+.kg-product-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--surface-1);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-lg);
+  align-items: flex-start;
+}
+.kg-product-card .kg-product-card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.kg-product-card .kg-product-card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.375rem;
+}
+.kg-product-card .kg-product-card-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.875rem;
+}
+.kg-product-card .kg-product-card-button a {
+  display: inline-flex;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--grad-accent);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.kg-product-card .kg-product-card-button a:hover { color: var(--white); }
+
+/* ── KG Callout Card (extended) ── */
+.gh-content .kg-callout-card-accent { background: rgba(56, 189, 248, 0.08); border-color: rgba(56, 189, 248, 0.25); }
+.gh-content .kg-callout-emoji { font-size: 1.25rem; line-height: 1; flex-shrink: 0; }
+.gh-content .kg-callout-text { font-size: 0.9375rem; line-height: 1.7; }
+
+/* ── KG Bookmark Card (extended) ── */
+.gh-content .kg-bookmark-container {
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--t-base), box-shadow var(--t-base);
+}
+.gh-content .kg-bookmark-card:hover { border-color: rgba(56, 189, 248, 0.3); }
+.gh-content .kg-bookmark-content {
+  flex: 1;
+  padding: 1.25rem;
+}
+.gh-content .kg-bookmark-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  margin-bottom: 0.375rem;
+}
+.gh-content .kg-bookmark-description {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 0.625rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gh-content .kg-bookmark-metadata {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.gh-content .kg-bookmark-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+.gh-content .kg-bookmark-thumbnail {
+  width: 160px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* ── Responsive KG Cards ── */
+@media (max-width: 640px) {
+  .kg-product-card { flex-direction: column; }
+  .kg-product-card .kg-product-card-image { width: 100%; height: 180px; }
+  .gh-content .kg-bookmark-thumbnail { display: none; }
+  .kg-signup-card { padding: 2rem 1.25rem; }
+  .kg-header-card { padding: 2.5rem 1.25rem; }
+  .kg-audio-card { flex-direction: column; text-align: center; }
+}
