@@ -36,6 +36,8 @@ UEM-Architect-Website/
 └── deep-dive-wordpress-theme/  # WordPress theme for The Deep Dive
     ├── style.css               # WordPress theme header
     ├── functions.php           # Theme setup, enqueue, helpers, meta box
+    ├── inc/
+    │   └── customizer.php      # Customizer panels, color/typography controls, dynamic CSS
     ├── header.php              # Navigation + mobile drawer
     ├── footer.php              # Footer + newsletter form
     ├── home.php                # Blog index — featured hero + post grid
@@ -108,6 +110,7 @@ Dark editorial WordPress theme for `deepdive.uemarchitect.org`. Built with the s
 
 ### Features
 
+- **WordPress Customizer** — "Deep Dive" panel with color pickers and typography controls; changes propagate via CSS custom property overrides with no file edits required
 - **Featured post hero** — mark any post as featured via the "Featured Post" meta box in the post editor
 - **Reading progress bar** — appears on single posts
 - **Related posts** — tag-matched posts pulled automatically on single post view
@@ -116,6 +119,18 @@ Dark editorial WordPress theme for `deepdive.uemarchitect.org`. Built with the s
 - **Custom nav walker** — active-state classes on menu items
 - **Newsletter form** — MC4WP-compatible; falls back to a plain HTML form
 - **Admin bar offset** — sticky header respects WordPress admin bar height
+
+### Customizer Options
+
+Go to **Appearance → Customize → Deep Dive** after installing the theme.
+
+| Section | Setting | Default | Controls |
+|---|---|---|---|
+| Colors | Accent Color | `#00b4d8` | Links, buttons, progress bar (`--blue`) |
+| Colors | Secondary Color | `#f59e0b` | Tags, featured labels (`--amber`) |
+| Colors | Page Background | `#0d1117` | Body, header, footer (`--surface-0`) |
+| Colors | Body Text Color | `#f1f5f9` | Primary text (`--text-primary`) |
+| Typography | Body Font Weight | Regular (400) | Figtree weight — Light / Regular / Medium |
 
 ### Template Hierarchy
 
