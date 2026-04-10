@@ -5,22 +5,25 @@
  * Registers theme-specific panels, sections, settings, and controls in the
  * WordPress Customizer, then outputs overriding CSS custom properties via
  * wp_head so every component that uses :root variables responds instantly.
- *
- * Pattern borrowed from Astra theme's customize_register + dynamic CSS approach.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// Single source of truth for defaults — used by both add_setting() and get_theme_mod().
+define( 'DEEP_DIVE_COLOR_ACCENT',  '#00b4d8' );
+define( 'DEEP_DIVE_COLOR_AMBER',   '#f59e0b' );
+define( 'DEEP_DIVE_COLOR_BG',      '#0d1117' );
+define( 'DEEP_DIVE_COLOR_TEXT',    '#f1f5f9' );
+define( 'DEEP_DIVE_FONT_WEIGHT',   '400'     );
 
-// ── Register Customizer Panels / Sections / Settings / Controls ─────────────
+
+// ── Customizer Registration ──────────────────────────────────────────────────
 
 add_action( 'customize_register', 'deep_dive_customize_register' );
 
 function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
-
-    // ── Panel ────────────────────────────────────────────────────────────────
 
     $wp_customize->add_panel( 'deep_dive_panel', [
         'title'       => __( 'Deep Dive', 'deep-dive' ),
@@ -28,18 +31,14 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
         'priority'    => 130,
     ] );
 
-
-    // ── Colors Section ───────────────────────────────────────────────────────
-
     $wp_customize->add_section( 'deep_dive_colors', [
         'title'    => __( 'Colors', 'deep-dive' ),
         'panel'    => 'deep_dive_panel',
         'priority' => 10,
     ] );
 
-    // Accent color — maps to --blue
     $wp_customize->add_setting( 'deep_dive_accent_color', [
-        'default'           => '#00b4d8',
+        'default'           => DEEP_DIVE_COLOR_ACCENT,
         'sanitize_callback' => 'sanitize_hex_color',
         'transport'         => 'refresh',
     ] );
@@ -50,9 +49,8 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
         'priority'    => 10,
     ] ) );
 
-    // Secondary / amber color — maps to --amber
     $wp_customize->add_setting( 'deep_dive_amber_color', [
-        'default'           => '#f59e0b',
+        'default'           => DEEP_DIVE_COLOR_AMBER,
         'sanitize_callback' => 'sanitize_hex_color',
         'transport'         => 'refresh',
     ] );
@@ -63,9 +61,8 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
         'priority'    => 20,
     ] ) );
 
-    // Page background — maps to --surface-0
     $wp_customize->add_setting( 'deep_dive_bg_color', [
-        'default'           => '#0d1117',
+        'default'           => DEEP_DIVE_COLOR_BG,
         'sanitize_callback' => 'sanitize_hex_color',
         'transport'         => 'refresh',
     ] );
@@ -76,9 +73,8 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
         'priority'    => 30,
     ] ) );
 
-    // Body text — maps to --text-primary
     $wp_customize->add_setting( 'deep_dive_text_color', [
-        'default'           => '#f1f5f9',
+        'default'           => DEEP_DIVE_COLOR_TEXT,
         'sanitize_callback' => 'sanitize_hex_color',
         'transport'         => 'refresh',
     ] );
@@ -89,18 +85,14 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
         'priority'    => 40,
     ] ) );
 
-
-    // ── Typography Section ───────────────────────────────────────────────────
-
     $wp_customize->add_section( 'deep_dive_typography', [
         'title'    => __( 'Typography', 'deep-dive' ),
         'panel'    => 'deep_dive_panel',
         'priority' => 20,
     ] );
 
-    // Body font weight
     $wp_customize->add_setting( 'deep_dive_body_weight', [
-        'default'           => '400',
+        'default'           => DEEP_DIVE_FONT_WEIGHT,
         'sanitize_callback' => 'deep_dive_sanitize_font_weight',
         'transport'         => 'refresh',
     ] );
@@ -119,31 +111,35 @@ function deep_dive_customize_register( WP_Customize_Manager $wp_customize ) {
 }
 
 
-// ── Sanitize font weight select ──────────────────────────────────────────────
+// ── Helpers ──────────────────────────────────────────────────────────────────
 
 function deep_dive_sanitize_font_weight( $value ) {
     $allowed = [ '300', '400', '500' ];
-    return in_array( $value, $allowed, true ) ? $value : '400';
+    return in_array( $value, $allowed, true ) ? $value : DEEP_DIVE_FONT_WEIGHT;
 }
 
 
-// ── Output Dynamic CSS to Override :root Variables ───────────────────────────
+// ── Dynamic CSS Output ───────────────────────────────────────────────────────
 
 add_action( 'wp_head', 'deep_dive_customizer_css', 99 );
 
 function deep_dive_customizer_css() {
-    $accent = get_theme_mod( 'deep_dive_accent_color', '#00b4d8' );
-    $amber  = get_theme_mod( 'deep_dive_amber_color',  '#f59e0b' );
-    $bg     = get_theme_mod( 'deep_dive_bg_color',     '#0d1117' );
-    $text   = get_theme_mod( 'deep_dive_text_color',   '#f1f5f9' );
-    $weight = deep_dive_sanitize_font_weight( get_theme_mod( 'deep_dive_body_weight', '400' ) );
+    if ( is_admin() ) {
+        return;
+    }
+
+    $accent = get_theme_mod( 'deep_dive_accent_color', DEEP_DIVE_COLOR_ACCENT );
+    $amber  = get_theme_mod( 'deep_dive_amber_color',  DEEP_DIVE_COLOR_AMBER  );
+    $bg     = get_theme_mod( 'deep_dive_bg_color',     DEEP_DIVE_COLOR_BG     );
+    $text   = get_theme_mod( 'deep_dive_text_color',   DEEP_DIVE_COLOR_TEXT   );
+    $weight = get_theme_mod( 'deep_dive_body_weight',  DEEP_DIVE_FONT_WEIGHT  );
     ?>
     <style id="deep-dive-customizer-css">
     :root {
-        --blue:         <?php echo sanitize_hex_color( $accent ); ?>;
-        --amber:        <?php echo sanitize_hex_color( $amber );  ?>;
-        --surface-0:    <?php echo sanitize_hex_color( $bg );     ?>;
-        --text-primary: <?php echo sanitize_hex_color( $text );   ?>;
+        --blue:         <?php echo esc_attr( $accent ); ?>;
+        --amber:        <?php echo esc_attr( $amber );  ?>;
+        --surface-0:    <?php echo esc_attr( $bg );     ?>;
+        --text-primary: <?php echo esc_attr( $text );   ?>;
     }
     body {
         font-weight: <?php echo esc_attr( $weight ); ?>;
