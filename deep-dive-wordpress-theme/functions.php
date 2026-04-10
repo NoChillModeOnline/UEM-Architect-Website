@@ -50,6 +50,9 @@ function deep_dive_setup() {
 }
 add_action( 'after_setup_theme', 'deep_dive_setup' );
 
+// Customizer panels, settings, controls, and dynamic CSS output
+require_once get_template_directory() . '/inc/customizer.php';
+
 
 // ── Enqueue Assets ─────────────────────────────────────────────────────────
 
