@@ -14,7 +14,7 @@ This repository contains two projects:
 ## 🌐 Live Sites
 
 - **Main site:** [uemarchitect.org](https://www.uemarchitect.org)
-- **The Deep Dive:** [deepdive.uemarchitect.org](https://deepdive.uemarchitect.org)
+- **The Deep Dive:** [deepdive.uemarchitect.org](https://deepdive.uemarchitect.org/)
 
 ---
 
