@@ -29,9 +29,13 @@ UEM-Architect-Website/
 ├── our-process.html            # 4-phase engagement process
 ├── why-us.html                 # Differentiators & testimonials
 ├── contact.html                # Contact form & booking
+├── deep-dive.html              # The Deep Dive teaser / landing page
 ├── privacy.html                # GDPR Privacy & Cookie Policy
 ├── index.css                   # All styles — design tokens, components
 ├── script.js                   # All interactivity
+├── git-push.sh                 # Helper script: stage, commit, and push to GitHub
+│
+├── Images/                     # Brand assets, partner logos, service illustrations
 │
 └── deep-dive-wordpress-theme/  # WordPress theme for The Deep Dive
     ├── style.css               # WordPress theme header
@@ -47,6 +51,7 @@ UEM-Architect-Website/
     ├── author.php              # Author archive
     ├── search.php              # Search results
     ├── comments.php            # Comment list + form
+    ├── 404.php                 # Not found page
     ├── index.php               # WordPress fallback template
     ├── template-parts/
     │   └── post-card.php       # Reusable post card (16:9, tag, reading time)
@@ -72,6 +77,7 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 | Our Process | `our-process.html` | Discover → Architect → Implement → Maintain |
 | Why Us | `why-us.html` | Differentiator cards + testimonial carousel |
 | Contact | `contact.html` | Formspree contact form, booking link, office info |
+| The Deep Dive | `deep-dive.html` | Teaser / landing page linking to deepdive.uemarchitect.org |
 | Privacy Policy | `privacy.html` | GDPR-compliant Privacy & Cookie Policy |
 
 ### Technologies
@@ -87,6 +93,7 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 | `--navy` | `#2b4570` | Primary brand navy |
 | `--blue` | `#0369A1` | Primary accent |
 | `--light-blue` | `#38BDF8` | Lighter accent |
+| `--sky` | `#BAE6FD` | Subtle highlight / background tint |
 | `--amber` | `#f59e0b` | Highlight / CTA |
 | `--dark` | `#0d1117` | Hero dark backgrounds |
 
@@ -96,9 +103,10 @@ Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800)
 
 | File | Placeholder | Replace With |
 |---|---|---|
-| All HTML | `og:image` meta tag | Full URL to OG image (1200×630 px) |
 | `contact.html` | `YOUR_FORM_ID` | Formspree contact form ID |
-| All HTML | `YOUR_NEWSLETTER_ID` | Formspree newsletter form ID |
+| All HTML pages | `YOUR_NEWSLETTER_ID` | Formspree newsletter form ID (used in footer of every page) |
+
+> **Note:** OG tags (`og:url`, `og:image`) and `<link rel="canonical">` have been set to production URLs across all pages.
 
 ---
 
@@ -174,6 +182,7 @@ Both the marketing site and The Deep Dive theme share the same brand palette:
 | Navy | `#2b4570` |
 | Blue | `#0369A1` |
 | Light Blue | `#38BDF8` |
+| Sky | `#BAE6FD` |
 | Amber | `#f59e0b` |
 | Dark | `#0d1117` |
 
@@ -190,6 +199,12 @@ open index.html
 
 # WordPress theme — zip and upload to WP Admin
 zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
+```
+
+To push changes to GitHub using the included helper script:
+
+```bash
+bash git-push.sh
 ```
 
 ---
