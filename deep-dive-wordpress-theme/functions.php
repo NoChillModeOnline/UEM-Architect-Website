@@ -89,12 +89,7 @@ add_action( 'wp_enqueue_scripts', 'deep_dive_enqueue_assets' );
 
 
 // ── Excerpt ─────────────────────────────────────────────────────────────────
-
-// Set excerpt length to 22 words (matches Ghost theme)
-function deep_dive_excerpt_length( $length ) {
-    return 22;
-}
-add_filter( 'excerpt_length', 'deep_dive_excerpt_length', 999 );
+// Excerpt length is now controlled by the Customizer (deep_dive_excerpt_length).
 
 // Use '…' as the excerpt "more" string
 function deep_dive_excerpt_more( $more ) {
