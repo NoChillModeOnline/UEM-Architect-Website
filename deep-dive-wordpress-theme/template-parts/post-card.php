@@ -10,6 +10,10 @@ $author_id = get_the_author_meta( 'ID' );
 $avatar    = get_avatar_url( $author_id, [ 'size' => 56 ] );
 $tags      = get_the_tags();
 $first_tag = $tags ? $tags[0] : null;
+
+$show_author       = get_theme_mod( 'deep_dive_archive_show_author',       '1' );
+$show_date         = get_theme_mod( 'deep_dive_archive_show_date',         '1' );
+$show_reading_time = get_theme_mod( 'deep_dive_archive_show_reading_time', '1' );
 ?>
 
 <article <?php post_class( 'post-card reveal' ); ?> id="post-<?php the_ID(); ?>">
@@ -38,6 +42,8 @@ $first_tag = $tags ? $tags[0] : null;
     <p class="post-card__excerpt"><?php echo wp_trim_words( get_the_excerpt(), 22 ); ?></p>
 
     <div class="post-card__meta">
+
+      <?php if ( $show_author ) : ?>
       <div class="post-card__author">
         <?php if ( $avatar ) : ?>
           <img class="post-card__author-avatar" src="<?php echo esc_url( $avatar ); ?>"
@@ -49,14 +55,24 @@ $first_tag = $tags ? $tags[0] : null;
         <?php endif; ?>
         <span class="post-card__author-name"><?php the_author(); ?></span>
       </div>
+      <?php endif; // show_author ?>
 
+      <?php if ( $show_date || $show_reading_time ) : ?>
       <div class="post-card__details">
-        <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>">
-          <?php echo esc_html( get_the_date( 'M j, Y' ) ); ?>
-        </time>
-        <span aria-hidden="true">&middot;</span>
-        <span><?php echo esc_html( deep_dive_reading_time() ); ?></span>
+        <?php if ( $show_date ) : ?>
+          <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>">
+            <?php echo esc_html( get_the_date( 'M j, Y' ) ); ?>
+          </time>
+        <?php endif; ?>
+        <?php if ( $show_date && $show_reading_time ) : ?>
+          <span aria-hidden="true">&middot;</span>
+        <?php endif; ?>
+        <?php if ( $show_reading_time ) : ?>
+          <span><?php echo esc_html( deep_dive_reading_time() ); ?></span>
+        <?php endif; ?>
       </div>
+      <?php endif; // show_date || show_reading_time ?>
+
     </div><!-- /.post-card__meta -->
 
   </div><!-- /.post-card__content -->
