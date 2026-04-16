@@ -739,18 +739,18 @@ function deep_dive_customizer_css() {
     }
 
     /* Header */
-    .site-header, header.site-header {
+    .site-header {
         background-color: <?php echo esc_attr( $hdr_bg );          ?>;
         color:            <?php echo esc_attr( $hdr_text );         ?>;
         border-bottom:    <?php echo esc_attr( $hdr_border_w ); ?>px solid <?php echo esc_attr( $hdr_border_color ); ?>;
     }
-    .site-header .nav-link, .site-header a {
+    .site-nav__item a {
         color: <?php echo esc_attr( $hdr_text ); ?>;
+        padding-inline: <?php echo esc_attr( $menu_spacing ); ?>px;
     }
-    .site-header .nav-link { padding-inline: <?php echo esc_attr( $menu_spacing ); ?>px; }
 
     /* Footer */
-    .site-footer, footer.site-footer {
+    .site-footer {
         background-color: <?php echo esc_attr( $ftr_bg );   ?>;
         color:            <?php echo esc_attr( $ftr_text ); ?>;
     }
