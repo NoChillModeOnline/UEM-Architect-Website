@@ -731,12 +731,12 @@ function deep_dive_customizer_css() {
     a { color: <?php echo esc_attr( $link ); ?>; }
     a:hover { color: <?php echo esc_attr( $accent_alt ); ?>; }
 
-    /* Buttons */
-    .btn, .wp-block-button__link, button[type="submit"] {
-        background-color: <?php echo esc_attr( $btn_bg );     ?>;
-        color:            <?php echo esc_attr( $btn_text );   ?>;
-        border-radius:    <?php echo esc_attr( $btn_radius ); ?>px;
+    /* Buttons — override gradient and radius via root tokens */
+    :root {
+        --grad-accent: linear-gradient(135deg, <?php echo esc_attr( $btn_bg ); ?> 0%, <?php echo esc_attr( $accent_alt ); ?> 100%);
+        --radius-md:   <?php echo esc_attr( $btn_radius ); ?>px;
     }
+    .btn--primary { color: <?php echo esc_attr( $btn_text ); ?>; }
 
     /* Header */
     .site-header {
