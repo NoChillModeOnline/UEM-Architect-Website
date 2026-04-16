@@ -17,6 +17,12 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     $author_url  = get_author_posts_url( $author_id );
     $author_bio  = get_the_author_meta( 'description' );
     $author_web  = get_the_author_meta( 'user_url' );
+
+    $show_featured     = get_theme_mod( 'deep_dive_single_show_featured',     '1' );
+    $show_reading_time = get_theme_mod( 'deep_dive_single_show_reading_time', '1' );
+    $show_author_bio   = get_theme_mod( 'deep_dive_single_show_author_bio',   '1' );
+    $show_related      = get_theme_mod( 'deep_dive_single_show_related',      '1' );
+    $show_comments     = get_theme_mod( 'deep_dive_single_show_comments',     '1' );
 ?>
 
 <article <?php post_class( 'post-full' ); ?> id="post-<?php the_ID(); ?>">
@@ -59,8 +65,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
               <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>">
                 <?php echo esc_html( get_the_date() ); ?>
               </time>
-              <span aria-hidden="true">&middot;</span>
-              <span><?php echo esc_html( deep_dive_reading_time() ); ?></span>
+              <?php if ( $show_reading_time ) : ?>
+                <span aria-hidden="true">&middot;</span>
+                <span><?php echo esc_html( deep_dive_reading_time() ); ?></span>
+              <?php endif; ?>
             </div>
           </div>
         </div><!-- /.post-full-author -->
@@ -80,7 +88,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
   </header><!-- /.post-full-header -->
 
   <!-- ── Feature Image ── -->
-  <?php if ( has_post_thumbnail() ) : ?>
+  <?php if ( $show_featured && has_post_thumbnail() ) : ?>
     <figure class="post-full-image">
       <?php the_post_thumbnail( 'deep-dive-hero', [ 'alt' => '' ] ); ?>
       <?php $caption = get_the_post_thumbnail_caption(); if ( $caption ) : ?>
@@ -115,6 +123,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
       <div class="post-full-divider"></div>
 
+      <?php if ( $show_author_bio ) : ?>
       <!-- Author card -->
       <div class="author-card">
         <div class="author-card__image-link">
@@ -145,6 +154,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
           <?php endif; ?>
         </div>
       </div><!-- /.author-card -->
+      <?php endif; // show_author_bio ?>
 
       <!-- Newsletter CTA -->
       <div class="post-subscribe-cta">
@@ -170,6 +180,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 </article><!-- /.post-full -->
 
+<?php if ( $show_related ) : ?>
 <!-- ── Related Posts ── -->
 <?php
 $related_args = [
@@ -200,9 +211,9 @@ if ( $related_query->have_posts() ) : ?>
 <?php
     wp_reset_postdata();
 endif;
+endif; // show_related
 
-// Comments
-if ( comments_open() || get_comments_number() ) :
+if ( $show_comments && ( comments_open() || get_comments_number() ) ) :
     echo '<div class="container--narrow">';
     comments_template();
     echo '</div>';
