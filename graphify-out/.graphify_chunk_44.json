@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "id": "img_c39b840b_composite",
+      "label": "UEM/Cybersecurity Services Illustration — 2x2 grid of flat-style blue security icons",
+      "file_type": "image",
+      "source_file": "Images/c39b840bee80842663d8220342ce20eb90ac92e6669c11cfb3211bc394349ff5.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "img_c39b840b_panel_1",
+      "label": "Security shield with key connected to multiple device endpoints (tablets, phones, laptops, desktops) — endpoint security / UEM concept",
+      "file_type": "image",
+      "source_file": "Images/c39b840bee80842663d8220342ce20eb90ac92e6669c11cfb3211bc394349ff5.png",
+      "source_location": "top-left quadrant",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "img_c39b840b_panel_2",
+      "label": "Two users in front of cloud environment with documents and connected devices — cloud document management / cloud storage concept",
+      "file_type": "image",
+      "source_file": "Images/c39b840bee80842663d8220342ce20eb90ac92e6669c11cfb3211bc394349ff5.png",
+      "source_location": "top-right quadrant",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "img_c39b840b_panel_3",
+      "label": "Circular network of connected endpoint nodes with a key at the center — zero-trust key management / identity hub / network topology concept",
+      "file_type": "image",
+      "source_file": "Images/c39b840bee80842663d8220342ce20eb90ac92e6669c11cfb3211bc394349ff5.png",
+      "source_location": "bottom-left quadrant",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "img_c39b840b_panel_4",
+      "label": "Group of people (team/organization) alongside a large security shield with key — organizational security / team identity protection concept",
+      "file_type": "image",
+      "source_file": "Images/c39b840bee80842663d8220342ce20eb90ac92e6669c11cfb3211bc394349ff5.png",
+      "source_location": "bottom-right quadrant",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "img_c39b840b_composite",
+      "to": "img_c39b840b_panel_1",
+      "relation": "contains_panel"
+    },
+    {
+      "from": "img_c39b840b_composite",
+      "to": "img_c39b840b_panel_2",
+      "relation": "contains_panel"
+    },
+    {
+      "from": "img_c39b840b_composite",
+      "to": "img_c39b840b_panel_3",
+      "relation": "contains_panel"
+    },
+    {
+      "from": "img_c39b840b_composite",
+      "to": "img_c39b840b_panel_4",
+      "relation": "contains_panel"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
