@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "brand-asset-uem-architect-color-logo-small-google",
+      "label": "UEM Architect Color Logo (Small, Google-Optimized)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - small - google.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "properties": {
+        "brand_name": "UEM Architect Consulting",
+        "variant": "color-with-logo-small-google",
+        "description": "Small Google-optimized color logo variant featuring the text 'uemarchitect' in dark navy/grey with 'Consulting' in smaller text below, accompanied by a blue droplet/leaf icon to the upper right of the wordmark.",
+        "color_scheme": "color",
+        "logo_type": "wordmark-with-icon",
+        "icon_description": "Blue stylized droplet or leaf mark positioned upper-right of wordmark",
+        "text_elements": ["uemarchitect", "Consulting"],
+        "usage": "Google profile/directory, small format brand asset",
+        "format": "PNG"
+      }
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
