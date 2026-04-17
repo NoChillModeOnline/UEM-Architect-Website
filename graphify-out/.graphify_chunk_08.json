@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "uem_implementation_migration",
+      "label": "UEM Implementation / Migration",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "laptop_device",
+      "label": "Laptop / Desktop Endpoint",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mobile_device",
+      "label": "Mobile / Smartphone Device",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "headset_peripheral",
+      "label": "Headset / Peripheral Device",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cloud_infrastructure",
+      "label": "Cloud Infrastructure / Management Platform",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "data_flow_migration",
+      "label": "Data Flow / Migration Arrow",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "endpoint_connectivity",
+      "label": "Endpoint Connectivity / Management",
+      "file_type": "image",
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "uem_implementation_migration",
+      "target": "laptop_device",
+      "relation": "depicts_managed_endpoint",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_implementation_migration",
+      "target": "mobile_device",
+      "relation": "depicts_managed_endpoint",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_implementation_migration",
+      "target": "headset_peripheral",
+      "relation": "depicts_managed_endpoint",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "uem_implementation_migration",
+      "target": "cloud_infrastructure",
+      "relation": "depicts_management_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.90,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "laptop_device",
+      "target": "cloud_infrastructure",
+      "relation": "migrates_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.80,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "mobile_device",
+      "target": "cloud_infrastructure",
+      "relation": "managed_by",
+      "confidence": "INFERRED",
+      "confidence_score": 0.80,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "headset_peripheral",
+      "target": "cloud_infrastructure",
+      "relation": "managed_by",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.7
+    },
+    {
+      "source": "data_flow_migration",
+      "target": "cloud_infrastructure",
+      "relation": "flows_into",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "laptop_device",
+      "target": "data_flow_migration",
+      "relation": "initiates_migration",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "endpoint_connectivity",
+      "target": "laptop_device",
+      "relation": "connects",
+      "confidence": "INFERRED",
+      "confidence_score": 0.70,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "endpoint_connectivity",
+      "target": "mobile_device",
+      "relation": "connects",
+      "confidence": "INFERRED",
+      "confidence_score": 0.70,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "cloud_infrastructure",
+      "target": "endpoint_connectivity",
+      "relation": "enables",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Images/uem_implementation_migration.png",
+      "source_location": null,
+      "weight": 0.8
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
