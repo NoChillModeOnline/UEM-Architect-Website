@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    {
+      "id": "brand_logo_uem_architect_color_large",
+      "label": "UEM Architect Color Logo (Large, with Text)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_name_uemarchitect",
+      "label": "uemarchitect (wordmark)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_descriptor_consulting",
+      "label": "Consulting (brand descriptor text)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_color_navy_blue",
+      "label": "Navy Blue (brand primary color — used on 'uem' prefix)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_color_medium_blue",
+      "label": "Medium Blue (brand secondary color — used on 'architect' and icon leaves)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_color_grey",
+      "label": "Grey (used on 'Consulting' descriptor text)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_icon_leaf_motif",
+      "label": "Leaf/sprout icon motif (three leaves — dark blue, medium blue, light blue — positioned above 't' in 'architect')",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_typography_sans_serif_lowercase",
+      "label": "Lowercase sans-serif wordmark typography style",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_registration_mark",
+      "label": "Registered trademark symbol (R) on 'Consulting'",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "brand_background_white",
+      "label": "White background (logo variant background color)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - with logo - large.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
