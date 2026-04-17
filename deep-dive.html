@@ -101,10 +101,12 @@
           <div class="deep-dive-subscribe">
             <p>Be the first to know when we publish:</p>
             <form
-              action="https://formspree.io/f/YOUR_NEWSLETTER_ID"
+              class="newsletter-subscribe-form"
+              action="https://api.web3forms.com/submit"
               method="POST"
               aria-label="Deep Dive notification signup"
             >
+              <input type="hidden" name="access_key" value="1747abac-6f54-40d0-bee6-9b7cd75b7fe5" />
               <label for="deep-dive-email" class="visually-hidden">Email address</label>
               <input
                 type="email"
