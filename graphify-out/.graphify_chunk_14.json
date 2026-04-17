@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "id": "partner-entra-svg",
+      "label": "Microsoft Entra ID",
+      "file_type": "image",
+      "source_file": "Images/partner-entra.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "brand": "Microsoft",
+      "product": "Entra ID",
+      "category": "Identity Platform",
+      "description": "Microsoft Entra ID partner logo — Microsoft's identity and access management platform (formerly Azure Active Directory). Displayed in Microsoft brand blue (#0F6CBD).",
+      "role": "technology_partner"
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
