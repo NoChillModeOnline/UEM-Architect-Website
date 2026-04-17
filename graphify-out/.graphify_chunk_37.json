@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "northbridge-health-network-logo",
+      "label": "Northbridge Health Network",
+      "file_type": "image",
+      "source_file": "Images/northbridge.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "brand_name": "Northbridge Health Network",
+      "brand_type": "healthcare_organization",
+      "visual_elements": {
+        "icon": "stylized medical cross / plus symbol with a swooping arc or ribbon overlay, rendered in grey",
+        "wordmark": "Northbridge",
+        "tagline": "HEALTH NETWORK",
+        "color_palette": ["grey", "dark grey", "white"],
+        "style": "monochrome greyscale",
+        "typography": {
+          "wordmark_weight": "bold",
+          "tagline_weight": "regular",
+          "tagline_case": "uppercase",
+          "tagline_spacing": "wide letter-spacing"
+        },
+        "logo_layout": "horizontal — icon left, text right"
+      },
+      "industry": "healthcare",
+      "description": "Northbridge Health Network client logo — greyscale horizontal lockup featuring a stylized medical cross icon with a swooping ribbon, the wordmark 'Northbridge' in bold, and 'HEALTH NETWORK' in spaced uppercase below."
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
