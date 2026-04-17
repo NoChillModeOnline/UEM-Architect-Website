@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "brand-asset-uem-architect-white-wordmark",
+      "label": "UEM Architect White Wordmark (Text Only)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-white - without logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "properties": {
+        "asset_type": "brand_wordmark",
+        "variant": "white",
+        "has_icon": false,
+        "has_text": true,
+        "width": 1200,
+        "height": 300,
+        "format": "SVG",
+        "created_with": "Inkscape 1.4.3",
+        "text_elements": [
+          {
+            "content": "uemarchitect",
+            "font_family": "Helvetica Neue, Arial, sans-serif",
+            "font_size": 72,
+            "font_weight": 700,
+            "fill": "#ffffff",
+            "role": "primary_brand_name"
+          },
+          {
+            "content": "Consulting",
+            "font_family": "Helvetica Neue, Arial, sans-serif",
+            "font_size": 44,
+            "font_weight": 300,
+            "fill": "#ffffff",
+            "opacity": 0.7,
+            "role": "descriptor"
+          },
+          {
+            "content": "®",
+            "font_size": 24,
+            "fill": "#ffffff",
+            "opacity": 0.7,
+            "role": "trademark"
+          }
+        ],
+        "icon_group": {
+          "present": true,
+          "visible": false,
+          "display": "none",
+          "description": "Abstract petal/leaf icon with ellipse connector, white fill, hidden via display:none"
+        },
+        "background": "transparent"
+      }
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
