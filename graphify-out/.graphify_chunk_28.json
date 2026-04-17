@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "brand_asset_uemarchitect_grey_bg_2026",
+      "label": "UEM Architect Consulting Logo — Grey Background (2026)",
+      "file_type": "image",
+      "source_file": "Images/uemarchitect_azure_background_2026_grey_background.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026",
+      "author": null,
+      "contributor": null,
+      "attributes": {
+        "brand_name": "UEM Architect Consulting",
+        "logo_text": "uemarchitect Consulting®",
+        "background_color": "grey (#d4d4d4 approximate)",
+        "logo_color_primary": "navy/slate blue (#2b4570 approximate)",
+        "logo_color_secondary": "light blue (#48cae4 approximate)",
+        "logo_icon": "three-leaf / sprout motif in dark slate and light blue above wordmark",
+        "trademark": "registered trademark symbol (®) on Consulting wordmark",
+        "variant": "grey background profile image",
+        "platform_context": "social media profile image / Azure-themed branding asset",
+        "image_dimensions": "landscape widescreen (approximately 1456x816)",
+        "year": "2026"
+      }
+    },
+    {
+      "id": "brand_uemarchitect_consulting",
+      "label": "UEM Architect Consulting — Brand Entity",
+      "file_type": "image",
+      "source_file": "Images/uemarchitect_azure_background_2026_grey_background.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "attributes": {
+        "entity_type": "brand",
+        "full_name": "UEM Architect Consulting",
+        "abbreviation": "UEM Architect",
+        "domain": "Unified Endpoint Management consulting",
+        "trademark_status": "registered (®)"
+      }
+    },
+    {
+      "id": "platform_context_azure_social_profile",
+      "label": "Azure / Social Profile Image Context — Grey Background Variant",
+      "file_type": "image",
+      "source_file": "Images/uemarchitect_azure_background_2026_grey_background.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "attributes": {
+        "entity_type": "platform_context",
+        "platform": "Azure / LinkedIn / social media profile",
+        "background_variant": "grey",
+        "usage": "profile image, branding asset for digital presence",
+        "year": "2026"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "brand_asset_uemarchitect_grey_bg_2026",
+      "target": "brand_uemarchitect_consulting",
+      "relation": "depicts"
+    },
+    {
+      "source": "brand_asset_uemarchitect_grey_bg_2026",
+      "target": "platform_context_azure_social_profile",
+      "relation": "used_in"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 1024,
+  "output_tokens": 512
+}
