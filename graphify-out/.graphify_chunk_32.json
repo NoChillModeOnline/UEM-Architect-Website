@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    {
+      "id": "asset:images/uem-architect-color-logo-only-svg",
+      "label": "UEM Architect Color Brand Mark (Icon Only)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - logo only.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "metadata": {
+        "format": "SVG",
+        "width": 1200,
+        "height": 300,
+        "tool": "Inkscape 1.4.3",
+        "description": "Color SVG brand mark icon for UEM Architect Consulting. Contains a two-petal/leaf abstract icon with a connecting ellipse. Left petal fill: #3d5a80 (opacity 0.8), right petal fill: #5b8dc9 (opacity 0.7), base ellipse fill: #7ab8f5 (opacity 0.6). Text elements (wordmark and consulting label) are present but hidden (display:none).",
+        "colors": ["#3d5a80", "#5b8dc9", "#7ab8f5"]
+      }
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
