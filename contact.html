@@ -129,11 +129,13 @@
           </div>
 
           <form
+            id="contact-form"
             class="contact-form"
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action="https://api.web3forms.com/submit"
             method="POST"
             novalidate
           >
+            <input type="hidden" name="access_key" value="1747abac-6f54-40d0-bee6-9b7cd75b7fe5" />
             <div class="contact-form__group">
               <label for="contact-name">Full Name</label>
               <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
