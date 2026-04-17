@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "brand-asset-uem-architect-logo-google",
+      "label": "UEM Architect Color Logo (Google-Optimized, Icon Only)",
+      "file_type": "image",
+      "source_file": "Images/uem-architect-color - logo only -google.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Google-optimized icon-only variant of the UEM Architect brand logo. Composed of three abstract geometric shapes forming a stylized mark: a dark navy/slate arc segment (upper-left), a medium blue arc segment (right), and a light sky-blue ellipse (center-bottom). No wordmark or text is present. Color palette aligns with brand tokens: --navy (#2b4570), --blue (#00b4d8), --sky (#90e0ef). Likely used for Google Business Profile, Google Workspace, or favicon contexts requiring a square/icon-safe crop.",
+      "variant": "icon-only",
+      "optimization_target": "google",
+      "colors": ["#2b4570", "#00b4d8", "#90e0ef"],
+      "has_text": false,
+      "has_wordmark": false
+    }
+  ],
+  "edges": [],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
