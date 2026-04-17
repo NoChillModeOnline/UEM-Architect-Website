@@ -277,6 +277,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── Web3Forms Handler ── */
+  function handleWeb3Form(form, successMessage) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (!submitBtn) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const originalText = submitBtn.textContent;
+
+      submitBtn.textContent = 'Sending\u2026';
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert(successMessage);
+          form.reset();
+        } else {
+          alert('Error: ' + data.message);
+        }
+      } catch {
+        alert('Something went wrong. Please try again.');
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    handleWeb3Form(contactForm, 'Success! Your message has been sent.');
+  }
+
+  document.querySelectorAll('.footer__newsletter-form, .newsletter-subscribe-form').forEach(form => {
+    handleWeb3Form(form, 'Thanks for subscribing!');
+  });
+
   /* ── Auto-update Footer Year ── */
   const footerYear = document.getElementById('footer-year');
   if (footerYear) {
