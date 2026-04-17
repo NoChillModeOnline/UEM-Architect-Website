@@ -21,7 +21,7 @@
           <p class="cookie-banner__title">🍪 We Use Cookies</p>
           <p class="cookie-banner__desc">
             We use essential cookies to keep this site running and to process contact
-            form submissions securely via Formspree. We don't use advertising or
+            form submissions securely via Web3Forms. We don't use advertising or
             tracking cookies. You can accept all cookies or continue with essential
             cookies only. <a href="privacy.html">Privacy &amp; Cookie Policy</a>
           </p>
