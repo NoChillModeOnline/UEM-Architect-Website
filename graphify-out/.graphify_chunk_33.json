@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "uem_platform_cross_platform_management",
+      "label": "Cross-Platform UEM Management",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ios_mobile_device",
+      "label": "Apple iOS Mobile Device",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_desktop",
+      "label": "Windows Desktop/PC",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bidirectional_sync",
+      "label": "Bidirectional Device Synchronization",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apple_platform",
+      "label": "Apple Platform (iOS/macOS)",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_platform",
+      "label": "Microsoft Windows Platform",
+      "file_type": "image",
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "uem_platform_cross_platform_management",
+      "target": "ios_mobile_device",
+      "relation": "manages",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_platform_cross_platform_management",
+      "target": "windows_desktop",
+      "relation": "manages",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ios_mobile_device",
+      "target": "windows_desktop",
+      "relation": "syncs_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.92,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_desktop",
+      "target": "ios_mobile_device",
+      "relation": "syncs_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.92,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ios_mobile_device",
+      "target": "apple_platform",
+      "relation": "runs_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.98,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "windows_desktop",
+      "target": "windows_platform",
+      "relation": "runs_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.98,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_platform_cross_platform_management",
+      "target": "apple_platform",
+      "relation": "supports_platform",
+      "confidence": "INFERRED",
+      "confidence_score": 0.90,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "uem_platform_cross_platform_management",
+      "target": "windows_platform",
+      "relation": "supports_platform",
+      "confidence": "INFERRED",
+      "confidence_score": 0.90,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "bidirectional_sync",
+      "target": "ios_mobile_device",
+      "relation": "connects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.93,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bidirectional_sync",
+      "target": "windows_desktop",
+      "relation": "connects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.93,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_platform_cross_platform_management",
+      "target": "bidirectional_sync",
+      "relation": "enables",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Images/platform.png",
+      "source_location": null,
+      "weight": 0.85
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 1024,
+  "output_tokens": 512
+}
