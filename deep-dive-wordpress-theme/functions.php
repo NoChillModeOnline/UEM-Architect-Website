@@ -222,6 +222,23 @@ function deep_dive_save_featured_meta( $post_id ) {
 add_action( 'save_post', 'deep_dive_save_featured_meta' );
 
 
+// ── Nav Menu: Strip target="_blank" from Main Site link ─────────────────────
+
+/**
+ * Remove target="_blank" from the "Main Site" nav menu item so it opens
+ * in the same tab. WordPress stores this as menu item metadata and adds
+ * it via the nav_menu_link_attributes filter.
+ */
+function deep_dive_remove_main_site_new_tab( $atts, $item ) {
+    if ( isset( $atts['href'] ) && strpos( $atts['href'], 'uemarchitect.org' ) !== false ) {
+        unset( $atts['target'] );
+        unset( $atts['rel'] );
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'deep_dive_remove_main_site_new_tab', 10, 2 );
+
+
 // ── Comment Callback ─────────────────────────────────────────────────────────
 
 /**
