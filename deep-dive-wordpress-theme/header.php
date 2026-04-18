@@ -90,7 +90,7 @@
       ] );
       ?>
       <ul class="mobile-nav__list mobile-nav__cta">
-        <li><a href="https://www.uemarchitect.org" target="_blank" rel="noopener">Main Site &rarr;</a></li>
+        <li><a href="https://www.uemarchitect.org">Main Site &rarr;</a></li>
       </ul>
     </div>
   </nav>
