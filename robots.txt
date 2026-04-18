@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /deep-dive.html
+
+Sitemap: https://www.uemarchitect.org/sitemap.xml
