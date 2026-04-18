@@ -41,6 +41,48 @@
 
   <!-- Security -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://api.web3forms.com; form-action https://api.web3forms.com;" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "We already have a UEM platform — do we still need you?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often, yes. Having a platform and getting full value from it are two different things. We regularly step into environments with Intune, Workspace ONE, or Jamf already deployed — but with gaps in policy coverage, inconsistent configurations, missing documentation, or security baselines that were never fully implemented. We audit what's there, identify what's missing, and close the gaps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "We're a small IT team. Is this the right fit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Small IT teams are often the ones who benefit most from our work because they carry the most operational burden. We design environments that are sustainable for lean teams — with automation, clear documentation, and training built in so your team isn't creating a recurring dependency on us."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle environments with a mix of Windows, Mac, iOS, and Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cross-platform environments are our default — not an exception. We design UEM strategies that unify policy enforcement and visibility across all device types, whether that means a single platform that handles everything or a purposeful multi-platform architecture with clear ownership at each layer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer ongoing support after the initial engagement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer managed UEM operations for clients who want ongoing support for their platform — including policy maintenance, enrollment support, patch coordination, and monthly reporting. Many clients start with a project-based engagement and transition to a managed model once the foundation is in place."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
