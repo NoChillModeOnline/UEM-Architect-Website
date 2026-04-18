@@ -4,17 +4,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static single-page marketing website for UEM Architect Consulting — a Unified Endpoint Management consulting firm. No build tools, no dependencies, no package manager. Open `index.html` directly in a browser.
+Multi-page static marketing website for UEM Architect Consulting — a Unified Endpoint Management consulting firm. No build tools, no dependencies, no package manager. Open any `.html` file directly in a browser.
 
 ## File Structure
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Single-page layout — all sections and content |
-| `index.css` | Vanilla CSS with design tokens, organized by component |
-| `script.js` | Vanilla JS, all logic inside one `DOMContentLoaded` listener |
-| `Image Materials for Website/` | Source brand assets and logos |
-| `images/` | ⚠️ Referenced by HTML but **not yet created** — see Known Issues |
+| `index.html` | Home page — hero, services overview, partners, testimonials, newsletter |
+| `who-we-serve.html` | Persona/audience page |
+| `services.html` | Services detail page |
+| `our-process.html` | Engagement process page |
+| `why-us.html` | Differentiators + testimonials |
+| `contact.html` | Contact form page |
+| `deep-dive.html` | "The Deep Dive" blog/resources — coming soon page |
+| `privacy.html` | Privacy & Cookie Policy |
+| `index.css` | Shared vanilla CSS with design tokens, organized by component |
+| `script.js` | Shared vanilla JS, all logic inside one `DOMContentLoaded` listener |
+| `Images/` | All brand assets, logos, service icons, and partner logos |
+| `og-image.jpg` | 1200×630 Open Graph social share image |
 
 ## Architecture
 
