@@ -10,25 +10,24 @@ Multi-page static marketing website for UEM Architect Consulting — a Unified E
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home page — hero, services overview, partners, testimonials, newsletter |
-| `who-we-serve.html` | Persona/audience page |
-| `services.html` | Services detail page |
+| `index.html` | Home page — hero, services overview, partners, Omnissa partner section, CTA |
+| `who-we-serve.html` | Persona/audience page — IT leaders, HR & ops teams, MSPs, industries, FAQ |
+| `services.html` | Services detail page — 6 service areas + engagement formats + platforms |
 | `our-process.html` | Engagement process page |
 | `why-us.html` | Differentiators + testimonials |
 | `contact.html` | Contact form page |
-| `deep-dive.html` | "The Deep Dive" blog/resources — coming soon page |
+| `deep-dive.html` | "The Deep Dive" blog/resources — coming soon page (`noindex, nofollow`) |
 | `privacy.html` | Privacy & Cookie Policy |
 | `index.css` | Shared vanilla CSS with design tokens, organized by component |
 | `script.js` | Shared vanilla JS, all logic inside one `DOMContentLoaded` listener |
 | `Images/` | All brand assets, logos, service icons, and partner logos |
 | `og-image.jpg` | 1200×630 Open Graph social share image |
+| `robots.txt` | Crawl directives — allows all except `deep-dive.html`; references sitemap |
+| `sitemap.xml` | XML sitemap with 6 indexable pages; submit to Google Search Console |
 
 ## Architecture
 
-**Single-page layout** with these sections (in order):
-`header` → `hero` → `#who-we-serve` → `#services` → `#process` → `#why-us` → `.partners` → `.cta-banner` → `#testimonials` → `#contact` → `footer`
-
-The hero section has no `id`. Nav links target the above section IDs. The entire body is wrapped in `<main id="main-content">`.
+**Multi-page site** — each page is a standalone HTML file sharing `index.css` and `script.js`.
 
 **CSS design tokens** are defined in `:root` at the top of `index.css` — use these rather than raw values.
 
@@ -48,6 +47,23 @@ The hero section has no `id`. Nav links target the above section IDs. The entire
 
 All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key `1747abac-6f54-40d0-bee6-9b7cd75b7fe5`. The key is embedded as a hidden `access_key` input on each form.
 
+## SEO
+
+Every page includes: `<title>`, `<meta name="description">`, canonical, Open Graph (`og:site_name`, `og:title`, `og:description`, `og:type`, `og:url`, `og:image`, `og:image:width/height`), and Twitter Card (`twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`).
+
+**JSON-LD structured data:**
+- `index.html` — `Organization` + `ProfessionalService` schema
+- `services.html` — `ItemList` schema (6 service offerings)
+- `who-we-serve.html` — `FAQPage` schema (4 Q&As, eligible for SERP FAQ accordions)
+
+**When adding a new page:**
+1. Add full OG + Twitter Card block (copy pattern from any existing page)
+2. Add `og:site_name` and `og:image:width/height`
+3. Add self-referencing canonical
+4. Add appropriate JSON-LD if the page has FAQ, service list, or article content
+5. Add the URL to `sitemap.xml`
+6. If it's a coming-soon or utility page, add `<meta name="robots" content="noindex, nofollow" />` and add to `robots.txt` Disallow
+
 ## Brand / Design Conventions
 
 **Full `:root` token reference:**
@@ -59,7 +75,7 @@ All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key
 - **Shadows**: `--shadow-sm/md/lg`, `--shadow-glow` (blue glow)
 - **Radius**: `--radius-sm` (8px) / `--radius-md` (12px) / `--radius-lg` (20px) / `--radius-xl` (28px)
 - **Transitions**: `--t-base` (0.3s), `--ease`
-- **Font**: Inter (Google Fonts) — weights 300–800
+- **Font**: Plus Jakarta Sans (Google Fonts) — weights 300–800
 
 **Button variants**: `.btn--primary` (blue `--grad-accent` gradient) and `.btn--outline` (ghost, white border — used on dark backgrounds only).
 
@@ -76,6 +92,6 @@ None. All previously noted issues are resolved:
 ## Contact / Social
 
 - Email: contact@uemarchitect.org
-- LinkedIn: linkedin.com/company/uem-architect
+- LinkedIn: linkedin.com/company/uem-architect-consulting
 - Booking: zeeg.me/uemarch-pso
-- Location: Charlotte, NC
+- Location: Odessa, FL (confirm if this has changed)
