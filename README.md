@@ -76,7 +76,7 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 | Services | `services.html` | 6 service offerings with deliverables and engagement models |
 | Our Process | `our-process.html` | Discover → Architect → Implement → Maintain |
 | Why Us | `why-us.html` | Differentiator cards + testimonial carousel |
-| Contact | `contact.html` | Formspree contact form, booking link, office info |
+| Contact | `contact.html` | Web3Forms contact form, booking link, office info |
 | The Deep Dive | `deep-dive.html` | Teaser / landing page linking to deepdive.uemarchitect.org |
 | Privacy Policy | `privacy.html` | GDPR-compliant Privacy & Cookie Policy |
 
