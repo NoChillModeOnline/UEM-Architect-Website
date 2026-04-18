@@ -59,7 +59,7 @@
 
       <!-- Header actions -->
       <div class="site-header__actions">
-        <a href="https://www.uemarchitect.org" class="btn btn--outline btn--sm" target="_blank" rel="noopener">
+        <a href="https://www.uemarchitect.org" class="btn btn--outline btn--sm">
           Main Site
         </a>
         <?php if ( get_option( 'users_can_register' ) ) : ?>
