@@ -365,4 +365,429 @@ document.addEventListener('DOMContentLoaded', () => {
     statNumbers.forEach(el => countObserver.observe(el));
   }
 
+  /* ── Assessment Quiz ── */
+  (function initAssessmentQuiz() {
+    const container = document.getElementById('quiz-container');
+    if (!container) return;
+
+    // All dynamic values inserted via innerHTML come from our own QUESTIONS/TIERS
+    // constants or from integer arithmetic. User form input (name, email, company)
+    // never appears in innerHTML — it only goes into FormData for submission.
+    // esc() is applied defensively to every dynamic string used in template literals.
+    function esc(v) {
+      return String(v)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    const QUESTIONS = [
+      {
+        text: 'How confident are you in your current UEM tenant architecture?',
+        answers: [
+          'Fully confident \u2014 clean, documented, and deliberate',
+          'Mostly confident \u2014 a few rough edges but solid overall',
+          'Some inherited complexity I\u2019m still untangling',
+          'Not sure what we have or why it\u2019s set up this way'
+        ]
+      },
+      {
+        text: 'Are your device enrollment flows documented and consistently enforced?',
+        answers: [
+          'Yes \u2014 fully documented and enforced across all platforms',
+          'Mostly \u2014 some variation by platform, but generally solid',
+          'Inconsistent \u2014 different teams do it differently',
+          'It\u2019s tribal knowledge \u2014 nobody has written it down'
+        ]
+      },
+      {
+        text: 'How is identity integrated with your UEM platform?',
+        answers: [
+          'Entra ID or Workspace ONE Access with modern authentication',
+          'Multiple IdPs in use (Okta, Google, etc.) \u2014 manageable',
+          'Legacy Active Directory with some modern overlay',
+          'Honestly not sure how it all connects'
+        ]
+      },
+      {
+        text: 'Are compliance policies actively enforced across all device types?',
+        answers: [
+          'Yes \u2014 enforced everywhere with conditional access tied in',
+          'Mostly \u2014 some gaps in coverage across platforms',
+          'Policies exist but enforcement is inconsistent',
+          'Compliance isn\u2019t meaningfully implemented yet'
+        ]
+      },
+      {
+        text: 'How would you describe your current profile and policy structure?',
+        answers: [
+          'Clean and intentional \u2014 minimal overlap, clear ownership',
+          'Some duplication, but manageable',
+          'Significant overlap \u2014 hard to tell what does what',
+          'It needs an archaeological expedition to understand'
+        ]
+      },
+      {
+        text: 'Are you using automation and intelligence within your UEM platform?',
+        answers: [
+          'Yes \u2014 alerts, automated workflows, and dashboards are running',
+          'Basic reporting only \u2014 no active automation yet',
+          'We have access but haven\u2019t really configured it',
+          'We weren\u2019t aware this was a capability'
+        ]
+      },
+      {
+        text: 'How quickly can you identify non-compliant devices in your environment?',
+        answers: [
+          'Instantly \u2014 real-time visibility directly in the console',
+          'Within a few minutes with some effort',
+          'Requires manual exports and spreadsheet work',
+          'We can\u2019t reliably identify them at all'
+        ]
+      },
+      {
+        text: 'Does your team have a designated owner for UEM architecture decisions?',
+        answers: [
+          'Yes \u2014 a dedicated person with clear accountability',
+          'Shared ownership across a small team',
+          'Informal \u2014 whoever knows the most handles it',
+          'No real owner \u2014 it\u2019s whoever has time'
+        ]
+      },
+      {
+        text: 'When did you last conduct a formal review of your UEM platform?',
+        answers: [
+          'Within the last 6\u201312 months',
+          '1\u20132 years ago',
+          'More than 2 years ago',
+          'We have never done a formal review'
+        ]
+      },
+      {
+        text: 'Overall, how confident are you in your endpoint management environment?',
+        answers: [
+          'Very confident \u2014 well-managed and well-understood',
+          'Reasonably confident \u2014 some things I\u2019d like to improve',
+          'There are gaps I\u2019m actively worried about',
+          'We\u2019re surviving, but not in a good place'
+        ]
+      }
+    ];
+
+    const TIERS = {
+      strong: {
+        label: 'Strong Foundation',
+        color: '#0369A1',
+        headline: 'Your environment shows strong fundamentals.',
+        body: 'You\u2019ve built something deliberate and well-structured. We can help identify the 10\u201320% of optimizations that would take your environment from good to excellent.',
+        items: [
+          'Targeted optimization opportunities most mature environments overlook',
+          'Automation and intelligence workflows that add real operational leverage',
+          'Security posture evaluation against current zero-trust benchmarks'
+        ]
+      },
+      grow: {
+        label: 'Room to Grow',
+        color: '#b45309',
+        headline: 'You\u2019ve got a working foundation with notable gaps.',
+        body: 'These aren\u2019t catastrophic \u2014 but left unaddressed, they tend to compound. A structured review would give you a clear, prioritized roadmap.',
+        items: [
+          'Address policy and profile gaps before they create compliance failures',
+          'Standardize enrollment flows to reduce support burden and security exposure',
+          'Build toward real-time compliance visibility instead of reactive reporting'
+        ]
+      },
+      attention: {
+        label: 'Needs Attention',
+        color: '#dc2626',
+        headline: 'Your environment has meaningful risks worth addressing.',
+        body: 'The good news: most of what we see in environments like yours is fixable with the right prioritization. Let\u2019s talk about where to start.',
+        items: [
+          'Establish clear architecture ownership to stop accumulating technical debt',
+          'Implement baseline compliance enforcement before expanding device scope',
+          'Get a clear picture of your current state \u2014 you can\u2019t fix what you can\u2019t see'
+        ]
+      }
+    };
+
+    function calcTier(score) {
+      if (score >= 33) return TIERS.strong;
+      if (score >= 21) return TIERS.grow;
+      return TIERS.attention;
+    }
+
+    let answers = [];
+    let currentQ = 0;
+
+    function scrollToCard() {
+      const top = container.getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+
+    function renderIntro() {
+      container.innerHTML = `
+        <div class="quiz-intro quiz-step-enter">
+          <div class="quiz-intro__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"/></svg>
+          </div>
+          <h2 class="quiz-intro__heading">Is your UEM environment working for you?</h2>
+          <p class="quiz-intro__sub">
+            This 10-question assessment gives you an honest, scored picture of where your endpoint
+            environment stands \u2014 and a personalized recommendation for what to focus on next.
+            Takes about 5 minutes.
+          </p>
+          <ul class="quiz-intro__list" aria-label="What to expect">
+            <li><span aria-hidden="true">\u2713</span> 10 questions about your current environment</li>
+            <li><span aria-hidden="true">\u2713</span> Scored results with a clear tier and next steps</li>
+            <li><span aria-hidden="true">\u2713</span> No obligation \u2014 just clarity</li>
+          </ul>
+          <button class="btn btn--primary quiz-start-btn" data-action="start">
+            Start the Assessment
+          </button>
+        </div>
+      `;
+    }
+
+    function renderQuestion(n) {
+      const q = QUESTIONS[n - 1];
+      const prevPct = ((n - 1) / QUESTIONS.length) * 100;
+      const currPct = (n / QUESTIONS.length) * 100;
+      const isLast = n === QUESTIONS.length;
+      const answersHTML = q.answers.map((text, i) => `
+        <button class="quiz-answer" data-value="${4 - i}" type="button" role="radio" aria-checked="false">
+          <span class="quiz-answer__radio" aria-hidden="true"></span>
+          <span class="quiz-answer__text">${esc(text)}</span>
+        </button>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="quiz-step-wrap quiz-step-enter">
+          <div class="quiz-progress-wrap" aria-label="Quiz progress">
+            <div class="quiz-progress-row">
+              <span class="quiz-progress-label">Question ${esc(n)} of ${esc(QUESTIONS.length)}</span>
+              <span class="quiz-progress-pct">${esc(Math.round(prevPct))}% complete</span>
+            </div>
+            <div class="quiz-progress-track" role="progressbar"
+              aria-valuenow="${esc(Math.round(prevPct))}"
+              aria-valuemin="0" aria-valuemax="100" aria-label="Quiz progress">
+              <div class="quiz-progress-fill" style="width:${esc(prevPct)}%"></div>
+            </div>
+          </div>
+          <h2 class="quiz-question" id="quiz-question-heading" tabindex="-1">${esc(q.text)}</h2>
+          <div class="quiz-answers" role="radiogroup" aria-labelledby="quiz-question-heading">
+            ${answersHTML}
+          </div>
+          <div class="quiz-nav">
+            <button class="btn btn--primary" data-action="next" disabled
+              aria-label="${isLast ? 'Finish and see results' : 'Next question'}">
+              ${isLast ? 'See My Results' : 'Next Question'}
+            </button>
+          </div>
+        </div>
+      `;
+
+      requestAnimationFrame(() => {
+        const fill = container.querySelector('.quiz-progress-fill');
+        if (fill) fill.style.width = currPct + '%';
+      });
+
+      const heading = container.querySelector('#quiz-question-heading');
+      if (heading) setTimeout(() => heading.focus(), 50);
+    }
+
+    function renderLead() {
+      container.innerHTML = `
+        <div class="quiz-lead-wrap quiz-step-enter">
+          <div class="quiz-lead__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+          </div>
+          <h2 class="quiz-lead__heading">Almost there \u2014 where should we send your results?</h2>
+          <p class="quiz-lead__sub">
+            Enter your details below and we\u2019ll show your personalized score and recommendations
+            right here on the page \u2014 plus email you a copy to keep.
+          </p>
+          <form id="quiz-lead-form" class="quiz-lead__form" novalidate>
+            <input type="hidden" name="access_key" value="1747abac-6f54-40d0-bee6-9b7cd75b7fe5" />
+            <input type="hidden" name="subject" value="" />
+            <input type="hidden" name="score" value="" />
+            <input type="hidden" name="tier" value="" />
+            <div class="quiz-lead__fields">
+              <div class="contact-form__group">
+                <label for="lead-name">Full Name</label>
+                <input type="text" id="lead-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="contact-form__group">
+                <label for="lead-email">Work Email</label>
+                <input type="email" id="lead-email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+              </div>
+              <div class="contact-form__group">
+                <label for="lead-company">Company</label>
+                <input type="text" id="lead-company" name="company" placeholder="Acme Corp" autocomplete="organization" />
+              </div>
+            </div>
+            <p class="quiz-lead__privacy">
+              We\u2019ll only use your contact info to send your results and follow up if relevant.
+              See our <a href="privacy.html">Privacy Policy</a>.
+            </p>
+            <button type="button" class="btn btn--primary quiz-submit-btn" data-action="submit-lead">
+              Show My Results
+            </button>
+          </form>
+        </div>
+      `;
+
+      const nameInput = container.querySelector('#lead-name');
+      if (nameInput) setTimeout(() => nameInput.focus(), 50);
+    }
+
+    function renderResults(score, tier) {
+      const itemsHTML = tier.items.map(item => `<li>${esc(item)}</li>`).join('');
+
+      container.innerHTML = `
+        <div class="quiz-results-wrap quiz-step-enter">
+          <div class="quiz-results__score-area">
+            <div class="quiz-results__badge" style="background:${esc(tier.color)}"
+              aria-label="Score: ${esc(score)} out of 40">
+              ${esc(score)}<span class="quiz-results__badge-max">/40</span>
+            </div>
+            <span class="quiz-results__tier-label" style="color:${esc(tier.color)}">${esc(tier.label)}</span>
+          </div>
+          <h2 class="quiz-results__headline">${esc(tier.headline)}</h2>
+          <p class="quiz-results__body">${esc(tier.body)}</p>
+          <div class="quiz-results__items-wrap">
+            <h3 class="quiz-results__items-heading">What this means for your environment:</h3>
+            <ul class="quiz-results__items" aria-label="Recommendations">
+              ${itemsHTML}
+            </ul>
+          </div>
+          <div class="quiz-results__ctas">
+            <a href="https://zeeg.me/uemarch-pso" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              Book a Free 30-Min Review
+            </a>
+            <a href="contact.html" class="btn btn--outline-dark">
+              Send Us a Message
+            </a>
+          </div>
+          <p class="quiz-results__restart">
+            Want to try again?
+            <button type="button" class="quiz-restart-link" data-action="restart">Retake the assessment</button>
+          </p>
+        </div>
+      `;
+    }
+
+    function handleClick(e) {
+      const target = e.target;
+      const actionEl = target.dataset.action ? target : target.closest('[data-action]');
+      const action = actionEl ? actionEl.dataset.action : null;
+
+      if (action === 'start') {
+        currentQ = 1;
+        answers = [];
+        renderQuestion(1);
+        scrollToCard();
+        return;
+      }
+
+      if (action === 'next') {
+        const selected = container.querySelector('.quiz-answer--selected');
+        if (!selected) return;
+        answers.push(parseInt(selected.dataset.value, 10));
+        if (currentQ < QUESTIONS.length) {
+          currentQ++;
+          renderQuestion(currentQ);
+        } else {
+          renderLead();
+        }
+        scrollToCard();
+        return;
+      }
+
+      if (action === 'submit-lead') {
+        submitLead();
+        return;
+      }
+
+      if (action === 'restart') {
+        currentQ = 0;
+        answers = [];
+        renderIntro();
+        scrollToCard();
+        return;
+      }
+
+      const answerBtn = target.classList.contains('quiz-answer')
+        ? target
+        : target.closest('.quiz-answer');
+
+      if (answerBtn) {
+        container.querySelectorAll('.quiz-answer').forEach(a => {
+          a.classList.remove('quiz-answer--selected');
+          a.setAttribute('aria-checked', 'false');
+        });
+        answerBtn.classList.add('quiz-answer--selected');
+        answerBtn.setAttribute('aria-checked', 'true');
+        const nextBtn = container.querySelector('[data-action="next"]');
+        if (nextBtn) nextBtn.disabled = false;
+      }
+    }
+
+    function submitLead() {
+      const form = document.getElementById('quiz-lead-form');
+      if (!form) return;
+
+      const nameInput = form.querySelector('[name="name"]');
+      const emailInput = form.querySelector('[name="email"]');
+
+      if (!nameInput.value.trim()) {
+        nameInput.focus();
+        nameInput.reportValidity();
+        return;
+      }
+      if (!emailInput.value.trim() || !emailInput.checkValidity()) {
+        emailInput.focus();
+        emailInput.reportValidity();
+        return;
+      }
+
+      const submitBtn = container.querySelector('.quiz-submit-btn');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending\u2026';
+      submitBtn.disabled = true;
+
+      const total = answers.reduce((sum, v) => sum + v, 0);
+      const tier = calcTier(total);
+
+      form.querySelector('[name="score"]').value = total;
+      form.querySelector('[name="tier"]').value = tier.label;
+      form.querySelector('[name="subject"]').value =
+        'UEM Assessment Results \u2014 ' + tier.label + ' (' + total + '/40)';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => response.json().then(data => ({ ok: response.ok, data })))
+        .then(({ ok, data }) => {
+          if (ok) {
+            renderResults(total, tier);
+            scrollToCard();
+          } else {
+            alert('Error: ' + data.message);
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          }
+        })
+        .catch(() => {
+          alert('Something went wrong. Please try again.');
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        });
+    }
+
+    container.addEventListener('click', handleClick);
+    renderIntro();
+  })();
+
 });
