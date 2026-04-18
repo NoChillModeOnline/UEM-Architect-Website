@@ -91,9 +91,9 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 | Token | Value | Usage |
 |---|---|---|
 | `--navy` | `#2b4570` | Primary brand navy |
-| `--blue` | `#0369A1` | Primary accent |
-| `--light-blue` | `#38BDF8` | Lighter accent |
-| `--sky` | `#BAE6FD` | Subtle highlight / background tint |
+| `--blue` | `#00b4d8` | Primary accent |
+| `--light-blue` | `#48cae4` | Lighter accent |
+| `--sky` | `#90e0ef` | Subtle highlight / background tint |
 | `--amber` | `#f59e0b` | Highlight / CTA |
 | `--dark` | `#0d1117` | Hero dark backgrounds |
 
