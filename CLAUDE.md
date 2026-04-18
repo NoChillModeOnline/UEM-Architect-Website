@@ -67,13 +67,11 @@ All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key
 
 ## Known Issues
 
-1. **`images/` directory missing** — All image `src` attributes in `index.html` reference `images/xxx` (e.g. `images/logo.png`, `images/service-assessment.png`, `images/partner-omnissa.png`). This directory does not exist; source files are in `Image Materials for Website/`. Images must be renamed/optimized and placed into `images/` before the site renders correctly.
-
-2. **Formspree placeholders** — Both forms use literal placeholder IDs:
-   - Contact form: `action="https://formspree.io/f/YOUR_FORM_ID"`
-   - Newsletter form: `action="https://formspree.io/f/YOUR_NEWSLETTER_ID"`
-
-3. **OG / canonical placeholders** — `<meta property="og:url">`, `<meta property="og:image">`, and `<link rel="canonical">` all use `https://your-domain.com/` and need the real production domain.
+None. All previously noted issues are resolved:
+- Images are in `Images/` (capital I) and all HTML references match
+- Forms migrated from Formspree to Web3Forms
+- OG/canonical URLs use `https://www.uemarchitect.org/`
+- `og-image.jpg` (1200×630) exists at the repo root
 
 ## Contact / Social
 
