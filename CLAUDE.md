@@ -41,7 +41,12 @@ The hero section has no `id`. Nav links target the above section IDs. The entire
 - Smooth scroll — accounts for sticky header height; skips bare `#` hrefs
 - Scroll-to-top — `#scroll-top` visible at 500px scroll, passive listener
 - Footer year — `#footer-year` auto-set to `new Date().getFullYear()`
+- Form handling — `handleWeb3Form()` targets `#contact-form`, `.footer__newsletter-form`, `.newsletter-subscribe-form`; posts to Web3Forms API asynchronously
 - All `scroll` listeners use `{ passive: true }`
+
+## Forms
+
+All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key `1747abac-6f54-40d0-bee6-9b7cd75b7fe5`. The key is embedded as a hidden `access_key` input on each form.
 
 ## Brand / Design Conventions
 
