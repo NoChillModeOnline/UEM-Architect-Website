@@ -34,7 +34,7 @@
 
       <!-- Logo -->
       <div class="site-header__logo">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-label="<?php bloginfo( 'name' ); ?> — home">
+        <a href="https://www.uemarchitect.org" rel="home" aria-label="<?php bloginfo( 'name' ); ?> — home">
           <?php if ( has_custom_logo() ) :
             the_custom_logo();
           else : ?>
