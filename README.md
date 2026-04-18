@@ -99,14 +99,7 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 
 Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800)
 
-### Pre-Deployment Checklist
-
-| File | Placeholder | Replace With |
-|---|---|---|
-| `contact.html` | `YOUR_FORM_ID` | Formspree contact form ID |
-| All HTML pages | `YOUR_NEWSLETTER_ID` | Formspree newsletter form ID (used in footer of every page) |
-
-> **Note:** OG tags (`og:url`, `og:image`) and `<link rel="canonical">` have been set to production URLs across all pages.
+> **Note:** OG tags (`og:url`, `og:image`) and `<link rel="canonical">` have been set to production URLs across all pages. Forms use **Web3Forms** — the access key is embedded as a hidden `access_key` input on each form.
 
 ---
 
