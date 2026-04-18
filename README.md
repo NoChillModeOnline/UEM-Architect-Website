@@ -173,9 +173,9 @@ Both the marketing site and The Deep Dive theme share the same brand palette:
 | Token | Value |
 |---|---|
 | Navy | `#2b4570` |
-| Blue | `#0369A1` |
-| Light Blue | `#38BDF8` |
-| Sky | `#BAE6FD` |
+| Blue | `#00b4d8` |
+| Light Blue | `#48cae4` |
+| Sky | `#90e0ef` |
 | Amber | `#f59e0b` |
 | Dark | `#0d1117` |
 
