@@ -35,11 +35,10 @@
       <!-- Logo -->
       <div class="site-header__logo">
         <a href="https://www.uemarchitect.org" rel="home" aria-label="<?php bloginfo( 'name' ); ?> — home">
-          <?php if ( has_custom_logo() ) :
-            the_custom_logo();
-          else : ?>
-            <span class="site-header__logo-text"><?php bloginfo( 'name' ); ?></span>
-          <?php endif; ?>
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.png' ); ?>"
+               alt="<?php bloginfo( 'name' ); ?>"
+               width="353" height="144"
+               class="site-header__logo-img" />
         </a>
       </div>
 
