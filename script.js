@@ -310,8 +310,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           alert(successMessage);
           form.reset();
-          if (form.querySelector('.g-recaptcha') && typeof grecaptcha !== 'undefined') {
-            grecaptcha.reset();
+          if (form.querySelector('.h-captcha') && typeof hcaptcha !== 'undefined') {
+            hcaptcha.reset();
           }
         } else {
           alert('Error: ' + data.message);
