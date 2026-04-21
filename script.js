@@ -909,14 +909,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Sending\u2026';
       submitBtn.disabled = true;
 
-      const total = answers.reduce((sum, v) => sum + v, 0);
-      const tier = calcTier(total);
-
-      form.querySelector('[name="score"]').value = total;
-      form.querySelector('[name="tier"]').value = tier.label;
-      form.querySelector('[name="subject"]').value =
-        'UEM Assessment Results \u2014 ' + tier.label + ' (' + total + '/40)';
-
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: new FormData(form)
@@ -924,8 +916,19 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json().then(data => ({ ok: response.ok, data })))
         .then(({ ok, data }) => {
           if (ok) {
-            renderResults(total, tier);
-            scrollToCard();
+            const leadSection = document.getElementById('quiz-results-lead');
+            if (leadSection) {
+              const successDiv = document.createElement('div');
+              successDiv.className = 'quiz-lead__success';
+              const checkIcon = document.createElement('span');
+              checkIcon.setAttribute('aria-hidden', 'true');
+              checkIcon.textContent = '\u2713';
+              const msg = document.createElement('p');
+              msg.textContent = 'Results sent! Check your inbox for your personalized assessment report.';
+              successDiv.appendChild(checkIcon);
+              successDiv.appendChild(msg);
+              leadSection.replaceChildren(successDiv);
+            }
           } else {
             alert('Error: ' + data.message);
             submitBtn.textContent = originalText;
