@@ -530,6 +530,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let answers = [];
     let currentQ = 0;
 
+    // SVG donut chart: viewBox 128×128, center 64,64, r=52, strokeWidth=12
+    const DONUT_CIRC = parseFloat((2 * Math.PI * 52).toFixed(2)); // ≈ 326.73
+
     function scrollToCard() {
       const top = container.getBoundingClientRect().top + window.scrollY - 100;
       window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
