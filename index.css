@@ -2835,6 +2835,72 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
+/* ── Score visual + donut ── */
+.quiz-results__score-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-results__donut-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Results: in-page lead form ── */
+.quiz-results__lead-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.75rem;
+  color: var(--text-light);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.quiz-results__lead-divider::before,
+.quiz-results__lead-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--light-grey);
+}
+
+.quiz-results__lead {
+  text-align: left;
+  background: var(--off-white);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.quiz-results__lead-sub {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.quiz-lead__success {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.quiz-lead__success span {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
 /* ── Step enter animation ── */
 @keyframes quizStepIn {
   from { opacity: 0; transform: translateY(14px); }
