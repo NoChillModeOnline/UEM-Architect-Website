@@ -76,7 +76,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
-      align-items: center;
+      align-items: start;
     }
 
     .about-story__text h2 {
@@ -95,6 +95,11 @@
     }
 
     .about-story__text p:last-child { margin-bottom: 0; }
+
+    .about-story__text em {
+      font-style: italic;
+      color: var(--navy);
+    }
 
     .about-story__visual {
       background: var(--grad-hero);
@@ -164,6 +169,32 @@
       margin-top: 0.125rem;
     }
 
+    .about-story__details {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+
+    .about-story__detail-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+
+    .about-story__detail-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 0.1rem;
+      color: var(--light-blue);
+    }
+
     /* ── Values grid ── */
     .values-grid {
       display: grid;
@@ -208,6 +239,72 @@
       font-size: 0.9375rem;
       color: var(--text-light);
       line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .value-card__detail {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--light-grey);
+      font-size: 0.875rem !important;
+      color: var(--navy) !important;
+      font-style: italic;
+    }
+
+    /* ── Engagement steps ── */
+    .engagement-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .step-card {
+      background: var(--white);
+      border: 1.5px solid var(--light-grey);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      transition: border-color var(--t-base) var(--ease), box-shadow var(--t-base) var(--ease),
+                  transform var(--t-base) var(--ease);
+    }
+
+    .step-card:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-3px);
+    }
+
+    .step-card__number {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: var(--grad-accent);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 0.9375rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .step-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    .step-card__note {
+      margin-top: 0.875rem;
+      font-size: 0.8125rem !important;
+      color: var(--blue) !important;
+      font-weight: 600;
     }
 
     /* ── Platform expertise ── */
@@ -220,7 +317,7 @@
     .expertise-card {
       background: var(--white);
       border-radius: var(--radius-md);
-      padding: 1.5rem;
+      padding: 1.75rem;
       box-shadow: var(--shadow-sm);
       border-left: 3px solid var(--blue);
       transition: box-shadow var(--t-base) var(--ease), transform var(--t-base) var(--ease);
@@ -244,13 +341,31 @@
       font-size: 1rem;
       font-weight: 700;
       color: var(--navy);
-      margin-bottom: 0.375rem;
+      margin-bottom: 0.5rem;
     }
 
     .expertise-card p {
       font-size: 0.875rem;
       color: var(--text-light);
-      line-height: 1.6;
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+
+    .expertise-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.375rem;
+      margin-top: 0.875rem;
+    }
+
+    .expertise-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--off-white);
+      border: 1px solid var(--light-grey);
+      border-radius: 100px;
+      padding: 0.2rem 0.625rem;
     }
 
     /* ── Deep Dive resources strip ── */
@@ -308,6 +423,12 @@
     }
 
     /* ── Responsive ── */
+    @media (max-width: 1100px) {
+      .engagement-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 900px) {
       .about-story {
         grid-template-columns: 1fr;
@@ -333,6 +454,10 @@
     }
 
     @media (max-width: 600px) {
+      .engagement-steps {
+        grid-template-columns: 1fr;
+      }
+
       .expertise-grid {
         grid-template-columns: 1fr;
       }
@@ -393,7 +518,8 @@
         <p>
           We're a specialized endpoint management consultancy built on 10+ years of hands-on
           experience across enterprise UEM environments. Our work is technical, opinionated,
-          and always anchored in how your organization actually operates.
+          and always anchored in how your organization actually operates — not how a vendor
+          demo suggests it should.
         </p>
       </div>
     </section>
@@ -414,13 +540,23 @@
             </p>
             <p>
               We started as practitioners. We've managed real environments, inherited broken
-              tenants, migrated platforms under pressure, and built zero-trust frameworks
-              from scratch. That experience shapes every engagement we run.
+              tenants, migrated platforms under deadline pressure, and built zero-trust
+              frameworks from scratch. We've seen what happens when architecture is an
+              afterthought and when documentation never gets written. That experience
+              shapes every engagement we run — we've already made the expensive mistakes
+              so you don't have to.
             </p>
             <p>
-              Our approach is direct, transparent, and focused on outcomes. We don't sell
-              you a platform. We help you get the most out of the one you have — or guide
-              you through choosing and implementing a better one.
+              We work with IT teams, security teams, and technology leadership across
+              mid-market and enterprise organizations. Engagements range from focused
+              environment assessments to full-scale platform migrations — but every one
+              starts with the same question: <em>what does your organization actually need?</em>
+            </p>
+            <p>
+              Our approach is direct, transparent, and focused on lasting outcomes.
+              We don't sell you a platform. We help you get the most out of the one you
+              have — or guide you through choosing and implementing a better one, with a
+              clear plan and documentation your team can own long after we're gone.
             </p>
           </div>
 
@@ -435,6 +571,20 @@
               <div>
                 <p class="about-story__sig-name">Michael Weisberg</p>
                 <p class="about-story__sig-title">Founder &amp; Principal Consultant, UEM Architect</p>
+              </div>
+            </div>
+            <div class="about-story__details">
+              <div class="about-story__detail-item">
+                <svg class="about-story__detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Every engagement is led and delivered by a senior consultant — not handed off to a junior team once the contract is signed.</span>
+              </div>
+              <div class="about-story__detail-item">
+                <svg class="about-story__detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>We work across all major UEM platforms — so our recommendations are based on what fits your environment, not what we're certified to sell.</span>
+              </div>
+              <div class="about-story__detail-item">
+                <svg class="about-story__detail-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>You leave every engagement with documentation and runbooks your team can act on — not just a completed project and a closed ticket.</span>
               </div>
             </div>
           </div>
@@ -475,7 +625,8 @@
           <h2 id="values-heading">Three things we believe in</h2>
           <p>
             These aren't slogans. They're the principles that determine how we scope projects,
-            structure deliverables, and communicate with clients.
+            structure deliverables, and communicate with clients — and what you'll notice if
+            you've worked with other consultants before.
           </p>
         </div>
 
@@ -487,7 +638,12 @@
             <p>
               Jumping straight to deployment is how environments become unmaintainable. Every
               engagement starts with a clear picture of your current state — before we touch a
-              single policy or profile.
+              single policy, profile, or configuration setting.
+            </p>
+            <p class="value-card__detail">
+              In practice: we map your existing enrollment flows, policy structure, and
+              integration points before recommending anything. That clarity prevents costly
+              rework down the line.
             </p>
           </article>
 
@@ -497,7 +653,12 @@
             <p>
               The right solution is the one that fits your team's actual workflows. We ask
               about your people and processes before we recommend any technology — because
-              the best platform is the one your team can actually use.
+              the best platform is the one your team can actually operate at scale.
+            </p>
+            <p class="value-card__detail">
+              In practice: we ask about support cadences, update windows, and team
+              structure before we open any admin console. Tools should serve workflows,
+              not the other way around.
             </p>
           </article>
 
@@ -509,6 +670,73 @@
               architecture decisions, runbooks, and rationale. Not just a "here's what we
               built" handoff that no one can maintain six months later.
             </p>
+            <p class="value-card__detail">
+              In practice: every deliverable includes decision logs explaining <em>why</em>
+              choices were made — so when your environment changes, your team knows what
+              to revisit and what to preserve.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How an Engagement Works ── -->
+    <section class="section" aria-labelledby="engagement-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="engagement-heading">How an engagement works</h2>
+          <p>
+            Every project follows the same four-stage structure — whether it's a two-week
+            assessment or a multi-month migration. Here's what to expect from start to finish.
+          </p>
+        </div>
+
+        <div class="engagement-steps">
+
+          <article class="step-card reveal reveal--delay-1">
+            <div class="step-card__number" aria-hidden="true">01</div>
+            <h3>Discovery Call</h3>
+            <p>
+              We talk through your environment, pain points, and goals. You don't need to
+              prepare anything — just show up and be honest about where things stand.
+              This call helps us understand whether and how we can help.
+            </p>
+            <p class="step-card__note">No prep required. No obligation.</p>
+          </article>
+
+          <article class="step-card reveal reveal--delay-2">
+            <div class="step-card__number" aria-hidden="true">02</div>
+            <h3>Scoping &amp; Proposal</h3>
+            <p>
+              We define the work, deliverables, and timeline together. You'll know exactly
+              what you're getting — and what it costs — before anything starts. No
+              moving goalposts, no surprise scope creep.
+            </p>
+            <p class="step-card__note">Fixed scope. Clear deliverables.</p>
+          </article>
+
+          <article class="step-card reveal reveal--delay-3">
+            <div class="step-card__number" aria-hidden="true">03</div>
+            <h3>Active Work</h3>
+            <p>
+              Hands-on architecture, configuration, and implementation with regular
+              check-ins and status updates. No black box — you stay informed and involved
+              throughout the entire engagement.
+            </p>
+            <p class="step-card__note">Regular updates. No surprises.</p>
+          </article>
+
+          <article class="step-card reveal reveal--delay-4">
+            <div class="step-card__number" aria-hidden="true">04</div>
+            <h3>Handoff &amp; Documentation</h3>
+            <p>
+              When we're done, you get everything in writing: what was built, why it was
+              built that way, and how to maintain it going forward. The goal is your
+              team's independence — not your dependency on us.
+            </p>
+            <p class="step-card__note">Full documentation. Clean handoff.</p>
           </article>
 
         </div>
@@ -516,7 +744,7 @@
     </section>
 
     <!-- ── Platform Expertise ── -->
-    <section class="section" aria-labelledby="expertise-heading">
+    <section class="section section--alt" aria-labelledby="expertise-heading">
       <div class="container">
         <div class="section-header reveal">
           <span class="accent-line" aria-hidden="true"></span>
@@ -524,6 +752,7 @@
           <p>
             We work across the full spectrum of modern endpoint management platforms —
             from cloud-native MDM to enterprise UEM with complex co-management scenarios.
+            Our recommendations are platform-agnostic and based on what fits your organization.
           </p>
         </div>
 
@@ -532,37 +761,70 @@
           <article class="expertise-card reveal reveal--delay-1">
             <p class="expertise-card__label">MDM / UEM</p>
             <h3>Omnissa Workspace ONE</h3>
-            <p>Full-lifecycle Workspace ONE deployments, hub configuration, intelligence workflows, and tenant rationalization.</p>
+            <p>Full-lifecycle Workspace ONE deployments, hub configuration, intelligence workflows, and tenant rationalization for organizations of all sizes.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Deployment</span>
+              <span class="expertise-tag">Hub Services</span>
+              <span class="expertise-tag">Intelligence</span>
+              <span class="expertise-tag">Tenant Migration</span>
+            </div>
           </article>
 
           <article class="expertise-card reveal reveal--delay-2">
             <p class="expertise-card__label">MDM / UEM</p>
             <h3>Microsoft Intune</h3>
-            <p>Intune architecture, co-management with Configuration Manager, Autopilot, RBAC design, and compliance baselines.</p>
+            <p>Intune architecture, co-management with Configuration Manager, Autopilot provisioning, RBAC design, and compliance baseline configuration.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Co-Management</span>
+              <span class="expertise-tag">Autopilot</span>
+              <span class="expertise-tag">RBAC</span>
+              <span class="expertise-tag">Compliance</span>
+            </div>
           </article>
 
           <article class="expertise-card reveal reveal--delay-3">
             <p class="expertise-card__label">Apple MDM</p>
             <h3>Jamf Pro &amp; Jamf School</h3>
-            <p>Jamf deployments for corporate and education environments, smart group strategy, and patch management workflows.</p>
+            <p>Jamf deployments for corporate and education environments, smart group strategy, patch management workflows, and macOS security hardening.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Smart Groups</span>
+              <span class="expertise-tag">Patch Mgmt</span>
+              <span class="expertise-tag">macOS</span>
+              <span class="expertise-tag">Education</span>
+            </div>
           </article>
 
           <article class="expertise-card reveal reveal--delay-4">
             <p class="expertise-card__label">Identity</p>
             <h3>Microsoft Entra ID</h3>
-            <p>Conditional access policy design, device compliance integration, hybrid join, and passwordless authentication flows.</p>
+            <p>Conditional access policy design, device compliance integration, hybrid join architecture, and passwordless authentication flows aligned to zero-trust principles.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Conditional Access</span>
+              <span class="expertise-tag">Hybrid Join</span>
+              <span class="expertise-tag">Passwordless</span>
+            </div>
           </article>
 
           <article class="expertise-card reveal reveal--delay-5">
             <p class="expertise-card__label">Identity</p>
             <h3>Okta &amp; Workspace ONE Access</h3>
-            <p>IdP integration with UEM platforms, SSO configuration, app provisioning, and modern authentication alignment.</p>
+            <p>IdP integration with UEM platforms, SSO configuration, app provisioning, and modern authentication alignment across mixed-platform environments.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">SSO</span>
+              <span class="expertise-tag">App Provisioning</span>
+              <span class="expertise-tag">MFA</span>
+            </div>
           </article>
 
           <article class="expertise-card reveal reveal--delay-6">
             <p class="expertise-card__label">Endpoint Security</p>
             <h3>CrowdStrike &amp; Zero Trust</h3>
-            <p>CrowdStrike Falcon integration, endpoint detection alignment, and zero-trust network access architecture.</p>
+            <p>CrowdStrike Falcon integration, endpoint detection alignment with UEM policy, and zero-trust network access architecture across device types and platforms.</p>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Falcon</span>
+              <span class="expertise-tag">ZTNA</span>
+              <span class="expertise-tag">EDR Integration</span>
+            </div>
           </article>
 
         </div>
@@ -570,7 +832,7 @@
     </section>
 
     <!-- ── Omnissa Partner ── -->
-    <section class="omnissa-partner section section--alt" aria-labelledby="partner-heading">
+    <section class="omnissa-partner section" aria-labelledby="partner-heading">
       <div class="container">
         <div class="omnissa-partner__inner reveal">
           <div class="omnissa-partner__badges">
@@ -587,7 +849,8 @@
               UEM Architect is an authorized Omnissa Silver Partner and Solution Reseller — meaning
               we can design, implement, and resell Workspace ONE and Horizon solutions with the full
               support of Omnissa's partner ecosystem. Our partnership gives clients access to
-              preferred pricing, dedicated support channels, and Omnissa's technical resources.
+              preferred pricing, dedicated support channels, and Omnissa's technical resources —
+              all without having to go through a large reseller who doesn't know your environment.
             </p>
           </div>
         </div>
@@ -595,7 +858,7 @@
     </section>
 
     <!-- ── The Deep Dive ── -->
-    <section class="section" aria-labelledby="resources-heading">
+    <section class="section section--alt" aria-labelledby="resources-heading">
       <div class="container">
         <div class="resources-strip reveal">
           <div>
@@ -604,7 +867,7 @@
             <p>
               In-depth articles, field notes, and practical guides on endpoint management,
               zero trust, platform migrations, and everything in between. Written by
-              practitioners, for practitioners.
+              practitioners, for practitioners — no vendor marketing, no filler content.
             </p>
           </div>
           <div class="resources-strip__cta">
