@@ -285,6 +285,14 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      // Validate reCAPTCHA if present on this form
+      if (form.querySelector('.g-recaptcha')) {
+        if (typeof grecaptcha === 'undefined' || !grecaptcha.getResponse()) {
+          alert('Please complete the reCAPTCHA verification before sending.');
+          return;
+        }
+      }
+
       const formData = new FormData(form);
       const originalText = submitBtn.textContent;
 
