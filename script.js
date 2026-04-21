@@ -850,7 +850,8 @@ document.addEventListener('DOMContentLoaded', () => {
           currentQ++;
           renderQuestion(currentQ);
         } else {
-          renderLead();
+          const total = answers.reduce((sum, v) => sum + v, 0);
+          renderResults(total, calcTier(total));
         }
         scrollToCard();
         return;
