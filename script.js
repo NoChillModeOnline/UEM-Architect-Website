@@ -679,12 +679,154 @@ document.addEventListener('DOMContentLoaded', () => {
               Send Us a Message
             </a>
           </div>
+          <div id="quiz-results-enhancements"></div>
           <p class="quiz-results__restart">
             Want to try again?
             <button type="button" class="quiz-restart-link" data-action="restart">Retake the assessment</button>
           </p>
         </div>
       `;
+      initResultsEnhancements(score, tier);
+    }
+
+    // Builds the animated donut chart and appended lead-capture form via DOM methods
+    // (avoids innerHTML for new dynamic content — no user input touches the DOM here)
+    function initResultsEnhancements(score, tier) {
+      const svgNS = 'http://www.w3.org/2000/svg';
+      const pct = score / 40;
+      const targetOffset = DONUT_CIRC * (1 - pct);
+
+      // ── Donut chart ──
+      const scoreVisual = document.getElementById('quiz-score-visual');
+      if (scoreVisual) {
+        const donutWrap = document.createElement('div');
+        donutWrap.className = 'quiz-results__donut-wrap';
+
+        const svg = document.createElementNS(svgNS, 'svg');
+        svg.setAttribute('viewBox', '0 0 128 128');
+        svg.setAttribute('width', '140');
+        svg.setAttribute('height', '140');
+        svg.setAttribute('role', 'img');
+        svg.setAttribute('aria-label', 'Score: ' + score + ' out of 40');
+        svg.classList.add('quiz-results__donut');
+
+        const track = document.createElementNS(svgNS, 'circle');
+        track.setAttribute('cx', '64'); track.setAttribute('cy', '64'); track.setAttribute('r', '52');
+        track.setAttribute('fill', 'none'); track.setAttribute('stroke', '#e2e8f0'); track.setAttribute('stroke-width', '12');
+        svg.appendChild(track);
+
+        const progress = document.createElementNS(svgNS, 'circle');
+        progress.setAttribute('cx', '64'); progress.setAttribute('cy', '64'); progress.setAttribute('r', '52');
+        progress.setAttribute('fill', 'none'); progress.setAttribute('stroke', tier.color);
+        progress.setAttribute('stroke-width', '12'); progress.setAttribute('stroke-linecap', 'round');
+        progress.setAttribute('stroke-dasharray', String(DONUT_CIRC));
+        progress.setAttribute('stroke-dashoffset', String(DONUT_CIRC));
+        progress.setAttribute('transform', 'rotate(-90 64 64)');
+        progress.classList.add('quiz-results__donut-progress');
+        svg.appendChild(progress);
+
+        const scoreText = document.createElementNS(svgNS, 'text');
+        scoreText.setAttribute('x', '64'); scoreText.setAttribute('y', '57');
+        scoreText.setAttribute('text-anchor', 'middle'); scoreText.setAttribute('dominant-baseline', 'middle');
+        scoreText.setAttribute('font-family', 'Plus Jakarta Sans, sans-serif');
+        scoreText.setAttribute('font-size', '22'); scoreText.setAttribute('font-weight', '800');
+        scoreText.setAttribute('fill', tier.color);
+        scoreText.textContent = String(score);
+        svg.appendChild(scoreText);
+
+        const maxText = document.createElementNS(svgNS, 'text');
+        maxText.setAttribute('x', '64'); maxText.setAttribute('y', '76');
+        maxText.setAttribute('text-anchor', 'middle'); maxText.setAttribute('dominant-baseline', 'middle');
+        maxText.setAttribute('font-family', 'Plus Jakarta Sans, sans-serif');
+        maxText.setAttribute('font-size', '11'); maxText.setAttribute('font-weight', '600');
+        maxText.setAttribute('fill', '#94a3b8');
+        maxText.textContent = '/40';
+        svg.appendChild(maxText);
+
+        donutWrap.appendChild(svg);
+        scoreVisual.appendChild(donutWrap);
+
+        // Animate fill after paint
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            progress.style.transition = 'stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1)';
+            progress.style.strokeDashoffset = String(targetOffset);
+          });
+        });
+      }
+
+      // ── Lead-capture form (email results) ──
+      const enhancementsSlot = document.getElementById('quiz-results-enhancements');
+      if (!enhancementsSlot) return;
+
+      const divider = document.createElement('div');
+      divider.className = 'quiz-results__lead-divider';
+      const dividerSpan = document.createElement('span');
+      dividerSpan.textContent = 'Get your personalized report by email';
+      divider.appendChild(dividerSpan);
+
+      const leadWrap = document.createElement('div');
+      leadWrap.className = 'quiz-results__lead';
+      leadWrap.id = 'quiz-results-lead';
+
+      const sub = document.createElement('p');
+      sub.className = 'quiz-results__lead-sub';
+      sub.textContent = 'Enter your details and we\u2019ll email you a copy of these results with your full recommendations.';
+      leadWrap.appendChild(sub);
+
+      const form = document.createElement('form');
+      form.id = 'quiz-lead-form';
+      form.className = 'quiz-lead__form';
+      form.setAttribute('novalidate', '');
+
+      function mkHidden(name, value) {
+        const i = document.createElement('input');
+        i.type = 'hidden'; i.name = name; i.value = value;
+        return i;
+      }
+      form.appendChild(mkHidden('access_key', '1747abac-6f54-40d0-bee6-9b7cd75b7fe5'));
+      form.appendChild(mkHidden('subject', 'UEM Assessment Results \u2014 ' + tier.label + ' (' + score + '/40)'));
+      form.appendChild(mkHidden('score', String(score)));
+      form.appendChild(mkHidden('tier', tier.label));
+
+      const fields = document.createElement('div');
+      fields.className = 'quiz-lead__fields';
+
+      function mkField(id, labelText, type, name, placeholder, autocomplete, required) {
+        const group = document.createElement('div');
+        group.className = 'contact-form__group';
+        const lbl = document.createElement('label');
+        lbl.htmlFor = id; lbl.textContent = labelText;
+        const inp = document.createElement('input');
+        inp.type = type; inp.id = id; inp.name = name;
+        inp.placeholder = placeholder; inp.autocomplete = autocomplete;
+        if (required) inp.required = true;
+        group.appendChild(lbl); group.appendChild(inp);
+        return group;
+      }
+      fields.appendChild(mkField('lead-name', 'Full Name', 'text', 'name', 'Jane Smith', 'name', true));
+      fields.appendChild(mkField('lead-email', 'Work Email', 'email', 'email', 'jane@company.com', 'email', true));
+      fields.appendChild(mkField('lead-company', 'Company', 'text', 'company', 'Acme Corp', 'organization', false));
+      form.appendChild(fields);
+
+      const privacy = document.createElement('p');
+      privacy.className = 'quiz-lead__privacy';
+      privacy.textContent = 'We\u2019ll only use your contact info to send your results and follow up if relevant. See our ';
+      const privLink = document.createElement('a');
+      privLink.href = 'privacy.html'; privLink.textContent = 'Privacy Policy';
+      privacy.appendChild(privLink);
+      privacy.appendChild(document.createTextNode('.'));
+      form.appendChild(privacy);
+
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'btn btn--primary quiz-submit-btn';
+      btn.dataset.action = 'submit-lead'; btn.style.width = '100%';
+      btn.textContent = 'Email Me My Results';
+      form.appendChild(btn);
+
+      leadWrap.appendChild(form);
+      enhancementsSlot.appendChild(divider);
+      enhancementsSlot.appendChild(leadWrap);
     }
 
     function handleClick(e) {
