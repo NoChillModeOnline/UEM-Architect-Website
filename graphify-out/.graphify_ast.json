@@ -1,144 +1,221 @@
 {
   "nodes": [
     {
-      "id": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "id": "script_js",
       "label": "script.js",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L1"
     },
     {
       "id": "script_buildbanner",
       "label": "buildBanner()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L9"
     },
     {
       "id": "script_updateheader",
       "label": "updateHeader()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L66"
     },
     {
       "id": "script_typeloop",
       "label": "typeLoop()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L133"
     },
     {
       "id": "script_gotoslide",
       "label": "goToSlide()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L198"
     },
     {
       "id": "script_nextslide",
       "label": "nextSlide()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L207"
     },
     {
       "id": "script_resetautoplay",
       "label": "resetAutoplay()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L211"
     },
     {
       "id": "script_handleweb3form",
       "label": "handleWeb3Form()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L281"
     },
     {
-      "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "id": "script_esc",
+      "label": "esc()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L387"
+    },
+    {
+      "id": "script_calctier",
+      "label": "calcTier()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L524"
+    },
+    {
+      "id": "script_scrolltocard",
+      "label": "scrollToCard()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L536"
+    },
+    {
+      "id": "script_renderintro",
+      "label": "renderIntro()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L541"
+    },
+    {
+      "id": "script_renderquestion",
+      "label": "renderQuestion()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L565"
+    },
+    {
+      "id": "script_renderlead",
+      "label": "renderLead()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L612"
+    },
+    {
+      "id": "script_renderresults",
+      "label": "renderResults()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L657"
+    },
+    {
+      "id": "script_initresultsenhancements",
+      "label": "initResultsEnhancements()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L694"
+    },
+    {
+      "id": "script_handleclick",
+      "label": "handleClick()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L832"
+    },
+    {
+      "id": "script_submitlead",
+      "label": "submitLead()",
+      "file_type": "code",
+      "source_file": "script.js",
+      "source_location": "L889"
+    },
+    {
+      "id": "deep_dive_wordpress_theme_functions_php",
       "label": "functions.php",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L1"
     },
     {
       "id": "functions_deep_dive_setup",
       "label": "deep_dive_setup()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L9"
     },
     {
       "id": "functions_deep_dive_enqueue_assets",
       "label": "deep_dive_enqueue_assets()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L59"
     },
     {
       "id": "functions_deep_dive_excerpt_more",
       "label": "deep_dive_excerpt_more()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L95"
     },
     {
       "id": "functions_deep_dive_reading_time",
       "label": "deep_dive_reading_time()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L109"
     },
     {
       "id": "functions_deep_dive_initials",
       "label": "deep_dive_initials()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L126"
     },
     {
       "id": "functions_deep_dive_body_classes",
       "label": "deep_dive_body_classes()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L140"
     },
     {
       "id": "functions_deep_dive_widgets_init",
       "label": "deep_dive_widgets_init()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L151"
     },
     {
       "id": "functions_deep_dive_register_featured_meta_box",
       "label": "deep_dive_register_featured_meta_box()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L178"
     },
     {
       "id": "functions_deep_dive_featured_meta_box_html",
       "label": "deep_dive_featured_meta_box_html()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L190"
     },
     {
       "id": "functions_deep_dive_save_featured_meta",
       "label": "deep_dive_save_featured_meta()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L202"
+    },
+    {
+      "id": "functions_deep_dive_remove_main_site_new_tab",
+      "label": "deep_dive_remove_main_site_new_tab()",
+      "file_type": "code",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
+      "source_location": "L232"
     },
     {
       "id": "functions_deep_dive_comment",
       "label": "deep_dive_comment()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
-      "source_location": "L234"
+      "source_file": "deep-dive-wordpress-theme/functions.php",
+      "source_location": "L251"
     },
     {
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_404_php",
@@ -183,25 +260,25 @@
       "source_location": "L1"
     },
     {
-      "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_header_php",
+      "id": "deep_dive_wordpress_theme_header_php",
       "label": "header.php",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/header.php",
+      "source_file": "deep-dive-wordpress-theme/header.php",
       "source_location": "L1"
     },
     {
       "id": "header_deep_dive_nav_walker",
       "label": "Deep_Dive_Nav_Walker",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/header.php",
-      "source_location": "L106"
+      "source_file": "deep-dive-wordpress-theme/header.php",
+      "source_location": "L105"
     },
     {
       "id": "header_deep_dive_nav_walker_start_el",
       "label": ".start_el()",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/header.php",
-      "source_location": "L107"
+      "source_file": "deep-dive-wordpress-theme/header.php",
+      "source_location": "L106"
     },
     {
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_footer_php",
@@ -211,10 +288,10 @@
       "source_location": "L1"
     },
     {
-      "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_single_php",
+      "id": "deep_dive_wordpress_theme_single_php",
       "label": "single.php",
       "file_type": "code",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/single.php",
+      "source_file": "deep-dive-wordpress-theme/single.php",
       "source_location": "L1"
     },
     {
@@ -332,66 +409,156 @@
   ],
   "edges": [
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_buildbanner",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L9",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_updateheader",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L66",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_typeloop",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L133",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_gotoslide",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L198",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_nextslide",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L207",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_resetautoplay",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L211",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_script_js",
+      "source": "script_js",
       "target": "script_handleweb3form",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_esc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L387",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_calctier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L524",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_scrolltocard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L536",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_renderintro",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L541",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_renderquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L565",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_renderlead",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L612",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_renderresults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L657",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_initresultsenhancements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L694",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_handleclick",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L832",
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "script_submitlead",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L889",
       "weight": 1.0
     },
     {
@@ -399,116 +566,206 @@
       "target": "script_gotoslide",
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L208",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "script_renderquestion",
+      "target": "script_esc",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L581",
+      "weight": 1.0
+    },
+    {
+      "source": "script_renderresults",
+      "target": "script_esc",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L664",
+      "weight": 1.0
+    },
+    {
+      "source": "script_renderresults",
+      "target": "script_initresultsenhancements",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L689",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_renderquestion",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L840",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_scrolltocard",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L841",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_renderresults",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L854",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_calctier",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L854",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_submitlead",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L861",
+      "weight": 1.0
+    },
+    {
+      "source": "script_handleclick",
+      "target": "script_renderintro",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "script.js",
+      "source_location": "L868",
+      "weight": 1.0
+    },
+    {
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_setup",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L9",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_enqueue_assets",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L59",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_excerpt_more",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L95",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_reading_time",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L109",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_initials",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L126",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_body_classes",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L140",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_widgets_init",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L151",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_register_featured_meta_box",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L178",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_featured_meta_box_html",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L190",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
       "target": "functions_deep_dive_save_featured_meta",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L202",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_functions_php",
-      "target": "functions_deep_dive_comment",
+      "source": "deep_dive_wordpress_theme_functions_php",
+      "target": "functions_deep_dive_remove_main_site_new_tab",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/functions.php",
-      "source_location": "L234",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
-      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_header_php",
+      "source": "deep_dive_wordpress_theme_functions_php",
+      "target": "functions_deep_dive_comment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deep-dive-wordpress-theme/functions.php",
+      "source_location": "L251",
+      "weight": 1.0
+    },
+    {
+      "source": "deep_dive_wordpress_theme_header_php",
       "target": "header_deep_dive_nav_walker",
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/header.php",
-      "source_location": "L106",
+      "source_file": "deep-dive-wordpress-theme/header.php",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -516,8 +773,8 @@
       "target": "header_deep_dive_nav_walker_start_el",
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/header.php",
-      "source_location": "L107",
+      "source_file": "deep-dive-wordpress-theme/header.php",
+      "source_location": "L106",
       "weight": 1.0
     },
     {
@@ -634,7 +891,7 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/script.js",
+      "source_file": "script.js",
       "source_location": "L68",
       "weight": 1.0
     }
