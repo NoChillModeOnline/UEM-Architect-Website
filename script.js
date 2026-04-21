@@ -285,8 +285,8 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      // Validate hCaptcha if present on this form
-      if (form.querySelector('.h-captcha')) {
+      const hCaptchaEl = form.querySelector('.h-captcha');
+      if (hCaptchaEl) {
         if (typeof hcaptcha === 'undefined' || !hcaptcha.getResponse()) {
           alert('Please complete the CAPTCHA verification before sending.');
           return;
@@ -310,9 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           alert(successMessage);
           form.reset();
-          if (form.querySelector('.h-captcha') && typeof hcaptcha !== 'undefined') {
-            hcaptcha.reset();
-          }
+          if (hCaptchaEl) hcaptcha.reset();
         } else {
           alert('Error: ' + data.message);
         }
