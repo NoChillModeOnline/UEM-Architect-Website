@@ -675,7 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
           </div>
           <div class="quiz-results__ctas">
-            <a href="https://zeeg.me/uemarch-pso" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <a href="https://zeeg.me/uemarch-pso/lets-meet-and-discuss-your-needs" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
               Book a Free 30-Min Review
             </a>
             <a href="contact.html" class="btn btn--outline-dark">
