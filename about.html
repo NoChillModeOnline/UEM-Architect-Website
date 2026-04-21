@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About UEM Architect — Endpoint Consulting Built on Real-World Expertise</title>
+  <meta
+    name="description"
+    content="Meet the team behind UEM Architect Consulting. We're endpoint management specialists who build practical, documented, and lasting UEM environments for IT organizations."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="UEM Architect Consulting" />
+  <meta property="og:title" content="About UEM Architect — Endpoint Consulting Built on Real-World Expertise" />
+  <meta property="og:description" content="We're UEM specialists who build practical, documented, and lasting endpoint environments. Learn who we are, how we work, and what sets us apart." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.uemarchitect.org/about.html" />
+  <meta property="og:image" content="https://www.uemarchitect.org/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About UEM Architect — Endpoint Consulting Built on Real-World Expertise" />
+  <meta name="twitter:description" content="Endpoint management specialists who build practical, documented, and lasting UEM environments." />
+  <meta name="twitter:image" content="https://www.uemarchitect.org/og-image.jpg" />
+
+  <link rel="canonical" href="https://www.uemarchitect.org/about.html" />
+  <link rel="icon" href="Images/logo.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://api.web3forms.com; form-action https://api.web3forms.com;" />
+
+  <style>
+    /* ── About-page-specific styles ── */
+    .about-story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-story__text h2 {
+      font-size: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-story__text p {
+      font-size: 1.0625rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-story__text p:last-child { margin-bottom: 0; }
+
+    .about-story__visual {
+      background: var(--grad-hero);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2.5rem;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-story__visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(56,189,248,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .about-story__quote {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+      position: relative;
+    }
+
+    .about-story__quote::before {
+      content: '\201C';
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--light-blue);
+      opacity: 0.5;
+      display: block;
+      margin-bottom: -1rem;
+    }
+
+    .about-story__sig {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 1.5rem;
+    }
+
+    .about-story__sig-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--light-blue) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.125rem;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .about-story__sig-name {
+      font-weight: 700;
+      font-size: 0.9375rem;
+    }
+
+    .about-story__sig-title {
+      font-size: 0.8125rem;
+      opacity: 0.7;
+      margin-top: 0.125rem;
+    }
+
+    /* ── Values grid ── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .value-card {
+      background: var(--white);
+      border: 1.5px solid var(--light-grey);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      transition: border-color var(--t-base) var(--ease), box-shadow var(--t-base) var(--ease),
+                  transform var(--t-base) var(--ease);
+    }
+
+    .value-card:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-3px);
+    }
+
+    .value-card__number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: var(--grad-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .value-card h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.625rem;
+    }
+
+    .value-card p {
+      font-size: 0.9375rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ── Platform expertise ── */
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .expertise-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 3px solid var(--blue);
+      transition: box-shadow var(--t-base) var(--ease), transform var(--t-base) var(--ease);
+    }
+
+    .expertise-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .expertise-card__label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue);
+      margin-bottom: 0.375rem;
+    }
+
+    .expertise-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.375rem;
+    }
+
+    .expertise-card p {
+      font-size: 0.875rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ── Deep Dive resources strip ── */
+    .resources-strip {
+      background: var(--grad-hero);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem;
+      color: var(--white);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .resources-strip::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 50%, rgba(56,189,248,0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .resources-strip__label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--light-blue);
+      margin-bottom: 0.75rem;
+    }
+
+    .resources-strip h2 {
+      font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 0.875rem;
+    }
+
+    .resources-strip p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .resources-strip__cta {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .about-story {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .resources-strip {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .resources-strip__cta {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .resources-strip {
+        padding: 2.25rem 1.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="header" class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="UEM Architect — home">
+        <img src="Images/logo.png" alt="UEM Architect logo" fetchpriority="high" />
+      </a>
+
+      <nav id="nav" class="header__nav" aria-label="Primary navigation">
+        <ul class="header__links">
+          <li><a href="who-we-serve.html">Who We Serve</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-process.html">Our Process</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="https://deepdive.uemarchitect.org/">The Deep Dive</a></li>
+          <li><a href="assessment.html">Security Health Check</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary header__cta">Get Started</a>
+      </nav>
+
+      <button
+        id="burger"
+        class="header__burger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ── Page Banner ── -->
+    <section class="page-banner" aria-labelledby="about-banner-heading">
+      <div class="container">
+        <span class="accent-line" aria-hidden="true"></span>
+        <h1 id="about-banner-heading">About UEM Architect</h1>
+        <p>
+          We're a specialized endpoint management consultancy built on 10+ years of hands-on
+          experience across enterprise UEM environments. Our work is technical, opinionated,
+          and always anchored in how your organization actually operates.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Our Story ── -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="about-story reveal">
+
+          <div class="about-story__text">
+            <span class="accent-line" aria-hidden="true"></span>
+            <h2 id="story-heading">Built by practitioners,<br/>not generalists.</h2>
+            <p>
+              UEM Architect Consulting was founded on a simple observation: most endpoint
+              management projects fail not because of bad technology — but because of
+              poorly planned architecture, undocumented decisions, and implementations
+              that were never designed to scale.
+            </p>
+            <p>
+              We started as practitioners. We've managed real environments, inherited broken
+              tenants, migrated platforms under pressure, and built zero-trust frameworks
+              from scratch. That experience shapes every engagement we run.
+            </p>
+            <p>
+              Our approach is direct, transparent, and focused on outcomes. We don't sell
+              you a platform. We help you get the most out of the one you have — or guide
+              you through choosing and implementing a better one.
+            </p>
+          </div>
+
+          <div class="about-story__visual" aria-hidden="true">
+            <p class="about-story__quote">
+              The best UEM environment isn't the most feature-rich one — it's the one your team
+              fully understands, can operate confidently, and that actually reflects your organization's
+              real workflows.
+            </p>
+            <div class="about-story__sig">
+              <div class="about-story__sig-avatar">TW</div>
+              <div>
+                <p class="about-story__sig-name">Travis Weisberg</p>
+                <p class="about-story__sig-title">Founder &amp; Principal Consultant, UEM Architect</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats Strip ── -->
+    <section class="stats-strip" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-item reveal reveal--delay-1">
+            <div class="stat-value"><span class="stat-number" data-target="50">50</span><span class="stat-suffix">+</span></div>
+            <p>IT Environments Transformed</p>
+          </div>
+          <div class="stat-item reveal reveal--delay-2">
+            <div class="stat-value"><span class="stat-number" data-target="6">6</span></div>
+            <p>Major UEM Platforms Mastered</p>
+          </div>
+          <div class="stat-item reveal reveal--delay-3">
+            <div class="stat-value"><span class="stat-number" data-target="96">96</span><span class="stat-suffix">%</span></div>
+            <p>Client Satisfaction Rate</p>
+          </div>
+          <div class="stat-item reveal reveal--delay-4">
+            <div class="stat-value"><span class="stat-number" data-target="10">10</span><span class="stat-suffix">+</span></div>
+            <p>Years UEM-Focused Expertise</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How We Work ── -->
+    <section class="section section--alt" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="values-heading">Three things we believe in</h2>
+          <p>
+            These aren't slogans. They're the principles that determine how we scope projects,
+            structure deliverables, and communicate with clients.
+          </p>
+        </div>
+
+        <div class="values-grid">
+
+          <article class="value-card reveal reveal--delay-1">
+            <div class="value-card__number" aria-hidden="true">01</div>
+            <h3>Architecture before implementation</h3>
+            <p>
+              Jumping straight to deployment is how environments become unmaintainable. Every
+              engagement starts with a clear picture of your current state — before we touch a
+              single policy or profile.
+            </p>
+          </article>
+
+          <article class="value-card reveal reveal--delay-2">
+            <div class="value-card__number" aria-hidden="true">02</div>
+            <h3>Workflow-first, technology-second</h3>
+            <p>
+              The right solution is the one that fits your team's actual workflows. We ask
+              about your people and processes before we recommend any technology — because
+              the best platform is the one your team can actually use.
+            </p>
+          </article>
+
+          <article class="value-card reveal reveal--delay-3">
+            <div class="value-card__number" aria-hidden="true">03</div>
+            <h3>Documentation that outlasts us</h3>
+            <p>
+              When an engagement ends, you get documentation your team can actually use —
+              architecture decisions, runbooks, and rationale. Not just a "here's what we
+              built" handoff that no one can maintain six months later.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Platform Expertise ── -->
+    <section class="section" aria-labelledby="expertise-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 id="expertise-heading">Platform expertise</h2>
+          <p>
+            We work across the full spectrum of modern endpoint management platforms —
+            from cloud-native MDM to enterprise UEM with complex co-management scenarios.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+
+          <article class="expertise-card reveal reveal--delay-1">
+            <p class="expertise-card__label">MDM / UEM</p>
+            <h3>Omnissa Workspace ONE</h3>
+            <p>Full-lifecycle Workspace ONE deployments, hub configuration, intelligence workflows, and tenant rationalization.</p>
+          </article>
+
+          <article class="expertise-card reveal reveal--delay-2">
+            <p class="expertise-card__label">MDM / UEM</p>
+            <h3>Microsoft Intune</h3>
+            <p>Intune architecture, co-management with Configuration Manager, Autopilot, RBAC design, and compliance baselines.</p>
+          </article>
+
+          <article class="expertise-card reveal reveal--delay-3">
+            <p class="expertise-card__label">Apple MDM</p>
+            <h3>Jamf Pro &amp; Jamf School</h3>
+            <p>Jamf deployments for corporate and education environments, smart group strategy, and patch management workflows.</p>
+          </article>
+
+          <article class="expertise-card reveal reveal--delay-4">
+            <p class="expertise-card__label">Identity</p>
+            <h3>Microsoft Entra ID</h3>
+            <p>Conditional access policy design, device compliance integration, hybrid join, and passwordless authentication flows.</p>
+          </article>
+
+          <article class="expertise-card reveal reveal--delay-5">
+            <p class="expertise-card__label">Identity</p>
+            <h3>Okta &amp; Workspace ONE Access</h3>
+            <p>IdP integration with UEM platforms, SSO configuration, app provisioning, and modern authentication alignment.</p>
+          </article>
+
+          <article class="expertise-card reveal reveal--delay-6">
+            <p class="expertise-card__label">Endpoint Security</p>
+            <h3>CrowdStrike &amp; Zero Trust</h3>
+            <p>CrowdStrike Falcon integration, endpoint detection alignment, and zero-trust network access architecture.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Omnissa Partner ── -->
+    <section class="omnissa-partner section section--alt" aria-labelledby="partner-heading">
+      <div class="container">
+        <div class="omnissa-partner__inner reveal">
+          <div class="omnissa-partner__badges">
+            <img
+              src="Images/OMN_Partner_Silver_2026.png"
+              alt="Omnissa Silver Partner 2026"
+              class="omnissa-partner__badge"
+              loading="lazy"
+            />
+          </div>
+          <div class="omnissa-partner__content">
+            <h2 id="partner-heading">Omnissa Silver Partner &amp; Solution Reseller</h2>
+            <p>
+              UEM Architect is an authorized Omnissa Silver Partner and Solution Reseller — meaning
+              we can design, implement, and resell Workspace ONE and Horizon solutions with the full
+              support of Omnissa's partner ecosystem. Our partnership gives clients access to
+              preferred pricing, dedicated support channels, and Omnissa's technical resources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── The Deep Dive ── -->
+    <section class="section" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="resources-strip reveal">
+          <div>
+            <p class="resources-strip__label">Thought Leadership</p>
+            <h2 id="resources-heading">The Deep Dive — UEM Insights &amp; Resources</h2>
+            <p>
+              In-depth articles, field notes, and practical guides on endpoint management,
+              zero trust, platform migrations, and everything in between. Written by
+              practitioners, for practitioners.
+            </p>
+          </div>
+          <div class="resources-strip__cta">
+            <a href="https://deepdive.uemarchitect.org/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              Read The Deep Dive
+            </a>
+            <a href="assessment.html" class="btn btn--outline" style="color:var(--white); border-color:rgba(255,255,255,0.4)">
+              Take the Assessment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to work together?</h2>
+        <p>
+          The first conversation is free, focused, and low-pressure. Whether you have a
+          specific project in mind or just want to understand where your environment stands —
+          we're here to help you figure out the right next step.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="contact.html" class="btn btn--primary">Start a Conversation</a>
+          <a href="https://zeeg.me/uemarch-pso/lets-meet-and-discuss-your-needs" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            Schedule a Discovery Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" aria-label="UEM Architect — home">
+            <img src="Images/logo-white.svg" alt="UEM Architect logo" height="48" loading="lazy" />
+          </a>
+          <p>
+            Helping organizations architect, secure, and operate their endpoint
+            environments with clarity, structure, and long-term confidence.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/uem-architect-consulting" target="_blank" rel="noopener noreferrer" aria-label="UEM Architect on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Endpoint Assessment</a></li>
+            <li><a href="services.html">Platform Deployment</a></li>
+            <li><a href="services.html">Managed UEM Operations</a></li>
+            <li><a href="services.html">Security &amp; Zero Trust</a></li>
+            <li><a href="services.html">Identity &amp; Access</a></li>
+            <li><a href="services.html">Training &amp; Enablement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="who-we-serve.html">Who We Serve</a></li>
+            <li><a href="our-process.html">Our Process</a></li>
+            <li><a href="why-us.html">Why UEM Architect Consulting?</a></li>
+            <li><a href="https://deepdive.uemarchitect.org/">The Deep Dive</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4>Stay in the Loop</h4>
+          <p>Get endpoint management insights and updates delivered to your inbox.</p>
+          <form
+            class="footer__newsletter-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            aria-label="Newsletter signup"
+          >
+            <input type="hidden" name="access_key" value="1747abac-6f54-40d0-bee6-9b7cd75b7fe5" />
+            <label for="newsletter-email-about" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email-about" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> UEM Architect. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="privacy.html">Privacy &amp; Cookie Policy</a>
+        </nav>
+        <p>Odessa, FL &mdash; Serving Clients Globally</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+</body>
+</html>
