@@ -381,10 +381,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('quiz-container');
     if (!container) return;
 
-    // All dynamic values inserted via innerHTML come from our own QUESTIONS/TIERS
-    // constants or from integer arithmetic. User form input (name, email, company)
-    // never appears in innerHTML — it only goes into FormData for submission.
     // esc() is applied defensively to every dynamic string used in template literals.
+    // User form input (name, email, company) never appears in innerHTML —
+    // it only goes into FormData for submission.
     function esc(v) {
       return String(v)
         .replace(/&/g, '&amp;')
