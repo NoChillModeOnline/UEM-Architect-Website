@@ -660,10 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = `
         <div class="quiz-results-wrap quiz-step-enter">
           <div class="quiz-results__score-area">
-            <div class="quiz-results__badge" style="background:${esc(tier.color)}"
-              aria-label="Score: ${esc(score)} out of 40">
-              ${esc(score)}<span class="quiz-results__badge-max">/40</span>
-            </div>
+            <div class="quiz-results__score-visual" id="quiz-score-visual"></div>
             <span class="quiz-results__tier-label" style="color:${esc(tier.color)}">${esc(tier.label)}</span>
           </div>
           <h2 class="quiz-results__headline">${esc(tier.headline)}</h2>
