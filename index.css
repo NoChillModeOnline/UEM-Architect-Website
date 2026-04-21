@@ -274,17 +274,19 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .header__links {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.25rem;
+  flex-wrap: nowrap;
 }
 
 .header__links a {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 500;
+  white-space: nowrap;
   color: var(--text);
   transition: color var(--t-base) var(--ease);
   position: relative;
