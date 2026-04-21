@@ -42,6 +42,34 @@
   <!-- Security -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://api.web3forms.com; form-action https://api.web3forms.com;" />
 
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About UEM Architect",
+    "url": "https://www.uemarchitect.org/about.html",
+    "description": "Meet the team behind UEM Architect Consulting — endpoint management specialists who build practical, documented, and lasting UEM environments.",
+    "publisher": {
+      "@type": "ProfessionalService",
+      "@id": "https://www.uemarchitect.org/#organization",
+      "name": "UEM Architect Consulting",
+      "url": "https://www.uemarchitect.org/",
+      "logo": "https://www.uemarchitect.org/Images/logo.png",
+      "email": "contact@uemarchitect.org",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Odessa",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/uem-architect-consulting"
+      ]
+    }
+  }
+  </script>
+
   <style>
     /* ── About-page-specific styles ── */
     .about-story {
