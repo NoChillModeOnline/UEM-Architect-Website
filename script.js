@@ -311,7 +311,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           alert(successMessage);
           form.reset();
-          if (reCaptchaEl) grecaptcha.reset();
         } else {
           alert('Error: ' + data.message);
         }
