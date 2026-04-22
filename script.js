@@ -292,6 +292,15 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
 
       try {
+        if (typeof grecaptcha !== 'undefined') {
+          const token = await new Promise((resolve) => {
+            grecaptcha.ready(async () => {
+              resolve(await grecaptcha.execute('6LcrtsMsAAAAAErAbXFWEGDJ-SHEl4B2j5u-m_1T', { action: 'contact' }));
+            });
+          });
+          formData.append('g-recaptcha-response', token);
+        }
+
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           body: formData
