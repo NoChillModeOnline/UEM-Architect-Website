@@ -285,9 +285,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const hCaptchaEl = form.querySelector('.h-captcha');
-      if (hCaptchaEl) {
-        if (typeof hcaptcha === 'undefined' || !hcaptcha.getResponse()) {
+      const reCaptchaEl = form.querySelector('.g-recaptcha');
+      if (reCaptchaEl) {
+        if (typeof grecaptcha === 'undefined' || !grecaptcha.getResponse()) {
           alert('Please complete the CAPTCHA verification before sending.');
           return;
         }
