@@ -11,29 +11,35 @@ This repository contains two projects:
 
 ---
 
-## 🌐 Live Sites
+## Live Sites
 
 - **Main site:** [uemarchitect.org](https://www.uemarchitect.org)
 - **The Deep Dive:** [deepdive.uemarchitect.org](https://deepdive.uemarchitect.org/)
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 UEM-Architect-Website/
 │
 ├── index.html                  # Home page
 ├── who-we-serve.html           # Personas & industries
-├── services.html               # Service offerings
+├── services.html               # 6 service offerings
 ├── our-process.html            # 4-phase engagement process
 ├── why-us.html                 # Differentiators & testimonials
+├── about.html                  # About Us
 ├── contact.html                # Contact form & booking
-├── deep-dive.html              # The Deep Dive teaser / landing page
+├── assessment.html             # UEM Platform Health Assessment (Security Health Check)
+├── deep-dive.html              # Redirect / coming-soon stub (noindex)
 ├── privacy.html                # GDPR Privacy & Cookie Policy
+│
 ├── index.css                   # All styles — design tokens, components
 ├── script.js                   # All interactivity
-├── git-push.sh                 # Helper script: stage, commit, and push to GitHub
+│
+├── og-image.jpg                # 1200×630 Open Graph social share image
+├── robots.txt                  # Crawl directives
+├── sitemap.xml                 # XML sitemap (6 indexable pages)
 │
 ├── Images/                     # Brand assets, partner logos, service illustrations
 │
@@ -76,15 +82,20 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 | Services | `services.html` | 6 service offerings with deliverables and engagement models |
 | Our Process | `our-process.html` | Discover → Architect → Implement → Maintain |
 | Why Us | `why-us.html` | Differentiator cards + testimonial carousel |
-| Contact | `contact.html` | Web3Forms contact form, booking link, office info |
-| The Deep Dive | `deep-dive.html` | Teaser / landing page linking to deepdive.uemarchitect.org |
+| About Us | `about.html` | Company background and team |
+| Contact | `contact.html` | Web3Forms contact form, booking link |
+| Security Health Check | `assessment.html` | 10-question UEM Platform Health Assessment with scored results |
+| The Deep Dive | `deep-dive.html` | Coming-soon stub linking to deepdive.uemarchitect.org (noindex) |
 | Privacy Policy | `privacy.html` | GDPR-compliant Privacy & Cookie Policy |
 
 ### Technologies
 
 - **HTML5** — semantic markup with ARIA landmarks
 - **CSS3** — vanilla CSS with design tokens, responsive layout, `prefers-reduced-motion`
-- **JavaScript (ES6)** — `IntersectionObserver`, typing effect, carousel, GDPR cookie banner
+- **JavaScript (ES6)** — `IntersectionObserver`, typing effect, carousel, GDPR cookie banner, quiz engine
+- **Google Analytics 4** — GA4 tag (`G-B6QG1225GH`) present on every page
+- **reCAPTCHA v3** — protects the assessment results email form on `assessment.html`
+- **Web3Forms** — handles all form submissions (contact form, newsletter, assessment lead capture)
 
 ### Design Tokens
 
@@ -99,7 +110,9 @@ Fully static multi-page site. No build tools, no dependencies — open any `.htm
 
 Font: **Plus Jakarta Sans** (Google Fonts, weights 300–800)
 
-> **Note:** OG tags (`og:url`, `og:image`) and `<link rel="canonical">` have been set to production URLs across all pages. Forms use **Web3Forms** — the access key is embedded as a hidden `access_key` input on each form.
+> **Forms:** All forms use **Web3Forms** (access key embedded as a hidden `access_key` input). The assessment results form additionally sends a **reCAPTCHA v3** token (`action: assessment`) with each submission.
+
+> **SEO:** OG tags, Twitter Card meta, and `<link rel="canonical">` are set to production URLs on every page. JSON-LD structured data: `Organization` + `ProfessionalService` on `index.html`, `ItemList` on `services.html`, `FAQPage` on `who-we-serve.html`.
 
 ---
 
@@ -166,7 +179,7 @@ zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
 
 ---
 
-## 🎨 Shared Design System
+## Shared Design System
 
 Both the marketing site and The Deep Dive theme share the same brand palette:
 
@@ -181,7 +194,7 @@ Both the marketing site and The Deep Dive theme share the same brand palette:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/NoChillModeOnline/UEM-Architect-Website.git
@@ -194,15 +207,9 @@ open index.html
 zip -r deep-dive-wordpress-theme.zip deep-dive-wordpress-theme/
 ```
 
-To push changes to GitHub using the included helper script:
-
-```bash
-bash git-push.sh
-```
-
 ---
 
-## 📬 Contact
+## Contact
 
 - **Email:** contact@uemarchitect.org
 - **Schedule:** https://zeeg.me/uemarch-pso
@@ -210,6 +217,6 @@ bash git-push.sh
 
 ---
 
-## 📄 License
+## License
 
 See the [LICENSE](LICENSE) file for details.
