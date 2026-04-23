@@ -909,10 +909,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const formData = new FormData(form);
       try {
-        if (typeof grecaptcha !== 'undefined') {
+        if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.enterprise !== 'undefined') {
           const token = await new Promise((resolve) => {
-            grecaptcha.ready(async () => {
-              resolve(await grecaptcha.execute('6LcrtsMsAAAAAErAbXFWEGDJ-SHEl4B2j5u-m_1T', { action: 'assessment' }));
+            grecaptcha.enterprise.ready(async () => {
+              resolve(await grecaptcha.enterprise.execute('6Le7mMYsAAAAABhCyqbN9SNJiIc_XbNSG09hcNo7', { action: 'assessment' }));
             });
           });
           formData.append('g-recaptcha-response', token);
