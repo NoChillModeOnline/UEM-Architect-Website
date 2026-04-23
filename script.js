@@ -814,6 +814,13 @@ document.addEventListener('DOMContentLoaded', () => {
       privacy.appendChild(document.createTextNode('.'));
       form.appendChild(privacy);
 
+      const captchaDiv = document.createElement('div');
+      captchaDiv.className = 'g-recaptcha';
+      captchaDiv.dataset.sitekey = '6Le7mMYsAAAAABhCyqbN9SNJiIc_XbNSG09hcNo7';
+      captchaDiv.dataset.action = 'ASSESSMENT';
+      captchaDiv.style.marginBottom = '1rem';
+      form.appendChild(captchaDiv);
+
       const btn = document.createElement('button');
       btn.type = 'button'; btn.className = 'btn btn--primary quiz-submit-btn';
       btn.dataset.action = 'submit-lead'; btn.style.width = '100%';
@@ -823,6 +830,15 @@ document.addEventListener('DOMContentLoaded', () => {
       leadWrap.appendChild(form);
       enhancementsSlot.appendChild(divider);
       enhancementsSlot.appendChild(leadWrap);
+
+      if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.enterprise !== 'undefined') {
+        grecaptcha.enterprise.ready(() => {
+          grecaptcha.enterprise.render(captchaDiv, {
+            sitekey: '6Le7mMYsAAAAABhCyqbN9SNJiIc_XbNSG09hcNo7',
+            action: 'ASSESSMENT'
+          });
+        });
+      }
     }
 
     function handleClick(e) {
