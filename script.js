@@ -292,13 +292,11 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
 
       try {
-        if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.enterprise !== 'undefined') {
-          const token = await new Promise((resolve) => {
-            grecaptcha.enterprise.ready(async () => {
-              resolve(await grecaptcha.enterprise.execute('6Le7mMYsAAAAABhCyqbN9SNJiIc_XbNSG09hcNo7', { action: 'contact' }));
-            });
-          });
-          formData.append('g-recaptcha-response', token);
+        if (form.querySelector('.g-recaptcha') && !formData.get('g-recaptcha-response')) {
+          alert('Please complete the CAPTCHA verification.');
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          return;
         }
 
         const response = await fetch('https://api.web3forms.com/submit', {
