@@ -884,7 +884,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    function submitLead() {
+    async function submitLead() {
       const form = document.getElementById('quiz-lead-form');
       if (!form) return;
 
