@@ -907,9 +907,23 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Sending\u2026';
       submitBtn.disabled = true;
 
+      const formData = new FormData(form);
+      try {
+        if (typeof grecaptcha !== 'undefined') {
+          const token = await new Promise((resolve) => {
+            grecaptcha.ready(async () => {
+              resolve(await grecaptcha.execute('6LcrtsMsAAAAAErAbXFWEGDJ-SHEl4B2j5u-m_1T', { action: 'assessment' }));
+            });
+          });
+          formData.append('g-recaptcha-response', token);
+        }
+      } catch {
+        // proceed without token if reCAPTCHA unavailable
+      }
+
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: new FormData(form)
+        body: formData
       })
         .then(response => response.json().then(data => ({ ok: response.ok, data })))
         .then(({ ok, data }) => {
