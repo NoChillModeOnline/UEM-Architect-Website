@@ -3351,6 +3351,7 @@ h1, h2, h3, h4, h5, h6 {
    ═══════════════════════════════════════════ */
 /* Force the badge into view — default is right: -186px (mostly off-screen) */
 .grecaptcha-badge {
+  visibility: visible !important;
   right: 0 !important;
   z-index: 100 !important;
 }
