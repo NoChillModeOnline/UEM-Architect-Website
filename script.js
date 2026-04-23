@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
             right here on the page \u2014 plus email you a copy to keep.
           </p>
           <form id="quiz-lead-form" class="quiz-lead__form" novalidate>
-            <input type="hidden" name="access_key" value="1747abac-6f54-40d0-bee6-9b7cd75b7fe5" />
+            <input type="hidden" name="access_key" value="1db59c16-cd9a-4d51-9058-1d89b49b8189" />
             <input type="hidden" name="subject" value="" />
             <input type="hidden" name="score" value="" />
             <input type="hidden" name="tier" value="" />
@@ -782,7 +782,7 @@ document.addEventListener('DOMContentLoaded', () => {
         i.type = 'hidden'; i.name = name; i.value = value;
         return i;
       }
-      form.appendChild(mkHidden('access_key', '1747abac-6f54-40d0-bee6-9b7cd75b7fe5'));
+      form.appendChild(mkHidden('access_key', '1db59c16-cd9a-4d51-9058-1d89b49b8189'));
       form.appendChild(mkHidden('subject', 'UEM Assessment Results \u2014 ' + tier.label + ' (' + score + '/40)'));
       form.appendChild(mkHidden('score', String(score)));
       form.appendChild(mkHidden('tier', tier.label));

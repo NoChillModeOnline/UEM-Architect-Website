@@ -45,7 +45,7 @@ Multi-page static marketing website for UEM Architect Consulting — a Unified E
 
 ## Forms
 
-All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key `1747abac-6f54-40d0-bee6-9b7cd75b7fe5`. The key is embedded as a hidden `access_key` input on each form.
+All forms use **Web3Forms** (`https://api.web3forms.com/submit`) with access key `1db59c16-cd9a-4d51-9058-1d89b49b8189`. The key is embedded as a hidden `access_key` input on each form.
 
 ## SEO
 
