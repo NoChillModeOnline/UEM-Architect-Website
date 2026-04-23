@@ -3345,3 +3345,24 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2.25rem 1.75rem;
   }
 }
+
+/* ═══════════════════════════════════════════
+   RECAPTCHA BADGE
+   ═══════════════════════════════════════════ */
+/* Force the badge into view — default is right: -186px (mostly off-screen) */
+.grecaptcha-badge {
+  right: 0 !important;
+  z-index: 100 !important;
+}
+
+/* On pages with reCAPTCHA, lift the scroll-to-top button above the badge
+   (badge is 60px tall at bottom: 14px → top edge at 74px) */
+body.has-recaptcha .scroll-top {
+  bottom: 5.5rem;
+}
+
+@media (max-width: 768px) {
+  body.has-recaptcha .scroll-top {
+    bottom: 5rem;
+  }
+}
