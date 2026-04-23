@@ -1,0 +1,133 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "UEM Architect — home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "UEM Architect logo" [ref=e6]
+      - navigation "Primary navigation" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Who We Serve" [ref=e10] [cursor=pointer]:
+              - /url: who-we-serve.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12] [cursor=pointer]:
+              - /url: services.html
+          - listitem [ref=e13]:
+            - link "Our Process" [ref=e14] [cursor=pointer]:
+              - /url: our-process.html
+          - listitem [ref=e15]:
+            - link "Why Us" [ref=e16] [cursor=pointer]:
+              - /url: why-us.html
+          - listitem [ref=e17]:
+            - link "About Us" [ref=e18] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e19]:
+            - link "The Deep Dive" [ref=e20] [cursor=pointer]:
+              - /url: https://deepdive.uemarchitect.org/
+          - listitem [ref=e21]:
+            - link "Security Health Check" [ref=e22] [cursor=pointer]:
+              - /url: assessment.html
+        - link "Get Started" [ref=e23] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e24]:
+    - region "UEM Platform Health Assessment" [ref=e25]:
+      - generic [ref=e26]:
+        - heading "UEM Platform Health Assessment" [level=1] [ref=e28]
+        - paragraph [ref=e29]: 10 questions. 5 minutes. An honest, scored picture of where your endpoint environment stands — and a personalized recommendation for what to focus on next.
+    - region "Platform health assessment quiz" [ref=e30]:
+      - generic [ref=e33]:
+        - img [ref=e35]
+        - heading "Is your UEM environment working for you?" [level=2] [ref=e37]
+        - paragraph [ref=e38]: This 10-question assessment gives you an honest, scored picture of where your endpoint environment stands — and a personalized recommendation for what to focus on next. Takes about 5 minutes.
+        - list "What to expect" [ref=e39]:
+          - listitem [ref=e40]:
+            - generic [ref=e41]: ✓
+            - text: 10 questions about your current environment
+          - listitem [ref=e42]:
+            - generic [ref=e43]: ✓
+            - text: Scored results with a clear tier and next steps
+          - listitem [ref=e44]:
+            - generic [ref=e45]: ✓
+            - text: No obligation — just clarity
+        - button "Start the Assessment" [ref=e46] [cursor=pointer]
+  - contentinfo [ref=e47]:
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - link "UEM Architect — home" [ref=e51] [cursor=pointer]:
+            - /url: index.html
+            - img "UEM Architect logo" [ref=e52]
+          - paragraph [ref=e53]: Helping organizations architect, secure, and operate their endpoint environments with clarity, structure, and long-term confidence.
+          - link "UEM Architect on LinkedIn" [ref=e55] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/uem-architect-consulting
+            - img [ref=e56]
+        - generic [ref=e58]:
+          - heading "Services" [level=4] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "Endpoint Assessment" [ref=e62] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e63]:
+              - link "Platform Deployment" [ref=e64] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e65]:
+              - link "Managed UEM Operations" [ref=e66] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e67]:
+              - link "Security & Zero Trust" [ref=e68] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e69]:
+              - link "Identity & Access" [ref=e70] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e71]:
+              - link "Training & Enablement" [ref=e72] [cursor=pointer]:
+                - /url: services.html
+        - generic [ref=e73]:
+          - heading "Company" [level=4] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "Who We Serve" [ref=e77] [cursor=pointer]:
+                - /url: who-we-serve.html
+            - listitem [ref=e78]:
+              - link "Our Process" [ref=e79] [cursor=pointer]:
+                - /url: our-process.html
+            - listitem [ref=e80]:
+              - link "Why UEM Architect Consulting?" [ref=e81] [cursor=pointer]:
+                - /url: why-us.html
+            - listitem [ref=e82]:
+              - link "Testimonials" [ref=e83] [cursor=pointer]:
+                - /url: why-us.html#testimonials
+            - listitem [ref=e84]:
+              - link "The Deep Dive" [ref=e85] [cursor=pointer]:
+                - /url: https://deepdive.uemarchitect.org/
+        - generic [ref=e86]:
+          - heading "Stay in the Loop" [level=4] [ref=e87]
+          - paragraph [ref=e88]: Get endpoint management insights and updates delivered to your inbox.
+          - form "Newsletter signup" [ref=e89]:
+            - generic [ref=e90]: Email address
+            - textbox "Email address" [ref=e91]:
+              - /placeholder: your@email.com
+            - button "Subscribe" [ref=e92] [cursor=pointer]
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: © 2026 UEM Architect. All rights reserved.
+        - navigation "Legal links" [ref=e95]:
+          - link "Privacy & Cookie Policy" [ref=e96] [cursor=pointer]:
+            - /url: privacy.html
+        - paragraph [ref=e97]: Odessa, FL — Serving Clients Globally
+  - iframe [ref=e100]:
+    - generic [ref=f19e2]:
+      - generic [ref=f19e6]:
+        - text: Localhost is not in the list of
+        - link "supported domains" [ref=f19e7] [cursor=pointer]:
+          - /url: https://cloud.google.com/recaptcha/docs/troubleshoot-recaptcha-issues#localhost-error
+        - text: for this site key.
+      - generic [ref=f19e8]:
+        - generic [ref=f19e11]: reCAPTCHA
+        - generic [ref=f19e12]:
+          - link "Privacy" [ref=f19e13] [cursor=pointer]:
+            - /url: https://www.google.com/intl/en/policies/privacy/
+          - text: "-"
+          - link "Terms" [ref=f19e14] [cursor=pointer]:
+            - /url: https://www.google.com/intl/en/policies/terms/
