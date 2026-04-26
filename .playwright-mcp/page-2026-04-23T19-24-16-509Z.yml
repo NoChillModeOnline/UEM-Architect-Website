@@ -1,0 +1,184 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "UEM Architect — home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "UEM Architect logo" [ref=e6]
+      - navigation "Primary navigation" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Who We Serve" [ref=e10] [cursor=pointer]:
+              - /url: who-we-serve.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12] [cursor=pointer]:
+              - /url: services.html
+          - listitem [ref=e13]:
+            - link "Our Process" [ref=e14] [cursor=pointer]:
+              - /url: our-process.html
+          - listitem [ref=e15]:
+            - link "Why Us" [ref=e16] [cursor=pointer]:
+              - /url: why-us.html
+          - listitem [ref=e17]:
+            - link "About Us" [ref=e18] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e19]:
+            - link "The Deep Dive" [ref=e20] [cursor=pointer]:
+              - /url: https://deepdive.uemarchitect.org/
+          - listitem [ref=e21]:
+            - link "Security Health Check" [ref=e22] [cursor=pointer]:
+              - /url: assessment.html
+        - link "Get Started" [ref=e23] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e24]:
+    - region "Contact & Get Started" [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Contact & Get Started" [level=1] [ref=e28]
+        - paragraph [ref=e29]: The first conversation is free, low-pressure, and focused entirely on understanding your environment. Whether you have a specific project in mind or just know something needs to improve, we're here to help you figure out the right next step — not sell you on a predetermined solution.
+    - region "Get in Touch" [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - heading "Get in Touch" [level=2] [ref=e34]
+          - paragraph [ref=e35]: Whether you have a specific project in mind or just want to explore what better endpoint management could look like for your organization — we're here.
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - img [ref=e40]
+              - generic [ref=e42]:
+                - heading "Email" [level=3] [ref=e43]
+                - link "contact@uemarchitect.org" [ref=e44] [cursor=pointer]:
+                  - /url: mailto:contact@uemarchitect.org
+            - generic [ref=e45]:
+              - img [ref=e47]
+              - generic [ref=e49]:
+                - heading "LinkedIn" [level=3] [ref=e50]
+                - link "linkedin.com/company/uem-architect-consulting" [ref=e51] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/uem-architect-consulting
+            - generic [ref=e52]:
+              - img [ref=e54]
+              - generic [ref=e56]:
+                - heading "Schedule a Meeting" [level=3] [ref=e57]
+                - link "Book a time with our team" [ref=e58] [cursor=pointer]:
+                  - /url: https://zeeg.me/uemarch-pso/lets-meet-and-discuss-your-needs
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: Full Name
+              - textbox "Full Name" [ref=e62]:
+                - /placeholder: Jane Smith
+            - generic [ref=e63]:
+              - generic [ref=e64]: Work Email
+              - textbox "Work Email" [ref=e65]:
+                - /placeholder: jane@company.com
+            - generic [ref=e66]:
+              - generic [ref=e67]: Company
+              - textbox "Company" [ref=e68]:
+                - /placeholder: Acme Corp
+            - generic [ref=e69]:
+              - generic [ref=e70]: How Can We Help?
+              - textbox "How Can We Help?" [ref=e71]:
+                - /placeholder: Tell us about your environment and what you're looking to solve...
+            - iframe [ref=e75]:
+              - generic [ref=f1e2]:
+                - generic [ref=f1e6]:
+                  - text: Localhost is not in the list of
+                  - link "supported domains" [ref=f1e7] [cursor=pointer]:
+                    - /url: https://cloud.google.com/recaptcha/docs/troubleshoot-recaptcha-issues#localhost-error
+                  - text: for this site key.
+                - generic [ref=f1e8]:
+                  - generic [ref=f1e11]: reCAPTCHA
+                  - generic [ref=f1e12]:
+                    - link "Privacy" [ref=f1e13] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/privacy/
+                    - text: "-"
+                    - link "Terms" [ref=f1e14] [cursor=pointer]:
+                      - /url: https://www.google.com/intl/en/policies/terms/
+            - button "Send Message" [ref=e76] [cursor=pointer]
+    - region "Prefer to Start with a Call?" [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Prefer to Start with a Call?" [level=2] [ref=e80]
+          - paragraph [ref=e81]: Skip the form and book directly onto our calendar. A discovery call is low-commitment — it's just a conversation about where you are and where you want to be.
+        - generic [ref=e82]:
+          - article [ref=e83]:
+            - img [ref=e85]
+            - heading "Book a Discovery Call" [level=3] [ref=e87]
+            - paragraph [ref=e88]: 30 minutes. We'll ask about your environment, your team structure, and what's keeping you up at night. You'll leave with clarity, regardless of whether we work together.
+            - link "Schedule Now" [ref=e89] [cursor=pointer]:
+              - /url: https://zeeg.me/uemarch-pso/lets-meet-and-discuss-your-needs
+          - article [ref=e90]:
+            - img [ref=e92]
+            - heading "Complete a 5 Minute Assessment Quiz" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Not sure where to start? Our Endpoint Assessment gives you a clear picture of your current environment and a prioritized path forward — with no guesswork.
+            - link "Start Your Free 5 Minute Assessment" [ref=e96] [cursor=pointer]:
+              - /url: assessment.html
+          - article [ref=e97]:
+            - img [ref=e99]
+            - heading "Partner With Us" [level=3] [ref=e101]
+            - paragraph [ref=e102]: MSP or IT consultancy looking to extend your endpoint expertise? We work with partners who want to deliver better outcomes for their clients — without building an in-house UEM team.
+            - link "Learn About Partnering" [ref=e103] [cursor=pointer]:
+              - /url: who-we-serve.html
+  - contentinfo [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - link "UEM Architect — home":
+            - /url: index.html
+            - img "UEM Architect logo"
+          - paragraph [ref=e108]: Helping organizations architect, secure, and operate their endpoint environments with clarity, structure, and long-term confidence.
+          - link "UEM Architect on LinkedIn" [ref=e110] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/uem-architect-consulting
+            - img [ref=e111]
+        - generic [ref=e113]:
+          - heading "Services" [level=4] [ref=e114]
+          - list [ref=e115]:
+            - listitem [ref=e116]:
+              - link "Endpoint Assessment" [ref=e117] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e118]:
+              - link "Platform Deployment" [ref=e119] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e120]:
+              - link "Managed UEM Operations" [ref=e121] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e122]:
+              - link "Security & Zero Trust" [ref=e123] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e124]:
+              - link "Identity & Access" [ref=e125] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e126]:
+              - link "Training & Enablement" [ref=e127] [cursor=pointer]:
+                - /url: services.html
+        - generic [ref=e128]:
+          - heading "Company" [level=4] [ref=e129]
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Who We Serve" [ref=e132] [cursor=pointer]:
+                - /url: who-we-serve.html
+            - listitem [ref=e133]:
+              - link "Our Process" [ref=e134] [cursor=pointer]:
+                - /url: our-process.html
+            - listitem [ref=e135]:
+              - link "Why UEM Architect Consulting?" [ref=e136] [cursor=pointer]:
+                - /url: why-us.html
+            - listitem [ref=e137]:
+              - link "Testimonials" [ref=e138] [cursor=pointer]:
+                - /url: why-us.html#testimonials
+            - listitem [ref=e139]:
+              - link "The Deep Dive" [ref=e140] [cursor=pointer]:
+                - /url: https://deepdive.uemarchitect.org/
+        - generic [ref=e141]:
+          - heading "Stay in the Loop" [level=4] [ref=e142]
+          - paragraph [ref=e143]: Get endpoint management insights and updates delivered to your inbox.
+          - form "Newsletter signup" [ref=e144]:
+            - generic [ref=e145]: Email address
+            - textbox "Email address" [ref=e146]:
+              - /placeholder: your@email.com
+            - button "Subscribe" [ref=e147] [cursor=pointer]
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: © 2026 UEM Architect. All rights reserved.
+        - navigation "Legal links" [ref=e150]:
+          - link "Privacy & Cookie Policy" [ref=e151] [cursor=pointer]:
+            - /url: privacy.html
+        - paragraph [ref=e152]: Odessa, FL — Serving Clients Globally
