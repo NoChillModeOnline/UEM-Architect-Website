@@ -1,7 +1,4 @@
 script.js
-deep-dive-wordpress-theme/functions.php
-deep-dive-wordpress-theme/header.php
-deep-dive-wordpress-theme/single.php
 README.md
 robots.txt
 CLAUDE.md

@@ -61,70 +61,70 @@
       "label": "esc()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L387"
+      "source_location": "L383"
     },
     {
       "id": "script_calctier",
       "label": "calcTier()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L524"
+      "source_location": "L520"
     },
     {
       "id": "script_scrolltocard",
       "label": "scrollToCard()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L536"
+      "source_location": "L532"
     },
     {
       "id": "script_renderintro",
       "label": "renderIntro()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L541"
+      "source_location": "L537"
     },
     {
       "id": "script_renderquestion",
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L565"
+      "source_location": "L561"
     },
     {
       "id": "script_renderlead",
       "label": "renderLead()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L612"
+      "source_location": "L608"
     },
     {
       "id": "script_renderresults",
       "label": "renderResults()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L657"
+      "source_location": "L653"
     },
     {
       "id": "script_initresultsenhancements",
       "label": "initResultsEnhancements()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L694"
+      "source_location": "L690"
     },
     {
       "id": "script_handleclick",
       "label": "handleClick()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L832"
+      "source_location": "L844"
     },
     {
       "id": "script_submitlead",
       "label": "submitLead()",
       "file_type": "code",
       "source_file": "script.js",
-      "source_location": "L889"
+      "source_location": "L901"
     },
     {
       "id": "deep_dive_wordpress_theme_functions_php",
@@ -477,7 +477,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L387",
+      "source_location": "L383",
       "weight": 1.0
     },
     {
@@ -486,7 +486,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L524",
+      "source_location": "L520",
       "weight": 1.0
     },
     {
@@ -495,7 +495,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L536",
+      "source_location": "L532",
       "weight": 1.0
     },
     {
@@ -504,7 +504,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L541",
+      "source_location": "L537",
       "weight": 1.0
     },
     {
@@ -513,7 +513,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L565",
+      "source_location": "L561",
       "weight": 1.0
     },
     {
@@ -522,7 +522,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L612",
+      "source_location": "L608",
       "weight": 1.0
     },
     {
@@ -531,7 +531,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L657",
+      "source_location": "L653",
       "weight": 1.0
     },
     {
@@ -540,7 +540,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L694",
+      "source_location": "L690",
       "weight": 1.0
     },
     {
@@ -549,7 +549,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L832",
+      "source_location": "L844",
       "weight": 1.0
     },
     {
@@ -558,7 +558,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L889",
+      "source_location": "L901",
       "weight": 1.0
     },
     {
@@ -576,7 +576,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L581",
+      "source_location": "L577",
       "weight": 1.0
     },
     {
@@ -585,7 +585,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L664",
+      "source_location": "L660",
       "weight": 1.0
     },
     {
@@ -594,7 +594,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L689",
+      "source_location": "L685",
       "weight": 1.0
     },
     {
@@ -603,7 +603,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L840",
+      "source_location": "L852",
       "weight": 1.0
     },
     {
@@ -612,7 +612,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L841",
+      "source_location": "L853",
       "weight": 1.0
     },
     {
@@ -621,7 +621,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L854",
+      "source_location": "L866",
       "weight": 1.0
     },
     {
@@ -630,7 +630,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L854",
+      "source_location": "L866",
       "weight": 1.0
     },
     {
@@ -639,7 +639,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L861",
+      "source_location": "L873",
       "weight": 1.0
     },
     {
@@ -648,7 +648,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "script.js",
-      "source_location": "L868",
+      "source_location": "L880",
       "weight": 1.0
     },
     {
