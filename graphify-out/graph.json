@@ -10406,6 +10406,196 @@
       "source_file": "",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_404_php",
+      "target": "readme_wp_404_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_index_php",
+      "target": "readme_wp_index_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_archive_php",
+      "target": "readme_wp_archive_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_comments_php",
+      "target": "readme_wp_comments_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_home_php",
+      "target": "readme_wp_home_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_search_php",
+      "target": "readme_wp_search_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_footer_php",
+      "target": "readme_wp_footer_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "deep_dive_wordpress_theme_single_php",
+      "target": "readme_wp_single_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_page_php",
+      "target": "readme_wp_page_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_author_php",
+      "target": "readme_wp_author_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_template_parts_post_card_php",
+      "target": "readme_wp_post_card_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_uem_architect_consulting",
+      "target": "org_uem_architect_consulting",
+      "relation": "describes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "concept_uem_services",
+      "relation": "documents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_js_modules",
+      "target": "script_js",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloud_infrastructure",
+      "target": "org_uem_architect_consulting",
+      "relation": "managed_by",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_assessments_roadmap",
+      "target": "org_uem_architect_consulting",
+      "relation": "service_offered_by",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_service",
+      "target": "concept_assessments_roadmap",
+      "relation": "part_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uem_architect_brand_name",
+      "target": "org_uem_architect_consulting",
+      "relation": "brand_name_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_who_we_serve_html",
+      "target": "persona_targeting_section",
+      "relation": "documents",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [
