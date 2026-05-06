@@ -10716,6 +10716,56 @@
       "source_file": "",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "screenshot_top_of_page_cta_buttons",
+      "target": "readme_contact_html",
+      "relation": "links_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "screenshot_top_of_page_cta_buttons",
+      "target": "readme_services_html",
+      "relation": "links_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "omnissa_brand",
+      "target": "org_uem_architect_consulting",
+      "relation": "technology_partner_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "homepage_hero_section",
+      "target": "script_typeloop",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "persona_targeting_section",
+      "target": "readme_who_we_serve_html",
+      "relation": "documented_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [

@@ -4,10 +4,13 @@
 - Large corpus: 109 files · ~730,471 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
-- 357 nodes · 489 edges · 89 communities detected · **1 connected component** (fully unified)
-- Extraction: 65% EXTRACTED · 30% INFERRED · 0% AMBIGUOUS · INFERRED: 150 edges (avg confidence: 0.85)
+- 357 nodes · 522 edges · 89 communities detected · **1 connected component** (fully unified)
+- Extraction: ~62% EXTRACTED · ~37% INFERRED · 0% AMBIGUOUS · avg INFERRED confidence: 0.87
 - Token cost: 13,441 input · 5,881 output
-- **Manual corrections (post-extraction):** +95 edges added to fix 22 isolated subgraphs, correct vision over-reads (false edges removed), stitch brand/logo orphans, and unify Omnissa/Security communities. All manual edges tagged INFERRED with per-edge confidence scores.
+- **Manual corrections (post-extraction):** +128 edges added across 3 exploration sessions to fix 22 isolated subgraphs, resolve semantic duplicates, reinforce articulation points, and surface architectural bridges.
+- **Diameter:** 15 hops · **Avg path:** 5.79 · **Graph center:** org_uem_architect_consulting (radius 8)
+- **Articulation points:** 57 (reduced from 66 via reinforcing bridges)
+- **Key architectural insight:** `readme_shared_design_system` is the true cross-codebase bridge (rank 4 betweenness), connecting the static marketing site and WordPress Deep Dive theme through a shared brand palette.
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Frontend JS Modules|Frontend JS Modules]]
