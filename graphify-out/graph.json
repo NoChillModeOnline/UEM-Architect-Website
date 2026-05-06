@@ -10596,6 +10596,126 @@
       "source_file": "",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "mobile_device",
+      "target": "ios_mobile_device",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "script_assessmentquiz",
+      "target": "assessment_service",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloud_infrastructure",
+      "target": "concept_cloud_management",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "endpoint_assessment",
+      "target": "assessment_service",
+      "relation": "part_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "deep_dive_wordpress_theme_functions_php",
+      "target": "readme_wp_functions_php",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cloud_platform",
+      "target": "cloud_infrastructure",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_script_js",
+      "target": "script_js",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "script_buildbanner",
+      "target": "script_buildBanner",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.97,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_design_tokens",
+      "target": "readme_index_css",
+      "relation": "implemented_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_design_tokens",
+      "target": "readme_design_tokens",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_wp_screen_css",
+      "target": "readme_shared_design_system",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "script_js",
+      "target": "readme_shared_design_system",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [
