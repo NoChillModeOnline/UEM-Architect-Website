@@ -1,12 +1,13 @@
-# Graph Report - .  (2026-05-05)
+# Graph Report - .  (2026-05-06, manually corrected)
 
 ## Corpus Check
 - Large corpus: 109 files · ~730,471 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
-- 357 nodes · 394 edges · 89 communities detected
-- Extraction: 73% EXTRACTED · 27% INFERRED · 0% AMBIGUOUS · INFERRED: 105 edges (avg confidence: 0.83)
+- 357 nodes · 489 edges · 89 communities detected · **1 connected component** (fully unified)
+- Extraction: 65% EXTRACTED · 30% INFERRED · 0% AMBIGUOUS · INFERRED: 150 edges (avg confidence: 0.85)
 - Token cost: 13,441 input · 5,881 output
+- **Manual corrections (post-extraction):** +95 edges added to fix 22 isolated subgraphs, correct vision over-reads (false edges removed), stitch brand/logo orphans, and unify Omnissa/Security communities. All manual edges tagged INFERRED with per-edge confidence scores.
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Frontend JS Modules|Frontend JS Modules]]
