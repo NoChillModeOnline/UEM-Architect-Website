@@ -10892,6 +10892,126 @@
       "source_file": "about.html",
       "source_location": null,
       "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "concept_zero_trust",
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "assessment_service",
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "concept_assessments_roadmap",
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "assessment_html",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_index_html",
+      "target": "assessment_html",
+      "relation": "links_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_index_html",
+      "target": "omnissa",
+      "relation": "features_partner",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_services_html",
+      "target": "omnissa",
+      "relation": "features_partner",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_why_us_html",
+      "target": "omnissa",
+      "relation": "features_partner",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_who_we_serve_html",
+      "target": "omnissa",
+      "relation": "features_partner",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_html",
+      "target": "omnissa",
+      "relation": "features_partner",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_index_html",
+      "target": "readme_uem_architect_consulting",
+      "relation": "displays",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_why_us_html",
+      "target": "readme_uem_architect_consulting",
+      "relation": "displays",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "",
+      "source_location": null,
+      "weight": 1.0
     }
   ],
   "hyperedges": [

@@ -22,5 +22,6 @@ tags:
 - [[Location pinmap marker above clipboard]] - `depicts` [EXTRACTED]
 - [[UEM Architect_1]] - `offers` [INFERRED]
 - [[UEM Architect Consulting_1]] - `service_offered_by` [INFERRED]
+- [[services.html — Service Offerings]] - `documents` [EXTRACTED]
 
 #graphify/image #graphify/INFERRED #community/Community_6

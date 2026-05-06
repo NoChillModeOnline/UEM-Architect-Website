@@ -12,6 +12,7 @@ tags:
 # Google reCAPTCHA Enterprise
 
 ## Connections
+- [[assessment.html — UEM Platform Health Assessment]] - `includes` [EXTRACTED]
 - [[handleWeb3Form()]] - `calls` [EXTRACTED]
 - [[initResultsEnhancements()]] - `calls` [EXTRACTED]
 - [[submitLead()]] - `calls` [EXTRACTED]

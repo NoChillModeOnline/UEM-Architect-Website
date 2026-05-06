@@ -28,8 +28,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 10]]
 - 1 edge to [[_COMMUNITY_Community 9]]
 
 ## Top bridge nodes
+- [[who-we-serve.html — Personas and Industries]] - degree 3, connects to 2 communities
 - [[Persona Targeting Section (IT Leaders, OpsHR, Security)]] - degree 8, connects to 1 community
-- [[who-we-serve.html — Personas and Industries]] - degree 2, connects to 1 community

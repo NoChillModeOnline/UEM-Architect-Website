@@ -13,5 +13,7 @@ tags:
 
 ## Connections
 - [[Marketing Site (Static HTMLCSSJS)]] - `references` [EXTRACTED]
+- [[Omnissa_1]] - `features_partner` [EXTRACTED]
+- [[UEM Architect Consulting — Omnissa Silver Partner]] - `displays` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_7

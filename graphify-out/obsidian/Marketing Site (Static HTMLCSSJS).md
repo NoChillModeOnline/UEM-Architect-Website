@@ -17,6 +17,8 @@ tags:
 - [[Shared Design System — Brand Palette Used by Both Projects]] - `references` [EXTRACTED]
 - [[UEM Architect Consulting_1]] - `serves` [INFERRED]
 - [[UEM Architect Website Repository]] - `references` [EXTRACTED]
+- [[about.html — About UEM Architect]] - `part_of` [EXTRACTED]
+- [[assessment.html — UEM Platform Health Assessment]] - `part_of` [EXTRACTED]
 - [[contact.html — Contact Form and Booking]] - `references` [EXTRACTED]
 - [[deep-dive.html — Deep Dive TeaserLanding Page]] - `references` [EXTRACTED]
 - [[index.css — All Styles and Design Tokens]] - `references` [EXTRACTED]

@@ -56,12 +56,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 2 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 15]]
 - 1 edge to [[_COMMUNITY_Community 11]]
 
 ## Top bridge nodes
 - [[UEM Consulting Services]] - degree 12, connects to 2 communities
+- [[Zero Trust (UEM security framework)]] - degree 10, connects to 1 community
 - [[Zero Trust Security Concept]] - degree 4, connects to 1 community
 - [[Cross-Platform Device Migration]] - degree 3, connects to 1 community

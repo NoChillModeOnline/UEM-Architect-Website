@@ -1,40 +1,35 @@
 ---
 type: community
 cohesion: 0.29
-members: 8
+members: 7
 ---
 
-# Community 12
+# Community 13
 
 **Cohesion:** 0.29 - loosely connected
-**Members:** 8 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Assessment Icon]] - image - Images/assessments.png
-- [[Assessment Service]] - image - Images/assessments.png
-- [[Checkbox Item]] - image - Images/assessments.png
-- [[Checklist Document]] - image - Images/assessments.png
-- [[Checklist Row]] - image - Images/assessments.png
-- [[Evaluation Methodology]] - image - Images/assessments.png
-- [[Structured Review]] - image - Images/assessments.png
-- [[UEM Architect_1]] - image - Images/assessments.png
+- [[Images — Brand Assets and Partner Logos]] - document - README.md
+- [[UEM Architect Consulting — Omnissa Silver Partner]] - document - README.md
+- [[UEM Architect Website Repository]] - document - README.md
+- [[deep-dive.html (disallowed)]] - document - robots.txt
+- [[git-push.sh — Helper Script for Git Operations]] - document - README.md
+- [[robots.txt]] - document - robots.txt
+- [[sitemap.xml]] - document - robots.txt
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/Community_12
+TABLE source_file, type FROM #community/Community_13
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 80]]
-- 1 edge to [[_COMMUNITY_Community 82]]
-- 1 edge to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 8]]
+- 3 edges to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 0]]
-- 1 edge to [[_COMMUNITY_Community 10]]
 
 ## Top bridge nodes
-- [[Assessment Service]] - degree 11, connects to 8 communities
+- [[UEM Architect Website Repository]] - degree 6, connects to 2 communities
+- [[UEM Architect Consulting — Omnissa Silver Partner]] - degree 4, connects to 2 communities

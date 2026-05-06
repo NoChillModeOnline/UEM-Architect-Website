@@ -14,5 +14,7 @@ tags:
 ## Connections
 - [[UEM Architect Consulting_1]] - `describes` [INFERRED]
 - [[UEM Architect Website Repository]] - `references` [EXTRACTED]
+- [[index.html — Home Page]] - `displays` [EXTRACTED]
+- [[why-us.html — Differentiators and Testimonials]] - `displays` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_13

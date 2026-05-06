@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Assessment Service]] - `implements` [INFERRED]
 - [[Web3Forms API (httpsapi.web3forms.comsubmit)]] - `shares_data_with` [INFERRED]
+- [[assessment.html — UEM Platform Health Assessment]] - `embeds` [EXTRACTED]
 - [[handleClick()]] - `calls` [EXTRACTED]
 - [[renderIntro()]] - `calls` [EXTRACTED]
 - [[renderLead()]] - `calls` [INFERRED]

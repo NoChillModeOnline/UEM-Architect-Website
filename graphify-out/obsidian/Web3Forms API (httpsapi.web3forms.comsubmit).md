@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[Assessment Quiz (initAssessmentQuiz)]] - `shares_data_with` [INFERRED]
+- [[assessment.html — UEM Platform Health Assessment]] - `posts_to` [EXTRACTED]
 - [[buildBanner]] - `references` [INFERRED]
 - [[handleWeb3Form()]] - `calls` [EXTRACTED]
 - [[submitLead()]] - `calls` [EXTRACTED]

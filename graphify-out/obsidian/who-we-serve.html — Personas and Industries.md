@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[Marketing Site (Static HTMLCSSJS)]] - `references` [EXTRACTED]
+- [[Omnissa_1]] - `features_partner` [EXTRACTED]
 - [[Persona Targeting Section (IT Leaders, OpsHR, Security)]] - `documented_in` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_12

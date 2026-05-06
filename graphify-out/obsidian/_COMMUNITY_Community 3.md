@@ -53,10 +53,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 7]]
+- 9 edges to [[_COMMUNITY_Community 7]]
 - 1 edge to [[_COMMUNITY_Community 9]]
 - 1 edge to [[_COMMUNITY_Community 6]]
 
 ## Top bridge nodes
-- [[script.js]] - degree 26, connects to 2 communities
-- [[Assessment Quiz (initAssessmentQuiz)]] - degree 7, connects to 1 community
+- [[script.js]] - degree 28, connects to 2 communities
+- [[Assessment Quiz (initAssessmentQuiz)]] - degree 8, connects to 2 communities
+- [[Web3Forms API (httpsapi.web3forms.comsubmit)]] - degree 5, connects to 1 community
+- [[Google reCAPTCHA Enterprise]] - degree 4, connects to 1 community

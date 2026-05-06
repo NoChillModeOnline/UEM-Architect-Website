@@ -19,6 +19,8 @@ tags:
 - [[Scroll to Top]] - `part_of` [EXTRACTED]
 - [[Shared Design System — Brand Palette Used by Both Projects]] - `uses` [INFERRED]
 - [[Stat Counter Count-Up]] - `part_of` [EXTRACTED]
+- [[about.html — About UEM Architect]] - `includes` [EXTRACTED]
+- [[assessment.html — UEM Platform Health Assessment]] - `includes` [EXTRACTED]
 - [[buildBanner()]] - `contains` [EXTRACTED]
 - [[calcTier()]] - `contains` [EXTRACTED]
 - [[esc()]] - `contains` [EXTRACTED]

@@ -4,7 +4,7 @@ type: "image"
 community: "Community 2"
 tags:
   - graphify/image
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Community_2
 ---
 
@@ -20,5 +20,6 @@ tags:
 - [[UEM Services Icon Row — Assessments, Implementation, Zero Trust Policy, Operations, Enablement and Training]] - `references` [EXTRACTED]
 - [[UEM Zero Trust Illustration (Shield with Key, Database, Mobile)]] - `references` [EXTRACTED]
 - [[Zero Trust Security Concept]] - `semantically_similar_to` [INFERRED]
+- [[services.html — Service Offerings]] - `documents` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Community_2
+#graphify/image #graphify/EXTRACTED #community/Community_2

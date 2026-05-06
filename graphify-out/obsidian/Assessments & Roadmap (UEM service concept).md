@@ -4,7 +4,7 @@ type: "image"
 community: "Community 6"
 tags:
   - graphify/image
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Community_6
 ---
 
@@ -16,5 +16,6 @@ tags:
 - [[UEM Architect Consulting_1]] - `service_offered_by` [INFERRED]
 - [[UEM Assessments Roadmap Illustration (Clipboard Checklist with Devices) JPG]] - `references` [EXTRACTED]
 - [[UEM Assessments Roadmap Illustration (Clipboard Checklist with Devices) PNG]] - `references` [EXTRACTED]
+- [[services.html — Service Offerings]] - `documents` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Community_6
+#graphify/image #graphify/EXTRACTED #community/Community_6
