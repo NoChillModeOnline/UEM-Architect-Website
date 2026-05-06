@@ -4738,6 +4738,22 @@
       "id": "deep_dive_wordpress_theme",
       "community": 5,
       "norm_label": "the deep dive wordpress theme"
+    },
+    {
+      "id": "assessment_html",
+      "label": "assessment.html \u2014 UEM Platform Health Assessment",
+      "file_type": "document",
+      "source_file": "assessment.html",
+      "source_location": null,
+      "community": 7
+    },
+    {
+      "id": "about_html",
+      "label": "about.html \u2014 About UEM Architect",
+      "file_type": "document",
+      "source_file": "about.html",
+      "source_location": null,
+      "community": 7
     }
   ],
   "links": [
@@ -10764,6 +10780,116 @@
       "confidence": "INFERRED",
       "confidence_score": 0.9,
       "source_file": "",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "script_js",
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "script_assessmentquiz",
+      "relation": "embeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "script_web3forms_api",
+      "relation": "posts_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "script_grecaptcha",
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "readme_contact_html",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "readme_marketing_site",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assessment_html",
+      "target": "readme_services_html",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assessment.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_html",
+      "target": "script_js",
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_html",
+      "target": "readme_marketing_site",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_html",
+      "target": "readme_contact_html",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "about_html",
+      "target": "assessment_html",
+      "relation": "links_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "about.html",
       "source_location": null,
       "weight": 1.0
     }

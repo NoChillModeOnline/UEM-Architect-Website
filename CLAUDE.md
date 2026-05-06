@@ -15,7 +15,9 @@ Multi-page static marketing website for UEM Architect Consulting — a Unified E
 | `services.html` | Services detail page — 6 service areas + engagement formats + platforms |
 | `our-process.html` | Engagement process page |
 | `why-us.html` | Differentiators + testimonials |
+| `about.html` | About page — team, consultant bio, company background |
 | `contact.html` | Contact form page |
+| `assessment.html` | UEM Platform Health Assessment — 10-question quiz, `#quiz-container` mounted by `initAssessmentQuiz()` in `script.js`; reCAPTCHA Enterprise + Web3Forms lead capture; labeled "Security Health Check" in nav |
 | `deep-dive.html` | "The Deep Dive" blog/resources — coming soon page (`noindex, nofollow`) |
 | `privacy.html` | Privacy & Cookie Policy |
 | `index.css` | Shared vanilla CSS with design tokens, organized by component |
