@@ -57,7 +57,7 @@
       "source_file": "script.js",
       "source_location": "L1",
       "id": "script_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "script.js"
     },
     {
@@ -66,7 +66,7 @@
       "source_file": "script.js",
       "source_location": "L9",
       "id": "script_buildbanner",
-      "community": 0,
+      "community": 3,
       "norm_label": "buildbanner()"
     },
     {
@@ -75,7 +75,7 @@
       "source_file": "script.js",
       "source_location": "L66",
       "id": "script_updateheader",
-      "community": 17,
+      "community": 3,
       "norm_label": "updateheader()"
     },
     {
@@ -84,7 +84,7 @@
       "source_file": "script.js",
       "source_location": "L133",
       "id": "script_typeloop",
-      "community": 0,
+      "community": 9,
       "norm_label": "typeloop()"
     },
     {
@@ -93,7 +93,7 @@
       "source_file": "script.js",
       "source_location": "L198",
       "id": "script_gotoslide",
-      "community": 0,
+      "community": 3,
       "norm_label": "gotoslide()"
     },
     {
@@ -102,7 +102,7 @@
       "source_file": "script.js",
       "source_location": "L207",
       "id": "script_nextslide",
-      "community": 0,
+      "community": 3,
       "norm_label": "nextslide()"
     },
     {
@@ -111,7 +111,7 @@
       "source_file": "script.js",
       "source_location": "L211",
       "id": "script_resetautoplay",
-      "community": 0,
+      "community": 3,
       "norm_label": "resetautoplay()"
     },
     {
@@ -120,7 +120,7 @@
       "source_file": "script.js",
       "source_location": "L281",
       "id": "script_handleweb3form",
-      "community": 0,
+      "community": 3,
       "norm_label": "handleweb3form()"
     },
     {
@@ -129,7 +129,7 @@
       "source_file": "script.js",
       "source_location": "L383",
       "id": "script_esc",
-      "community": 0,
+      "community": 3,
       "norm_label": "esc()"
     },
     {
@@ -138,7 +138,7 @@
       "source_file": "script.js",
       "source_location": "L520",
       "id": "script_calctier",
-      "community": 0,
+      "community": 3,
       "norm_label": "calctier()"
     },
     {
@@ -147,7 +147,7 @@
       "source_file": "script.js",
       "source_location": "L532",
       "id": "script_scrolltocard",
-      "community": 0,
+      "community": 3,
       "norm_label": "scrolltocard()"
     },
     {
@@ -156,7 +156,7 @@
       "source_file": "script.js",
       "source_location": "L537",
       "id": "script_renderintro",
-      "community": 0,
+      "community": 3,
       "norm_label": "renderintro()"
     },
     {
@@ -165,7 +165,7 @@
       "source_file": "script.js",
       "source_location": "L561",
       "id": "script_renderquestion",
-      "community": 0,
+      "community": 3,
       "norm_label": "renderquestion()"
     },
     {
@@ -174,7 +174,7 @@
       "source_file": "script.js",
       "source_location": "L608",
       "id": "script_renderlead",
-      "community": 0,
+      "community": 3,
       "norm_label": "renderlead()"
     },
     {
@@ -183,7 +183,7 @@
       "source_file": "script.js",
       "source_location": "L653",
       "id": "script_renderresults",
-      "community": 0,
+      "community": 3,
       "norm_label": "renderresults()"
     },
     {
@@ -192,7 +192,7 @@
       "source_file": "script.js",
       "source_location": "L690",
       "id": "script_initresultsenhancements",
-      "community": 0,
+      "community": 3,
       "norm_label": "initresultsenhancements()"
     },
     {
@@ -201,7 +201,7 @@
       "source_file": "script.js",
       "source_location": "L844",
       "id": "script_handleclick",
-      "community": 0,
+      "community": 3,
       "norm_label": "handleclick()"
     },
     {
@@ -210,7 +210,7 @@
       "source_file": "script.js",
       "source_location": "L901",
       "id": "script_submitlead",
-      "community": 0,
+      "community": 3,
       "norm_label": "submitlead()"
     },
     {
@@ -219,7 +219,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L1",
       "id": "deep_dive_wordpress_theme_functions_php",
-      "community": 7,
+      "community": 5,
       "norm_label": "functions.php"
     },
     {
@@ -228,7 +228,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L9",
       "id": "functions_deep_dive_setup",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_setup()"
     },
     {
@@ -237,7 +237,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L59",
       "id": "functions_deep_dive_enqueue_assets",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_enqueue_assets()"
     },
     {
@@ -246,7 +246,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L95",
       "id": "functions_deep_dive_excerpt_more",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_excerpt_more()"
     },
     {
@@ -255,7 +255,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L109",
       "id": "functions_deep_dive_reading_time",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_reading_time()"
     },
     {
@@ -264,7 +264,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L126",
       "id": "functions_deep_dive_initials",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_initials()"
     },
     {
@@ -273,7 +273,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L140",
       "id": "functions_deep_dive_body_classes",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_body_classes()"
     },
     {
@@ -282,7 +282,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L151",
       "id": "functions_deep_dive_widgets_init",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_widgets_init()"
     },
     {
@@ -291,7 +291,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L178",
       "id": "functions_deep_dive_register_featured_meta_box",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_register_featured_meta_box()"
     },
     {
@@ -300,7 +300,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L190",
       "id": "functions_deep_dive_featured_meta_box_html",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_featured_meta_box_html()"
     },
     {
@@ -309,7 +309,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L202",
       "id": "functions_deep_dive_save_featured_meta",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_save_featured_meta()"
     },
     {
@@ -318,7 +318,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L232",
       "id": "functions_deep_dive_remove_main_site_new_tab",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_remove_main_site_new_tab()"
     },
     {
@@ -327,7 +327,7 @@
       "source_file": "deep-dive-wordpress-theme/functions.php",
       "source_location": "L251",
       "id": "functions_deep_dive_comment",
-      "community": 7,
+      "community": 5,
       "norm_label": "deep_dive_comment()"
     },
     {
@@ -336,7 +336,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/404.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_404_php",
-      "community": 29,
+      "community": 1,
       "norm_label": "404.php"
     },
     {
@@ -345,7 +345,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/index.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_index_php",
-      "community": 30,
+      "community": 1,
       "norm_label": "index.php"
     },
     {
@@ -354,7 +354,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/archive.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_archive_php",
-      "community": 31,
+      "community": 1,
       "norm_label": "archive.php"
     },
     {
@@ -363,7 +363,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/comments.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_comments_php",
-      "community": 32,
+      "community": 1,
       "norm_label": "comments.php"
     },
     {
@@ -372,7 +372,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/home.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_home_php",
-      "community": 33,
+      "community": 1,
       "norm_label": "home.php"
     },
     {
@@ -381,7 +381,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/search.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_search_php",
-      "community": 34,
+      "community": 1,
       "norm_label": "search.php"
     },
     {
@@ -390,7 +390,7 @@
       "source_file": "deep-dive-wordpress-theme/header.php",
       "source_location": "L1",
       "id": "deep_dive_wordpress_theme_header_php",
-      "community": 24,
+      "community": 5,
       "norm_label": "header.php"
     },
     {
@@ -399,7 +399,7 @@
       "source_file": "deep-dive-wordpress-theme/header.php",
       "source_location": "L105",
       "id": "header_deep_dive_nav_walker",
-      "community": 24,
+      "community": 5,
       "norm_label": "deep_dive_nav_walker"
     },
     {
@@ -408,7 +408,7 @@
       "source_file": "deep-dive-wordpress-theme/header.php",
       "source_location": "L106",
       "id": "header_deep_dive_nav_walker_start_el",
-      "community": 24,
+      "community": 5,
       "norm_label": ".start_el()"
     },
     {
@@ -417,7 +417,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/footer.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_footer_php",
-      "community": 35,
+      "community": 1,
       "norm_label": "footer.php"
     },
     {
@@ -426,7 +426,7 @@
       "source_file": "deep-dive-wordpress-theme/single.php",
       "source_location": "L1",
       "id": "deep_dive_wordpress_theme_single_php",
-      "community": 36,
+      "community": 1,
       "norm_label": "single.php"
     },
     {
@@ -435,7 +435,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/page.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_page_php",
-      "community": 37,
+      "community": 1,
       "norm_label": "page.php"
     },
     {
@@ -444,7 +444,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/author.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_author_php",
-      "community": 38,
+      "community": 1,
       "norm_label": "author.php"
     },
     {
@@ -453,7 +453,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_inc_customizer_php",
-      "community": 9,
+      "community": 1,
       "norm_label": "customizer.php"
     },
     {
@@ -462,7 +462,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L42",
       "id": "customizer_deep_dive_customize_register",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_customize_register()"
     },
     {
@@ -471,7 +471,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L647",
       "id": "customizer_deep_dive_sanitize_font_weight",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sanitize_font_weight()"
     },
     {
@@ -480,7 +480,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L652",
       "id": "customizer_deep_dive_sanitize_line_height",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sanitize_line_height()"
     },
     {
@@ -489,7 +489,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L657",
       "id": "customizer_deep_dive_sanitize_checkbox",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sanitize_checkbox()"
     },
     {
@@ -498,7 +498,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L661",
       "id": "customizer_deep_dive_sanitize_color_scheme",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sanitize_color_scheme()"
     },
     {
@@ -507,7 +507,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L665",
       "id": "customizer_deep_dive_sanitize_sidebar_layout",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sanitize_sidebar_layout()"
     },
     {
@@ -516,7 +516,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L675",
       "id": "customizer_deep_dive_customizer_css",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_customizer_css()"
     },
     {
@@ -525,7 +525,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L775",
       "id": "customizer_deep_dive_sync_posts_per_page",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_sync_posts_per_page()"
     },
     {
@@ -534,7 +534,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/inc/customizer.php",
       "source_location": "L784",
       "id": "customizer_deep_dive_customizer_excerpt_length",
-      "community": 9,
+      "community": 1,
       "norm_label": "deep_dive_customizer_excerpt_length()"
     },
     {
@@ -543,7 +543,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/template-parts/post-card.php",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_template_parts_post_card_php",
-      "community": 39,
+      "community": 1,
       "norm_label": "post-card.php"
     },
     {
@@ -552,7 +552,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/assets/js/main.js",
       "source_location": "L1",
       "id": "users_travisweisberg_documents_uem_architect_website_deep_dive_wordpress_theme_assets_js_main_js",
-      "community": 17,
+      "community": 1,
       "norm_label": "main.js"
     },
     {
@@ -561,7 +561,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/assets/js/main.js",
       "source_location": "L16",
       "id": "main_updateprogress",
-      "community": 17,
+      "community": 1,
       "norm_label": "updateprogress()"
     },
     {
@@ -570,7 +570,7 @@
       "source_file": "/Users/travisweisberg/Documents/UEM-Architect-Website/deep-dive-wordpress-theme/assets/js/main.js",
       "source_location": "L48",
       "id": "main_toggle",
-      "community": 17,
+      "community": 1,
       "norm_label": "toggle()"
     },
     {
@@ -583,7 +583,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_uem_architect_website",
-      "community": 2,
+      "community": 13,
       "norm_label": "uem architect website repository"
     },
     {
@@ -596,7 +596,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_marketing_site",
-      "community": 3,
+      "community": 7,
       "norm_label": "marketing site (static html/css/js)"
     },
     {
@@ -609,7 +609,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_deep_dive_theme",
-      "community": 2,
+      "community": 1,
       "norm_label": "the deep dive wordpress theme"
     },
     {
@@ -622,7 +622,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_index_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "index.html \u2014 home page"
     },
     {
@@ -635,7 +635,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_who_we_serve_html",
-      "community": 3,
+      "community": 12,
       "norm_label": "who-we-serve.html \u2014 personas and industries"
     },
     {
@@ -648,7 +648,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_services_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "services.html \u2014 service offerings"
     },
     {
@@ -661,7 +661,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_our_process_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "our-process.html \u2014 4-phase engagement process"
     },
     {
@@ -674,7 +674,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_why_us_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "why-us.html \u2014 differentiators and testimonials"
     },
     {
@@ -687,7 +687,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_contact_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "contact.html \u2014 contact form and booking"
     },
     {
@@ -700,7 +700,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_deep_dive_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "deep-dive.html \u2014 deep dive teaser/landing page"
     },
     {
@@ -713,7 +713,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_privacy_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "privacy.html \u2014 gdpr privacy and cookie policy"
     },
     {
@@ -726,7 +726,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_index_css",
-      "community": 3,
+      "community": 7,
       "norm_label": "index.css \u2014 all styles and design tokens"
     },
     {
@@ -739,7 +739,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_script_js",
-      "community": 3,
+      "community": 7,
       "norm_label": "script.js \u2014 all interactivity"
     },
     {
@@ -752,7 +752,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_git_push_sh",
-      "community": 40,
+      "community": 13,
       "norm_label": "git-push.sh \u2014 helper script for git operations"
     },
     {
@@ -765,7 +765,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_images_dir",
-      "community": 41,
+      "community": 13,
       "norm_label": "images/ \u2014 brand assets and partner logos"
     },
     {
@@ -778,7 +778,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_style_css",
-      "community": 2,
+      "community": 1,
       "norm_label": "deep-dive-wordpress-theme/style.css \u2014 wordpress theme header"
     },
     {
@@ -791,7 +791,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_functions_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "functions.php \u2014 theme setup, enqueue, helpers, meta box"
     },
     {
@@ -804,7 +804,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_customizer_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "inc/customizer.php \u2014 customizer panels, color/typography controls"
     },
     {
@@ -817,7 +817,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_header_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "header.php \u2014 navigation and mobile drawer"
     },
     {
@@ -830,7 +830,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_footer_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "footer.php \u2014 footer and newsletter form"
     },
     {
@@ -843,7 +843,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_home_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "home.php \u2014 blog index with featured hero and post grid"
     },
     {
@@ -856,7 +856,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_single_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "single.php \u2014 single post with reading progress and share"
     },
     {
@@ -869,7 +869,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_page_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "page.php \u2014 static page template"
     },
     {
@@ -882,7 +882,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_archive_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "archive.php \u2014 category/tag/date archives"
     },
     {
@@ -895,7 +895,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_author_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "author.php \u2014 author archive"
     },
     {
@@ -908,7 +908,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_search_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "search.php \u2014 search results"
     },
     {
@@ -921,7 +921,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_comments_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "comments.php \u2014 comment list and form"
     },
     {
@@ -934,7 +934,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_404_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "404.php \u2014 not found page"
     },
     {
@@ -947,7 +947,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_index_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "index.php \u2014 wordpress fallback template"
     },
     {
@@ -960,7 +960,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_post_card_php",
-      "community": 2,
+      "community": 1,
       "norm_label": "template-parts/post-card.php \u2014 reusable post card"
     },
     {
@@ -973,7 +973,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_screen_css",
-      "community": 2,
+      "community": 7,
       "norm_label": "assets/css/screen.css \u2014 full stylesheet with design tokens and gutenberg blocks"
     },
     {
@@ -986,7 +986,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_main_js",
-      "community": 2,
+      "community": 1,
       "norm_label": "assets/js/main.js \u2014 reading progress, share, reveal animations"
     },
     {
@@ -999,7 +999,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wp_favicon_svg",
-      "community": 2,
+      "community": 1,
       "norm_label": "assets/images/favicon.svg \u2014 svg favicon"
     },
     {
@@ -1012,7 +1012,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_shared_design_system",
-      "community": 3,
+      "community": 7,
       "norm_label": "shared design system \u2014 brand palette used by both projects"
     },
     {
@@ -1025,7 +1025,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_design_tokens",
-      "community": 3,
+      "community": 7,
       "norm_label": "css design tokens (navy, blue, light blue, sky, amber, dark)"
     },
     {
@@ -1038,7 +1038,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_formspree_placeholders",
-      "community": 3,
+      "community": 7,
       "norm_label": "formspree placeholder ids \u2014 pre-deployment issue"
     },
     {
@@ -1051,7 +1051,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_wordpress_customizer",
-      "community": 2,
+      "community": 1,
       "norm_label": "wordpress customizer \u2014 deep dive panel with color and typography controls"
     },
     {
@@ -1064,7 +1064,7 @@
       "author": null,
       "contributor": null,
       "id": "readme_uem_architect_consulting",
-      "community": 2,
+      "community": 13,
       "norm_label": "uem architect consulting \u2014 omnissa silver partner"
     },
     {
@@ -1077,7 +1077,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_project_overview",
-      "community": 3,
+      "community": 7,
       "norm_label": "project overview \u2014 static single-page marketing website"
     },
     {
@@ -1090,7 +1090,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_architecture",
-      "community": 3,
+      "community": 7,
       "norm_label": "single-page layout architecture with section order"
     },
     {
@@ -1103,7 +1103,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_js_modules",
-      "community": 3,
+      "community": 7,
       "norm_label": "javascript modules in script.js (sticky header, burger menu, typing effect, etc.)"
     },
     {
@@ -1116,7 +1116,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_design_tokens",
-      "community": 3,
+      "community": 7,
       "norm_label": "css design token reference in claude.md (:root variables)"
     },
     {
@@ -1129,7 +1129,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_known_issues",
-      "community": 3,
+      "community": 7,
       "norm_label": "known issues \u2014 images/ missing, formspree placeholders, og/canonical placeholders"
     },
     {
@@ -1142,7 +1142,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_index_html",
-      "community": 3,
+      "community": 7,
       "norm_label": "index.html \u2014 single-page layout (claude.md reference)"
     },
     {
@@ -1155,7 +1155,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_index_css",
-      "community": 3,
+      "community": 7,
       "norm_label": "index.css \u2014 vanilla css with design tokens (claude.md reference)"
     },
     {
@@ -1168,7 +1168,7 @@
       "author": null,
       "contributor": null,
       "id": "claude_script_js",
-      "community": 3,
+      "community": 7,
       "norm_label": "script.js \u2014 vanilla js under domcontentloaded (claude.md reference)"
     },
     {
@@ -1181,7 +1181,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_omnissa",
-      "community": 25,
+      "community": 10,
       "norm_label": "omnissa"
     },
     {
@@ -1194,7 +1194,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_omnissa_logo",
-      "community": 25,
+      "community": 10,
       "norm_label": "omnissa logo (blue hexagons + gear)"
     },
     {
@@ -1207,7 +1207,7 @@
       "author": null,
       "contributor": null,
       "id": "site_uem_architect",
-      "community": 25,
+      "community": 10,
       "norm_label": "uem architect"
     },
     {
@@ -1220,7 +1220,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_black_without_logo_wordmark",
-      "community": 5,
+      "community": 9,
       "norm_label": "uem architect consulting wordmark (black, no icon)"
     },
     {
@@ -1233,7 +1233,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_brand",
-      "community": 5,
+      "community": 9,
       "norm_label": "uem architect consulting brand"
     },
     {
@@ -1246,7 +1246,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_black_color_scheme",
-      "community": 5,
+      "community": 9,
       "norm_label": "black / dark gray color scheme"
     },
     {
@@ -1259,7 +1259,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_text_only_variant",
-      "community": 5,
+      "community": 9,
       "norm_label": "text-only logo variant (no icon/symbol)"
     },
     {
@@ -1272,7 +1272,7 @@
       "author": null,
       "contributor": null,
       "id": "zerotrust_icon",
-      "community": 19,
+      "community": 2,
       "norm_label": "zero trust icon"
     },
     {
@@ -1285,7 +1285,7 @@
       "author": null,
       "contributor": null,
       "id": "shield_shape",
-      "community": 19,
+      "community": 2,
       "norm_label": "shield shape (pentagon/hexagon outline)"
     },
     {
@@ -1298,7 +1298,7 @@
       "author": null,
       "contributor": null,
       "id": "psi_symbol",
-      "community": 19,
+      "community": 2,
       "norm_label": "psi symbol (\u03c8)"
     },
     {
@@ -1311,7 +1311,7 @@
       "author": null,
       "contributor": null,
       "id": "zero_trust_security",
-      "community": 19,
+      "community": 2,
       "norm_label": "zero trust security concept"
     },
     {
@@ -1324,7 +1324,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_service",
-      "community": 19,
+      "community": 0,
       "norm_label": "uem architect service"
     },
     {
@@ -1337,7 +1337,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_logo_mark",
-      "community": 42,
+      "community": 0,
       "norm_label": "uem architect logo mark"
     },
     {
@@ -1350,7 +1350,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_brand_color_steel_blue",
-      "community": 43,
+      "community": 0,
       "norm_label": "brand color: steel blue (dark wing shape)"
     },
     {
@@ -1363,7 +1363,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_brand_color_muted_blue",
-      "community": 44,
+      "community": 0,
       "norm_label": "brand color: muted periwinkle blue (right wing shape)"
     },
     {
@@ -1376,7 +1376,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_brand_color_pale_blue",
-      "community": 45,
+      "community": 0,
       "norm_label": "brand color: pale sky blue (oval accent at base)"
     },
     {
@@ -1389,7 +1389,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_logo_shape_abstract_wings",
-      "community": 46,
+      "community": 0,
       "norm_label": "logo shape: abstract wing / arc forms"
     },
     {
@@ -1402,7 +1402,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_logo_background_white",
-      "community": 47,
+      "community": 0,
       "norm_label": "logo background: white / transparent"
     },
     {
@@ -1415,7 +1415,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_logo_google",
-      "community": 11,
+      "community": 0,
       "norm_label": "uem architect logo (google-optimized color variant)"
     },
     {
@@ -1428,7 +1428,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_brand_name",
-      "community": 11,
+      "community": 0,
       "norm_label": "uemarchitect (brand wordmark)"
     },
     {
@@ -1441,7 +1441,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_consulting_tagline",
-      "community": 11,
+      "community": 0,
       "norm_label": "consulting (brand sub-label)"
     },
     {
@@ -1454,7 +1454,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_logo_icon",
-      "community": 11,
+      "community": 0,
       "norm_label": "uem architect icon/symbol (small graphic mark, upper-right of wordmark)"
     },
     {
@@ -1467,7 +1467,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_color_dark_navy_text",
-      "community": 11,
+      "community": 0,
       "norm_label": "brand color: dark navy/charcoal (primary wordmark text color)"
     },
     {
@@ -1480,7 +1480,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_color_teal_blue_accent",
-      "community": 11,
+      "community": 0,
       "norm_label": "brand color: teal/blue accent (icon mark and sub-label)"
     },
     {
@@ -1493,7 +1493,7 @@
       "author": null,
       "contributor": null,
       "id": "google_optimized_logo_variant",
-      "community": 11,
+      "community": 0,
       "norm_label": "google-optimized usage context (google business profile / google workspace display)"
     },
     {
@@ -1506,7 +1506,7 @@
       "author": null,
       "contributor": null,
       "id": "color_logo_variant",
-      "community": 11,
+      "community": 0,
       "norm_label": "color logo variant (full-color, non-monochrome)"
     },
     {
@@ -1519,7 +1519,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_deployment",
-      "community": 1,
+      "community": 4,
       "norm_label": "uem deployment"
     },
     {
@@ -1532,7 +1532,7 @@
       "author": null,
       "contributor": null,
       "id": "cloud_platform",
-      "community": 1,
+      "community": 4,
       "norm_label": "cloud platform"
     },
     {
@@ -1545,7 +1545,7 @@
       "author": null,
       "contributor": null,
       "id": "laptop_endpoint",
-      "community": 1,
+      "community": 4,
       "norm_label": "laptop endpoint"
     },
     {
@@ -1558,7 +1558,7 @@
       "author": null,
       "contributor": null,
       "id": "mobile_device",
-      "community": 1,
+      "community": 4,
       "norm_label": "mobile device (smartphone)"
     },
     {
@@ -1571,7 +1571,7 @@
       "author": null,
       "contributor": null,
       "id": "headset_peripheral",
-      "community": 1,
+      "community": 4,
       "norm_label": "headset / peripheral device"
     },
     {
@@ -1584,7 +1584,7 @@
       "author": null,
       "contributor": null,
       "id": "device_enrollment",
-      "community": 1,
+      "community": 4,
       "norm_label": "device enrollment"
     },
     {
@@ -1597,7 +1597,7 @@
       "author": null,
       "contributor": null,
       "id": "endpoint_management",
-      "community": 1,
+      "community": 4,
       "norm_label": "endpoint management"
     },
     {
@@ -1610,7 +1610,7 @@
       "author": null,
       "contributor": null,
       "id": "multi_device_support",
-      "community": 1,
+      "community": 4,
       "norm_label": "multi-device support"
     },
     {
@@ -1623,7 +1623,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_implementation_migration",
-      "community": 1,
+      "community": 4,
       "norm_label": "uem implementation / migration"
     },
     {
@@ -1636,7 +1636,7 @@
       "author": null,
       "contributor": null,
       "id": "laptop_device",
-      "community": 1,
+      "community": 4,
       "norm_label": "laptop / desktop endpoint"
     },
     {
@@ -1649,7 +1649,7 @@
       "author": null,
       "contributor": null,
       "id": "cloud_infrastructure",
-      "community": 1,
+      "community": 4,
       "norm_label": "cloud infrastructure / management platform"
     },
     {
@@ -1662,7 +1662,7 @@
       "author": null,
       "contributor": null,
       "id": "data_flow_migration",
-      "community": 1,
+      "community": 4,
       "norm_label": "data flow / migration arrow"
     },
     {
@@ -1675,7 +1675,7 @@
       "author": null,
       "contributor": null,
       "id": "endpoint_connectivity",
-      "community": 1,
+      "community": 4,
       "norm_label": "endpoint connectivity / management"
     },
     {
@@ -1688,7 +1688,7 @@
       "author": null,
       "contributor": null,
       "id": "smartphone_endpoint",
-      "community": 1,
+      "community": 4,
       "norm_label": "smartphone / mobile endpoint"
     },
     {
@@ -1701,7 +1701,7 @@
       "author": null,
       "contributor": null,
       "id": "headset_support_device",
-      "community": 1,
+      "community": 4,
       "norm_label": "headset / support device"
     },
     {
@@ -1714,7 +1714,7 @@
       "author": null,
       "contributor": null,
       "id": "endpoint_migration_flow",
-      "community": 1,
+      "community": 4,
       "norm_label": "endpoint migration data flow"
     },
     {
@@ -1727,7 +1727,7 @@
       "author": null,
       "contributor": null,
       "id": "unified_endpoint_management",
-      "community": 1,
+      "community": 4,
       "norm_label": "unified endpoint management"
     },
     {
@@ -1740,7 +1740,7 @@
       "author": null,
       "contributor": null,
       "id": "device_connectivity",
-      "community": 1,
+      "community": 4,
       "norm_label": "device connectivity"
     },
     {
@@ -1753,7 +1753,7 @@
       "author": null,
       "contributor": null,
       "id": "cloud_migration",
-      "community": 1,
+      "community": 4,
       "norm_label": "cloud migration"
     },
     {
@@ -1766,7 +1766,7 @@
       "author": null,
       "contributor": null,
       "id": "businessman_stock_photo",
-      "community": 48,
+      "community": 12,
       "norm_label": "businessman stock photo \u2014 professional male headshot in navy suit; used as persona illustration or testimonial avatar on uem consulting website"
     },
     {
@@ -1779,7 +1779,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_enablement_training",
-      "community": 15,
+      "community": 14,
       "norm_label": "uem enablement training"
     },
     {
@@ -1792,7 +1792,7 @@
       "author": null,
       "contributor": null,
       "id": "trainer_presenter",
-      "community": 15,
+      "community": 14,
       "norm_label": "trainer / presenter"
     },
     {
@@ -1805,7 +1805,7 @@
       "author": null,
       "contributor": null,
       "id": "laptop_display",
-      "community": 15,
+      "community": 14,
       "norm_label": "laptop / display screen"
     },
     {
@@ -1818,7 +1818,7 @@
       "author": null,
       "contributor": null,
       "id": "knowledge_transfer",
-      "community": 15,
+      "community": 14,
       "norm_label": "knowledge transfer"
     },
     {
@@ -1831,7 +1831,7 @@
       "author": null,
       "contributor": null,
       "id": "communication_bubble",
-      "community": 15,
+      "community": 14,
       "norm_label": "communication / message bubble"
     },
     {
@@ -1844,7 +1844,7 @@
       "author": null,
       "contributor": null,
       "id": "training_content_flow",
-      "community": 15,
+      "community": 14,
       "norm_label": "training content flow (arrow)"
     },
     {
@@ -1857,7 +1857,7 @@
       "author": null,
       "contributor": null,
       "id": "global_deployment",
-      "community": 15,
+      "community": 14,
       "norm_label": "global deployment / location reach"
     },
     {
@@ -1870,7 +1870,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_logo_uem_architect_color_large",
-      "community": 49,
+      "community": 0,
       "norm_label": "uem architect color logo (large, with text)"
     },
     {
@@ -1883,7 +1883,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_name_uemarchitect",
-      "community": 50,
+      "community": 0,
       "norm_label": "uemarchitect (wordmark)"
     },
     {
@@ -1896,7 +1896,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_descriptor_consulting",
-      "community": 51,
+      "community": 0,
       "norm_label": "consulting (brand descriptor text)"
     },
     {
@@ -1909,7 +1909,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_color_navy_blue",
-      "community": 52,
+      "community": 0,
       "norm_label": "navy blue (brand primary color \u2014 used on 'uem' prefix)"
     },
     {
@@ -1922,7 +1922,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_color_medium_blue",
-      "community": 53,
+      "community": 0,
       "norm_label": "medium blue (brand secondary color \u2014 used on 'architect' and icon leaves)"
     },
     {
@@ -1935,7 +1935,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_color_grey",
-      "community": 54,
+      "community": 0,
       "norm_label": "grey (used on 'consulting' descriptor text)"
     },
     {
@@ -1948,7 +1948,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_icon_leaf_motif",
-      "community": 55,
+      "community": 0,
       "norm_label": "leaf/sprout icon motif (three leaves \u2014 dark blue, medium blue, light blue \u2014 positioned above 't' in 'architect')"
     },
     {
@@ -1961,7 +1961,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_typography_sans_serif_lowercase",
-      "community": 56,
+      "community": 0,
       "norm_label": "lowercase sans-serif wordmark typography style"
     },
     {
@@ -1974,7 +1974,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_registration_mark",
-      "community": 57,
+      "community": 0,
       "norm_label": "registered trademark symbol (r) on 'consulting'"
     },
     {
@@ -1987,7 +1987,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_background_white",
-      "community": 58,
+      "community": 0,
       "norm_label": "white background (logo variant background color)"
     },
     {
@@ -2000,7 +2000,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment_icon",
-      "community": 12,
+      "community": 6,
       "norm_label": "assessment icon"
     },
     {
@@ -2013,7 +2013,7 @@
       "author": null,
       "contributor": null,
       "id": "checklist_document",
-      "community": 12,
+      "community": 6,
       "norm_label": "checklist document"
     },
     {
@@ -2026,7 +2026,7 @@
       "author": null,
       "contributor": null,
       "id": "checkbox_item",
-      "community": 12,
+      "community": 6,
       "norm_label": "checkbox item"
     },
     {
@@ -2039,7 +2039,7 @@
       "author": null,
       "contributor": null,
       "id": "checklist_row",
-      "community": 12,
+      "community": 6,
       "norm_label": "checklist row"
     },
     {
@@ -2052,7 +2052,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment_service",
-      "community": 12,
+      "community": 6,
       "norm_label": "assessment service"
     },
     {
@@ -2065,7 +2065,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect",
-      "community": 12,
+      "community": 6,
       "norm_label": "uem architect"
     },
     {
@@ -2078,7 +2078,7 @@
       "author": null,
       "contributor": null,
       "id": "evaluation_methodology",
-      "community": 12,
+      "community": 6,
       "norm_label": "evaluation methodology"
     },
     {
@@ -2091,7 +2091,7 @@
       "author": null,
       "contributor": null,
       "id": "structured_review",
-      "community": 12,
+      "community": 6,
       "norm_label": "structured review"
     },
     {
@@ -2109,7 +2109,7 @@
       "description": "Microsoft Entra ID partner logo \u2014 Microsoft's identity and access management platform (formerly Azure Active Directory). Displayed in Microsoft brand blue (#0F6CBD).",
       "role": "technology_partner",
       "id": "partner-entra-svg",
-      "community": 59,
+      "community": 0,
       "norm_label": "microsoft entra id"
     },
     {
@@ -2122,7 +2122,7 @@
       "author": null,
       "contributor": null,
       "id": "enterprise_png",
-      "community": 60,
+      "community": 2,
       "norm_label": "enterprise compliance checklist \u2014 clipboard icon with three checked items and a verification badge, representing enterprise policy audit readiness and endpoint management compliance verification for a uem consulting context"
     },
     {
@@ -2138,7 +2138,7 @@
       "brand_type": "energy_company",
       "description": "Grayscale logo featuring a stylized square icon with an arrow/chevron motif alongside the wordmark 'Vertex ENERGY' in sans-serif typography",
       "id": "vertex-energy-logo",
-      "community": 61,
+      "community": 8,
       "norm_label": "vertex energy"
     },
     {
@@ -2151,7 +2151,7 @@
       "author": null,
       "contributor": null,
       "id": "partner-intune",
-      "community": 62,
+      "community": 0,
       "norm_label": "microsoft intune"
     },
     {
@@ -2181,7 +2181,7 @@
         "transparent-background"
       ],
       "id": "img-b778e0ec95af7a376b3d236cadf9fe572776c521261e5f2e56384fd4a4728866",
-      "community": 63,
+      "community": 2,
       "norm_label": "uem icon set: device management, security, cross-device enrollment, compliance checklist"
     },
     {
@@ -2202,7 +2202,7 @@
       "industry": "healthcare",
       "partner_type": "UEM Architect partner",
       "id": "northbridge-health-network-logo",
-      "community": 64,
+      "community": 8,
       "norm_label": "northbridge health network"
     },
     {
@@ -2235,7 +2235,7 @@
         "description": "Color wordmark SVG with 'uem' in dark navy (#3d5a80) and 'architect' in medium blue (#5b8dc9), 'Consulting' in grey (#6b7c8f). Includes a hidden abstract leaf/petal icon group and a registered trademark symbol. No standalone logo mark visible."
       },
       "id": "asset:images/uem-architect-color-without-logo-svg",
-      "community": 65,
+      "community": 0,
       "norm_label": "uem architect color brand mark (no logo)"
     },
     {
@@ -2248,7 +2248,7 @@
       "author": null,
       "contributor": null,
       "id": "uemarchitect_consulting_brand",
-      "community": 20,
+      "community": 16,
       "norm_label": "uem architect consulting"
     },
     {
@@ -2261,7 +2261,7 @@
       "author": null,
       "contributor": null,
       "id": "uemarchitect_logo_mark",
-      "community": 20,
+      "community": 16,
       "norm_label": "uem architect logo mark (leaf/feather icon)"
     },
     {
@@ -2274,7 +2274,7 @@
       "author": null,
       "contributor": null,
       "id": "uemarchitect_wordmark",
-      "community": 20,
+      "community": 16,
       "norm_label": "uemarchitect wordmark (blue gradient text)"
     },
     {
@@ -2287,7 +2287,7 @@
       "author": null,
       "contributor": null,
       "id": "consulting_subtitle",
-      "community": 20,
+      "community": 16,
       "norm_label": "consulting\u00ae subtitle text"
     },
     {
@@ -2300,7 +2300,7 @@
       "author": null,
       "contributor": null,
       "id": "microsoft_teams_background_asset",
-      "community": 20,
+      "community": 16,
       "norm_label": "microsoft teams background / profile image asset"
     },
     {
@@ -2313,7 +2313,7 @@
       "author": null,
       "contributor": null,
       "id": "brand-asset-uem-architect-black-with-logo-svg",
-      "community": 66,
+      "community": 0,
       "norm_label": "uem architect black brand variant (with logo)"
     },
     {
@@ -2326,7 +2326,7 @@
       "author": null,
       "contributor": null,
       "id": "secure_browser",
-      "community": 16,
+      "community": 2,
       "norm_label": "secure browser"
     },
     {
@@ -2339,7 +2339,7 @@
       "author": null,
       "contributor": null,
       "id": "browser_window",
-      "community": 16,
+      "community": 2,
       "norm_label": "browser window"
     },
     {
@@ -2352,7 +2352,7 @@
       "author": null,
       "contributor": null,
       "id": "security_shield",
-      "community": 16,
+      "community": 2,
       "norm_label": "security shield"
     },
     {
@@ -2365,7 +2365,7 @@
       "author": null,
       "contributor": null,
       "id": "padlock",
-      "community": 16,
+      "community": 2,
       "norm_label": "padlock / lock icon"
     },
     {
@@ -2378,7 +2378,7 @@
       "author": null,
       "contributor": null,
       "id": "web_security",
-      "community": 16,
+      "community": 2,
       "norm_label": "web security"
     },
     {
@@ -2391,7 +2391,7 @@
       "author": null,
       "contributor": null,
       "id": "encryption",
-      "community": 16,
+      "community": 2,
       "norm_label": "encryption / data protection"
     },
     {
@@ -2404,7 +2404,7 @@
       "author": null,
       "contributor": null,
       "id": "access_control",
-      "community": 16,
+      "community": 2,
       "norm_label": "access control"
     },
     {
@@ -2425,7 +2425,7 @@
       "wordmark": "Crestline FINANCIAL",
       "typography_notes": "Sans-serif; 'Crestline' in bold, 'FINANCIAL' in spaced uppercase tracking below",
       "id": "crestline-financial-logo",
-      "community": 67,
+      "community": 8,
       "norm_label": "crestline financial"
     },
     {
@@ -2450,7 +2450,7 @@
       "industry": "Retail",
       "entity_type": "organization",
       "id": "riverbend-retail-group-logo",
-      "community": 68,
+      "community": 8,
       "norm_label": "riverbend retail group"
     },
     {
@@ -2481,7 +2481,7 @@
         "enterprise mobility"
       ],
       "id": "f3e6791f215e0626e9062fd2483a0432afdc07488724477e31b1025d6b0db76b",
-      "community": 69,
+      "community": 2,
       "norm_label": "uem cloud device management illustration"
     },
     {
@@ -2537,7 +2537,7 @@
         "background": "transparent"
       },
       "id": "brand-asset-uem-architect-white-wordmark",
-      "community": 70,
+      "community": 0,
       "norm_label": "uem architect white wordmark (text only)"
     },
     {
@@ -2563,7 +2563,7 @@
         "year": "2026"
       },
       "id": "brand_asset_uemarchitect_grey_bg_2026",
-      "community": 26,
+      "community": 0,
       "norm_label": "uem architect consulting logo \u2014 grey background (2026)"
     },
     {
@@ -2583,7 +2583,7 @@
         "trademark_status": "registered (\u00ae)"
       },
       "id": "brand_uemarchitect_consulting",
-      "community": 26,
+      "community": 0,
       "norm_label": "uem architect consulting \u2014 brand entity"
     },
     {
@@ -2603,7 +2603,7 @@
         "year": "2026"
       },
       "id": "platform_context_azure_social_profile",
-      "community": 26,
+      "community": 0,
       "norm_label": "azure / social profile image context \u2014 grey background variant"
     },
     {
@@ -2616,7 +2616,7 @@
       "author": null,
       "contributor": null,
       "id": "uem-architect",
-      "community": 21,
+      "community": 10,
       "norm_label": "uem architect"
     },
     {
@@ -2629,7 +2629,7 @@
       "author": null,
       "contributor": null,
       "id": "omnissa",
-      "community": 21,
+      "community": 10,
       "norm_label": "omnissa"
     },
     {
@@ -2642,7 +2642,7 @@
       "author": null,
       "contributor": null,
       "id": "omnissa-partner-program",
-      "community": 21,
+      "community": 10,
       "norm_label": "omnissa partner program"
     },
     {
@@ -2655,7 +2655,7 @@
       "author": null,
       "contributor": null,
       "id": "solution-reseller-tier",
-      "community": 21,
+      "community": 10,
       "norm_label": "solution reseller"
     },
     {
@@ -2668,7 +2668,7 @@
       "author": null,
       "contributor": null,
       "id": "year-2026",
-      "community": 21,
+      "community": 10,
       "norm_label": "2026"
     },
     {
@@ -2690,7 +2690,7 @@
         "avatar"
       ],
       "id": "businesswoman_persona_illustration",
-      "community": 71,
+      "community": 12,
       "norm_label": "businesswoman persona illustration"
     },
     {
@@ -2712,7 +2712,7 @@
       "entity_type": "company",
       "role": "client_or_partner",
       "id": "swifttech-logo",
-      "community": 72,
+      "community": 8,
       "norm_label": "swifttech solutions"
     },
     {
@@ -2737,7 +2737,7 @@
         ]
       },
       "id": "asset:images/uem-architect-color-logo-only-svg",
-      "community": 73,
+      "community": 0,
       "norm_label": "uem architect color brand mark (icon only)"
     },
     {
@@ -2750,7 +2750,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_platform_cross_platform_management",
-      "community": 18,
+      "community": 15,
       "norm_label": "cross-platform uem management"
     },
     {
@@ -2763,7 +2763,7 @@
       "author": null,
       "contributor": null,
       "id": "ios_mobile_device",
-      "community": 18,
+      "community": 15,
       "norm_label": "apple ios mobile device"
     },
     {
@@ -2776,7 +2776,7 @@
       "author": null,
       "contributor": null,
       "id": "windows_desktop",
-      "community": 18,
+      "community": 15,
       "norm_label": "windows desktop/pc"
     },
     {
@@ -2789,7 +2789,7 @@
       "author": null,
       "contributor": null,
       "id": "bidirectional_sync",
-      "community": 18,
+      "community": 15,
       "norm_label": "bidirectional device synchronization"
     },
     {
@@ -2802,7 +2802,7 @@
       "author": null,
       "contributor": null,
       "id": "apple_platform",
-      "community": 18,
+      "community": 15,
       "norm_label": "apple platform (ios/macos)"
     },
     {
@@ -2815,7 +2815,7 @@
       "author": null,
       "contributor": null,
       "id": "windows_platform",
-      "community": 18,
+      "community": 15,
       "norm_label": "microsoft windows platform"
     },
     {
@@ -2828,7 +2828,7 @@
       "author": null,
       "contributor": null,
       "id": "endpoint_assessment",
-      "community": 10,
+      "community": 6,
       "norm_label": "endpoint assessment"
     },
     {
@@ -2841,7 +2841,7 @@
       "author": null,
       "contributor": null,
       "id": "checklist",
-      "community": 10,
+      "community": 6,
       "norm_label": "assessment checklist"
     },
     {
@@ -2854,7 +2854,7 @@
       "author": null,
       "contributor": null,
       "id": "clipboard",
-      "community": 10,
+      "community": 6,
       "norm_label": "evaluation clipboard"
     },
     {
@@ -2867,7 +2867,7 @@
       "author": null,
       "contributor": null,
       "id": "tablet_device",
-      "community": 10,
+      "community": 6,
       "norm_label": "tablet device"
     },
     {
@@ -2880,7 +2880,7 @@
       "author": null,
       "contributor": null,
       "id": "endpoint_inventory",
-      "community": 10,
+      "community": 6,
       "norm_label": "endpoint inventory"
     },
     {
@@ -2893,7 +2893,7 @@
       "author": null,
       "contributor": null,
       "id": "checklist_items",
-      "community": 10,
+      "community": 6,
       "norm_label": "checklist line items"
     },
     {
@@ -2906,7 +2906,7 @@
       "author": null,
       "contributor": null,
       "id": "evaluation_criteria",
-      "community": 10,
+      "community": 6,
       "norm_label": "evaluation criteria"
     },
     {
@@ -2919,7 +2919,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_service",
-      "community": 10,
+      "community": 6,
       "norm_label": "unified endpoint management service"
     },
     {
@@ -2932,7 +2932,7 @@
       "author": null,
       "contributor": null,
       "id": "multi_device_coverage",
-      "community": 10,
+      "community": 6,
       "norm_label": "multi-device coverage"
     },
     {
@@ -2955,7 +2955,7 @@
       "has_text": false,
       "has_wordmark": false,
       "id": "brand-asset-uem-architect-logo-google",
-      "community": 74,
+      "community": 0,
       "norm_label": "uem architect color logo (google-optimized, icon only)"
     },
     {
@@ -2990,7 +2990,7 @@
         "icon_group": "hidden (display:none)"
       },
       "id": "asset:Images/uem-architect-black - without logo.svg",
-      "community": 75,
+      "community": 0,
       "norm_label": "uem architect black brand mark (no logo)"
     },
     {
@@ -3003,7 +3003,7 @@
       "author": null,
       "contributor": null,
       "id": "managed_uem_operations",
-      "community": 1,
+      "community": 4,
       "norm_label": "managed uem operations"
     },
     {
@@ -3016,7 +3016,7 @@
       "author": null,
       "contributor": null,
       "id": "desktop_monitor",
-      "community": 1,
+      "community": 4,
       "norm_label": "desktop monitor"
     },
     {
@@ -3029,7 +3029,7 @@
       "author": null,
       "contributor": null,
       "id": "analytics_dashboard",
-      "community": 1,
+      "community": 4,
       "norm_label": "analytics dashboard / growth chart"
     },
     {
@@ -3042,7 +3042,7 @@
       "author": null,
       "contributor": null,
       "id": "gear_settings_icon",
-      "community": 1,
+      "community": 4,
       "norm_label": "gear / settings / configuration icon"
     },
     {
@@ -3055,7 +3055,7 @@
       "author": null,
       "contributor": null,
       "id": "monitoring_and_reporting",
-      "community": 1,
+      "community": 4,
       "norm_label": "monitoring and reporting"
     },
     {
@@ -3068,7 +3068,7 @@
       "author": null,
       "contributor": null,
       "id": "operational_configuration",
-      "community": 1,
+      "community": 4,
       "norm_label": "operational configuration"
     },
     {
@@ -3081,7 +3081,7 @@
       "author": null,
       "contributor": null,
       "id": "multi_device_fleet",
-      "community": 1,
+      "community": 4,
       "norm_label": "multi-device fleet"
     },
     {
@@ -3108,7 +3108,7 @@
         "format": "PNG"
       },
       "id": "brand-asset-uem-architect-color-logo-small-google",
-      "community": 76,
+      "community": 0,
       "norm_label": "uem architect color logo (small, google-optimized)"
     },
     {
@@ -3138,7 +3138,7 @@
         "use_case": "primary brand logo, full color version"
       },
       "id": "brand-identity-uem-architect-consulting",
-      "community": 77,
+      "community": 0,
       "norm_label": "uem architect consulting \u2014 full color brand logo with text"
     },
     {
@@ -3160,7 +3160,7 @@
         "font_size": "38"
       },
       "id": "partner-jamf",
-      "community": 78,
+      "community": 0,
       "norm_label": "jamf"
     },
     {
@@ -3173,7 +3173,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment-icon-checklist",
-      "community": 79,
+      "community": 6,
       "norm_label": "checklist/clipboard icon with two checked checkboxes"
     },
     {
@@ -3186,7 +3186,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment-icon-location-pin",
-      "community": 80,
+      "community": 6,
       "norm_label": "location pin/map marker above clipboard"
     },
     {
@@ -3199,7 +3199,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment-icon-gear",
-      "community": 81,
+      "community": 6,
       "norm_label": "gear/cog wheel overlapping bottom-right of clipboard"
     },
     {
@@ -3212,7 +3212,7 @@
       "author": null,
       "contributor": null,
       "id": "assessment-icon-overall",
-      "community": 82,
+      "community": 6,
       "norm_label": "blue gradient assessment illustration: checked clipboard, location pin, and gear \u2014 representing an assessment or audit process with configuration"
     },
     {
@@ -3241,7 +3241,7 @@
         "bottom ellipse (light sky blue)"
       ],
       "id": "brand-asset-uem-architect-color-logo-only-larger",
-      "community": 83,
+      "community": 0,
       "norm_label": "uem architect color logo (mark only, large)"
     },
     {
@@ -3254,7 +3254,7 @@
       "author": null,
       "contributor": null,
       "id": "img_c39b840b_composite",
-      "community": 22,
+      "community": 2,
       "norm_label": "uem/cybersecurity services illustration \u2014 2x2 grid of flat-style blue security icons"
     },
     {
@@ -3267,7 +3267,7 @@
       "author": null,
       "contributor": null,
       "id": "img_c39b840b_panel_1",
-      "community": 22,
+      "community": 2,
       "norm_label": "security shield with key connected to multiple device endpoints (tablets, phones, laptops, desktops) \u2014 endpoint security / uem concept"
     },
     {
@@ -3280,7 +3280,7 @@
       "author": null,
       "contributor": null,
       "id": "img_c39b840b_panel_2",
-      "community": 22,
+      "community": 2,
       "norm_label": "two users in front of cloud environment with documents and connected devices \u2014 cloud document management / cloud storage concept"
     },
     {
@@ -3293,7 +3293,7 @@
       "author": null,
       "contributor": null,
       "id": "img_c39b840b_panel_3",
-      "community": 22,
+      "community": 2,
       "norm_label": "circular network of connected endpoint nodes with a key at the center \u2014 zero-trust key management / identity hub / network topology concept"
     },
     {
@@ -3306,7 +3306,7 @@
       "author": null,
       "contributor": null,
       "id": "img_c39b840b_panel_4",
-      "community": 22,
+      "community": 2,
       "norm_label": "group of people (team/organization) alongside a large security shield with key \u2014 organizational security / team identity protection concept"
     },
     {
@@ -3319,7 +3319,7 @@
       "author": null,
       "contributor": null,
       "id": "script_buildBanner",
-      "community": 0,
+      "community": 3,
       "norm_label": "buildbanner"
     },
     {
@@ -3332,7 +3332,7 @@
       "author": null,
       "contributor": null,
       "id": "script_cookieconsent",
-      "community": 0,
+      "community": 3,
       "norm_label": "cookie consent banner (gdpr)"
     },
     {
@@ -3345,7 +3345,7 @@
       "author": null,
       "contributor": null,
       "id": "script_stickyheader",
-      "community": 17,
+      "community": 3,
       "norm_label": "sticky header module"
     },
     {
@@ -3358,7 +3358,7 @@
       "author": null,
       "contributor": null,
       "id": "script_mobilemenutoggle",
-      "community": 84,
+      "community": 3,
       "norm_label": "mobile menu toggle"
     },
     {
@@ -3371,7 +3371,7 @@
       "author": null,
       "contributor": null,
       "id": "script_typingeffect",
-      "community": 0,
+      "community": 9,
       "norm_label": "typing effect module"
     },
     {
@@ -3384,7 +3384,7 @@
       "author": null,
       "contributor": null,
       "id": "script_scrollreveal",
-      "community": 85,
+      "community": 3,
       "norm_label": "scroll reveal (intersectionobserver)"
     },
     {
@@ -3397,7 +3397,7 @@
       "author": null,
       "contributor": null,
       "id": "script_testimonialcarousel",
-      "community": 0,
+      "community": 3,
       "norm_label": "testimonial carousel"
     },
     {
@@ -3410,7 +3410,7 @@
       "author": null,
       "contributor": null,
       "id": "script_smoothscroll",
-      "community": 17,
+      "community": 3,
       "norm_label": "smooth scroll for anchor links"
     },
     {
@@ -3423,7 +3423,7 @@
       "author": null,
       "contributor": null,
       "id": "script_scrolltotop",
-      "community": 86,
+      "community": 3,
       "norm_label": "scroll to top"
     },
     {
@@ -3436,7 +3436,7 @@
       "author": null,
       "contributor": null,
       "id": "script_web3forms_api",
-      "community": 0,
+      "community": 3,
       "norm_label": "web3forms api (https://api.web3forms.com/submit)"
     },
     {
@@ -3449,7 +3449,7 @@
       "author": null,
       "contributor": null,
       "id": "script_footeryear",
-      "community": 87,
+      "community": 3,
       "norm_label": "auto-update footer year"
     },
     {
@@ -3462,7 +3462,7 @@
       "author": null,
       "contributor": null,
       "id": "script_statcounter",
-      "community": 88,
+      "community": 3,
       "norm_label": "stat counter count-up"
     },
     {
@@ -3475,7 +3475,7 @@
       "author": null,
       "contributor": null,
       "id": "script_assessmentquiz",
-      "community": 0,
+      "community": 3,
       "norm_label": "assessment quiz (initassessmentquiz)"
     },
     {
@@ -3488,7 +3488,7 @@
       "author": null,
       "contributor": null,
       "id": "script_quizquestions",
-      "community": 0,
+      "community": 3,
       "norm_label": "questions (quiz question data)"
     },
     {
@@ -3501,7 +3501,7 @@
       "author": null,
       "contributor": null,
       "id": "script_quiztiers",
-      "community": 0,
+      "community": 3,
       "norm_label": "tiers (quiz result tiers)"
     },
     {
@@ -3514,7 +3514,7 @@
       "author": null,
       "contributor": null,
       "id": "script_grecaptcha",
-      "community": 0,
+      "community": 3,
       "norm_label": "google recaptcha enterprise"
     },
     {
@@ -3527,7 +3527,7 @@
       "author": null,
       "contributor": null,
       "id": "script_contactform",
-      "community": 0,
+      "community": 3,
       "norm_label": "contact-form element"
     },
     {
@@ -3540,7 +3540,7 @@
       "author": null,
       "contributor": null,
       "id": "script_newsletterforms",
-      "community": 0,
+      "community": 3,
       "norm_label": "newsletter form elements"
     },
     {
@@ -3553,7 +3553,7 @@
       "author": null,
       "contributor": null,
       "id": "robots_txt",
-      "community": 27,
+      "community": 13,
       "norm_label": "robots.txt"
     },
     {
@@ -3566,7 +3566,7 @@
       "author": null,
       "contributor": null,
       "id": "robots_deepdive",
-      "community": 27,
+      "community": 13,
       "norm_label": "deep-dive.html (disallowed)"
     },
     {
@@ -3579,7 +3579,7 @@
       "author": null,
       "contributor": null,
       "id": "robots_sitemap",
-      "community": 27,
+      "community": 13,
       "norm_label": "sitemap.xml"
     },
     {
@@ -3592,7 +3592,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_210128_header_dark",
-      "community": 5,
+      "community": 9,
       "norm_label": "header - dark theme (screenshot 2026-03-23 210128)"
     },
     {
@@ -3605,7 +3605,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_210128_logo",
-      "community": 5,
+      "community": 9,
       "norm_label": "uem architect logo (dark header context)"
     },
     {
@@ -3618,7 +3618,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_210128_nav",
-      "community": 5,
+      "community": 9,
       "norm_label": "navigation bar - dark background"
     },
     {
@@ -3631,7 +3631,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_210128_get_started_btn",
-      "community": 5,
+      "community": 9,
       "norm_label": "get started cta button (blue, dark nav)"
     },
     {
@@ -3644,7 +3644,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_204930_logo_closeup",
-      "community": 5,
+      "community": 9,
       "norm_label": "uem architect logo closeup (dark background)"
     },
     {
@@ -3657,7 +3657,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_hero",
-      "community": 5,
+      "community": 9,
       "norm_label": "top of page - hero section"
     },
     {
@@ -3670,7 +3670,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_nav",
-      "community": 5,
+      "community": 9,
       "norm_label": "navigation bar - light/transparent (top of page)"
     },
     {
@@ -3683,7 +3683,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_heading",
-      "community": 5,
+      "community": 9,
       "norm_label": "hero heading - 'architects' (animated typing effect)"
     },
     {
@@ -3696,7 +3696,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_tagline",
-      "community": 5,
+      "community": 9,
       "norm_label": "hero tagline - uem strategy consulting value proposition"
     },
     {
@@ -3709,7 +3709,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_cta_buttons",
-      "community": 5,
+      "community": 7,
       "norm_label": "cta buttons - schedule consultation + explore services"
     },
     {
@@ -3722,7 +3722,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_top_of_page_badge",
-      "community": 5,
+      "community": 9,
       "norm_label": "hero badge - unified endpoint management experts"
     },
     {
@@ -3735,7 +3735,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_after_scrolling_personas",
-      "community": 23,
+      "community": 12,
       "norm_label": "after scrolling - persona cards section"
     },
     {
@@ -3748,7 +3748,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_after_scrolling_it_leaders_card",
-      "community": 23,
+      "community": 12,
       "norm_label": "persona card - for it leaders"
     },
     {
@@ -3761,7 +3761,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_after_scrolling_ops_hr_card",
-      "community": 23,
+      "community": 12,
       "norm_label": "persona card - for operations & hr teams"
     },
     {
@@ -3774,7 +3774,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_after_scrolling_security_card",
-      "community": 23,
+      "community": 12,
       "norm_label": "persona card - for security & compliance"
     },
     {
@@ -3787,7 +3787,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_after_scrolling_sticky_nav",
-      "community": 5,
+      "community": 9,
       "norm_label": "sticky header - light mode (after scrolling)"
     },
     {
@@ -3800,7 +3800,7 @@
       "author": null,
       "contributor": null,
       "id": "screenshot_205615_header_scrolled",
-      "community": 5,
+      "community": 9,
       "norm_label": "header - scrolled state (light background)"
     },
     {
@@ -3813,7 +3813,7 @@
       "author": null,
       "contributor": null,
       "id": "nav_links_set",
-      "community": 5,
+      "community": 9,
       "norm_label": "navigation links: services, process, why us, testimonials, contact"
     },
     {
@@ -3826,7 +3826,7 @@
       "author": null,
       "contributor": null,
       "id": "homepage_hero_section",
-      "community": 5,
+      "community": 9,
       "norm_label": "homepage hero section"
     },
     {
@@ -3839,7 +3839,7 @@
       "author": null,
       "contributor": null,
       "id": "persona_targeting_section",
-      "community": 23,
+      "community": 12,
       "norm_label": "persona targeting section (it leaders, ops/hr, security)"
     },
     {
@@ -3852,7 +3852,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_okta",
-      "community": 13,
+      "community": 0,
       "norm_label": "okta"
     },
     {
@@ -3865,7 +3865,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_crowdstrike",
-      "community": 13,
+      "community": 0,
       "norm_label": "crowdstrike"
     },
     {
@@ -3878,7 +3878,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_uem_architect_logo_white",
-      "community": 13,
+      "community": 0,
       "norm_label": "uem architect consulting logo (white)"
     },
     {
@@ -3891,7 +3891,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_uem_architect_white_with_logo",
-      "community": 13,
+      "community": 0,
       "norm_label": "uem architect consulting white variant (with logo)"
     },
     {
@@ -3904,7 +3904,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_uem_architect_color_with_logo",
-      "community": 13,
+      "community": 0,
       "norm_label": "uem architect consulting color variant (with logo)"
     },
     {
@@ -3917,7 +3917,7 @@
       "author": null,
       "contributor": null,
       "id": "org_uem_architect_consulting",
-      "community": 13,
+      "community": 0,
       "norm_label": "uem architect consulting"
     },
     {
@@ -3930,7 +3930,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_okta_identity",
-      "community": 13,
+      "community": 0,
       "norm_label": "okta identity platform"
     },
     {
@@ -3943,7 +3943,7 @@
       "author": null,
       "contributor": null,
       "id": "brand_crowdstrike_security",
-      "community": 13,
+      "community": 0,
       "norm_label": "crowdstrike cybersecurity"
     },
     {
@@ -3956,7 +3956,7 @@
       "author": null,
       "contributor": null,
       "id": "operations_icon",
-      "community": 8,
+      "community": 11,
       "norm_label": "operations icon (bar chart)"
     },
     {
@@ -3969,7 +3969,7 @@
       "author": null,
       "contributor": null,
       "id": "cloudmanagement_icon",
-      "community": 8,
+      "community": 11,
       "norm_label": "cloud management icon (cloud with laptop and phone)"
     },
     {
@@ -3982,7 +3982,7 @@
       "author": null,
       "contributor": null,
       "id": "service_identity_icon",
-      "community": 6,
+      "community": 2,
       "norm_label": "service identity icon (person with key and checkmark)"
     },
     {
@@ -3995,7 +3995,7 @@
       "author": null,
       "contributor": null,
       "id": "identity_icon",
-      "community": 6,
+      "community": 2,
       "norm_label": "identity icon (shield with key and checkmark)"
     },
     {
@@ -4008,7 +4008,7 @@
       "author": null,
       "contributor": null,
       "id": "implementation_icon",
-      "community": 8,
+      "community": 11,
       "norm_label": "implementation icon (user/person on laptop)"
     },
     {
@@ -4021,7 +4021,7 @@
       "author": null,
       "contributor": null,
       "id": "securebrowsing_icon",
-      "community": 6,
+      "community": 2,
       "norm_label": "secure browsing icon (folder with shield)"
     },
     {
@@ -4034,7 +4034,7 @@
       "author": null,
       "contributor": null,
       "id": "training_icon",
-      "community": 8,
+      "community": 11,
       "norm_label": "training icon (presentation screen)"
     },
     {
@@ -4047,7 +4047,7 @@
       "author": null,
       "contributor": null,
       "id": "service_training_icon",
-      "community": 8,
+      "community": 11,
       "norm_label": "service training illustration (instructor with laptop and content flow)"
     },
     {
@@ -4060,7 +4060,7 @@
       "author": null,
       "contributor": null,
       "id": "service_security_icon",
-      "community": 6,
+      "community": 2,
       "norm_label": "service security illustration (shield with key, database, and device)"
     },
     {
@@ -4073,7 +4073,7 @@
       "author": null,
       "contributor": null,
       "id": "identitymanagement_icon",
-      "community": 6,
+      "community": 2,
       "norm_label": "identity management icon (person with key and checkmark)"
     },
     {
@@ -4086,7 +4086,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_operations_illustration",
-      "community": 8,
+      "community": 11,
       "norm_label": "uem operations illustration (multi-device dashboard with gear)"
     },
     {
@@ -4099,7 +4099,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_zero_trust_illustration",
-      "community": 6,
+      "community": 2,
       "norm_label": "uem zero trust illustration (shield with key, database, mobile)"
     },
     {
@@ -4112,7 +4112,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_assessments_roadmap_jpg",
-      "community": 8,
+      "community": 6,
       "norm_label": "uem assessments roadmap illustration (clipboard checklist with devices) jpg"
     },
     {
@@ -4125,7 +4125,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_assessments_roadmap_png",
-      "community": 8,
+      "community": 6,
       "norm_label": "uem assessments roadmap illustration (clipboard checklist with devices) png"
     },
     {
@@ -4138,7 +4138,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_operations",
-      "community": 8,
+      "community": 11,
       "norm_label": "operations (uem service concept)"
     },
     {
@@ -4151,7 +4151,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_cloud_management",
-      "community": 8,
+      "community": 11,
       "norm_label": "cloud management (uem service concept)"
     },
     {
@@ -4164,7 +4164,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_identity",
-      "community": 6,
+      "community": 2,
       "norm_label": "identity & access management (uem service concept)"
     },
     {
@@ -4177,7 +4177,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_implementation",
-      "community": 8,
+      "community": 11,
       "norm_label": "implementation (uem service concept)"
     },
     {
@@ -4190,7 +4190,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_secure_browsing",
-      "community": 6,
+      "community": 2,
       "norm_label": "secure browsing / data security (uem service concept)"
     },
     {
@@ -4203,7 +4203,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_training",
-      "community": 8,
+      "community": 11,
       "norm_label": "training (uem service concept)"
     },
     {
@@ -4216,7 +4216,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_security",
-      "community": 6,
+      "community": 2,
       "norm_label": "security (uem service concept)"
     },
     {
@@ -4229,7 +4229,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_assessments_roadmap",
-      "community": 8,
+      "community": 6,
       "norm_label": "assessments & roadmap (uem service concept)"
     },
     {
@@ -4242,7 +4242,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_zero_trust",
-      "community": 6,
+      "community": 2,
       "norm_label": "zero trust (uem security framework)"
     },
     {
@@ -4255,7 +4255,7 @@
       "author": null,
       "contributor": null,
       "id": "omn_partner_silver_2026_badge",
-      "community": 4,
+      "community": 10,
       "norm_label": "omnissa partner silver 2026 badge"
     },
     {
@@ -4268,7 +4268,7 @@
       "author": null,
       "contributor": null,
       "id": "omnissa_brand",
-      "community": 4,
+      "community": 10,
       "norm_label": "omnissa"
     },
     {
@@ -4281,7 +4281,7 @@
       "author": null,
       "contributor": null,
       "id": "silver_partner_tier",
-      "community": 4,
+      "community": 10,
       "norm_label": "silver partner tier"
     },
     {
@@ -4294,7 +4294,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_uem_architect_consulting",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting logo (with wordmark)"
     },
     {
@@ -4307,7 +4307,7 @@
       "author": null,
       "contributor": null,
       "id": "uem_architect_consulting_brand",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting"
     },
     {
@@ -4320,7 +4320,7 @@
       "author": null,
       "contributor": null,
       "id": "omnissapartner_icon",
-      "community": 4,
+      "community": 10,
       "norm_label": "omnissa partner icon (hexagon and gear)"
     },
     {
@@ -4333,7 +4333,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_vertex_logo",
-      "community": 4,
+      "community": 8,
       "norm_label": "vertex energy logo"
     },
     {
@@ -4346,7 +4346,7 @@
       "author": null,
       "contributor": null,
       "id": "vertex_energy_brand",
-      "community": 4,
+      "community": 8,
       "norm_label": "vertex energy"
     },
     {
@@ -4359,7 +4359,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_crestline_logo",
-      "community": 4,
+      "community": 8,
       "norm_label": "crestline financial logo"
     },
     {
@@ -4372,7 +4372,7 @@
       "author": null,
       "contributor": null,
       "id": "crestline_financial_brand",
-      "community": 4,
+      "community": 8,
       "norm_label": "crestline financial"
     },
     {
@@ -4385,7 +4385,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_riverbend_logo",
-      "community": 4,
+      "community": 8,
       "norm_label": "riverbend retail group logo"
     },
     {
@@ -4398,7 +4398,7 @@
       "author": null,
       "contributor": null,
       "id": "riverbend_retail_group_brand",
-      "community": 4,
+      "community": 8,
       "norm_label": "riverbend retail group"
     },
     {
@@ -4411,7 +4411,7 @@
       "author": null,
       "contributor": null,
       "id": "partner_swifttech_logo",
-      "community": 4,
+      "community": 8,
       "norm_label": "swifttech solutions logo"
     },
     {
@@ -4424,7 +4424,7 @@
       "author": null,
       "contributor": null,
       "id": "swifttech_solutions_brand",
-      "community": 4,
+      "community": 8,
       "norm_label": "swifttech solutions"
     },
     {
@@ -4437,7 +4437,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_with_logo_large_centered",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting logo - color with icon large centered"
     },
     {
@@ -4450,7 +4450,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_only_large",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting - icon only large (three leaf shapes)"
     },
     {
@@ -4463,7 +4463,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_grey_background_2026",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting logo - grey background 2026 updated"
     },
     {
@@ -4476,7 +4476,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_no_background_2026",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting logo - no background 2026 updated"
     },
     {
@@ -4489,7 +4489,7 @@
       "author": null,
       "contributor": null,
       "id": "logo_without_icon_larger",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting wordmark only (no leaf icon)"
     },
     {
@@ -4502,7 +4502,7 @@
       "author": null,
       "contributor": null,
       "id": "og_image",
-      "community": 4,
+      "community": 8,
       "norm_label": "uem architect consulting open graph social share image (1200x630)"
     },
     {
@@ -4515,7 +4515,7 @@
       "author": null,
       "contributor": null,
       "id": "img_cf22e7_dashboard_illustration",
-      "community": 6,
+      "community": 2,
       "norm_label": "cloud dashboard analytics illustration"
     },
     {
@@ -4528,7 +4528,7 @@
       "author": null,
       "contributor": null,
       "id": "img_e48f5a_professional_headshots",
-      "community": 6,
+      "community": 2,
       "norm_label": "professional business headshots \u2014 male and female consultants"
     },
     {
@@ -4541,7 +4541,7 @@
       "author": null,
       "contributor": null,
       "id": "img_95fce0_service_icons_grid",
-      "community": 6,
+      "community": 2,
       "norm_label": "uem service icons grid \u2014 assessments, implementation, zero trust, enablement"
     },
     {
@@ -4554,7 +4554,7 @@
       "author": null,
       "contributor": null,
       "id": "img_5544fe_client_logos",
-      "community": 28,
+      "community": 8,
       "norm_label": "client logos \u2014 northbridge health network, riverbend retail group, swifttech solutions, crestline financial, vertex energy"
     },
     {
@@ -4567,7 +4567,7 @@
       "author": null,
       "contributor": null,
       "id": "img_79bde3_security_icons",
-      "community": 6,
+      "community": 2,
       "norm_label": "security icons \u2014 cloud devices, user authentication, secure folder, secure browser"
     },
     {
@@ -4580,7 +4580,7 @@
       "author": null,
       "contributor": null,
       "id": "img_52e5a7_services_icon_row",
-      "community": 6,
+      "community": 2,
       "norm_label": "uem services icon row \u2014 assessments, implementation, zero trust policy, operations, enablement and training"
     },
     {
@@ -4593,7 +4593,7 @@
       "author": null,
       "contributor": null,
       "id": "img_fba255_uem_feature_icons",
-      "community": 6,
+      "community": 2,
       "norm_label": "uem feature icons \u2014 configuration/gear, zero trust shield key, cross-platform migration (apple/windows), assessment checklist"
     },
     {
@@ -4606,7 +4606,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_uem_services",
-      "community": 6,
+      "community": 2,
       "norm_label": "uem consulting services"
     },
     {
@@ -4619,7 +4619,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_client_portfolio",
-      "community": 28,
+      "community": 8,
       "norm_label": "client portfolio / social proof"
     },
     {
@@ -4632,7 +4632,7 @@
       "author": null,
       "contributor": null,
       "id": "concept_cross_platform_migration",
-      "community": 6,
+      "community": 2,
       "norm_label": "cross-platform device migration"
     },
     {
@@ -4645,7 +4645,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_primary_logo",
-      "community": 14,
+      "community": 5,
       "norm_label": "the deep dive primary logo"
     },
     {
@@ -4658,7 +4658,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_theme_logo",
-      "community": 14,
+      "community": 5,
       "norm_label": "the deep dive wordpress theme logo"
     },
     {
@@ -4671,7 +4671,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_favicon",
-      "community": 14,
+      "community": 5,
       "norm_label": "the deep dive favicon (dd monogram)"
     },
     {
@@ -4684,7 +4684,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_brand",
-      "community": 14,
+      "community": 5,
       "norm_label": "the deep dive brand"
     },
     {
@@ -4697,7 +4697,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_icon_element",
-      "community": 14,
+      "community": 5,
       "norm_label": "server with magnifying glass icon (uem insight)"
     },
     {
@@ -4710,7 +4710,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_tagline",
-      "community": 14,
+      "community": 5,
       "norm_label": "uncovering strategic insights tagline"
     },
     {
@@ -4723,7 +4723,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_color_palette",
-      "community": 14,
+      "community": 5,
       "norm_label": "deep dive color palette (dark navy, teal, sky blue)"
     },
     {
@@ -4736,7 +4736,7 @@
       "author": null,
       "contributor": null,
       "id": "deep_dive_wordpress_theme",
-      "community": 14,
+      "community": 5,
       "norm_label": "the deep dive wordpress theme"
     }
   ],
