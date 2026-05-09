@@ -26,6 +26,7 @@ Multi-page static marketing website for UEM Architect Consulting — a Unified E
 | `og-image.jpg` | 1200×630 Open Graph social share image |
 | `robots.txt` | Crawl directives — allows all except `deep-dive.html`; references sitemap |
 | `sitemap.xml` | XML sitemap with 6 indexable pages; submit to Google Search Console |
+| `git-push.sh` | Deploy helper — stages site files, commits, and pushes to `origin/main`; run via `bash git-push.sh` |
 
 ## Architecture
 

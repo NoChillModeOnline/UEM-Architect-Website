@@ -40,6 +40,7 @@ UEM-Architect-Website/
 ├── og-image.jpg                # 1200×630 Open Graph social share image
 ├── robots.txt                  # Crawl directives
 ├── sitemap.xml                 # XML sitemap (6 indexable pages)
+├── git-push.sh                 # Helper script — stages site files and pushes to origin/main
 │
 ├── Images/                     # Brand assets, partner logos, service illustrations
 │
