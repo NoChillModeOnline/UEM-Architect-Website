@@ -829,6 +829,10 @@ document.addEventListener('DOMContentLoaded', () => {
       leadWrap.appendChild(form);
       enhancementsSlot.appendChild(divider);
       enhancementsSlot.appendChild(leadWrap);
+
+      if (typeof turnstile !== 'undefined') {
+        turnstile.render(captchaDiv, { sitekey: '0x4AAAAAADB_G5GamVWk3cTW' });
+      }
     }
 
     function handleClick(e) {
