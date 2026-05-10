@@ -913,7 +913,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const formData = new FormData(form);
 
-      if (form.querySelector('.g-recaptcha') && !formData.get('g-recaptcha-response')) {
+      if (form.querySelector('.cf-turnstile') && !formData.get('cf-turnstile-response')) {
         alert('Please complete the CAPTCHA verification.');
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
